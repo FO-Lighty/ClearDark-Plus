@@ -35,6 +35,20 @@ CSS link
 
 ![discord-105](https://user-images.githubusercontent.com/4013216/125158378-c8527080-e13e-11eb-9ad5-a7f2e229ac2b.png)
 
+## About
+
+This is the first Discord theme I ever worked on!
+Its purpose is essentially to create a light translucent black background and add an image to make it more personal!
+
+### Installation
+
+Installing betterdiscord themes is really easy!
+- Go into discord's settings
+- Go to "Themes"
+- Click on "Open theme folder"
+- Move the .theme.css file you downloaded into the folder you just opened
+- Click the checkbox in the top-right corner of the theme in discord to enable it
+
 ## Variables
 
 #### App elements
