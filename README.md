@@ -11,6 +11,7 @@ Current version: v1.0.0 (18/01/2025)
 
 CSS link
 ```
+https://github.com/FO-Lighty/ClearDark-Plus/blob/main/css/source.css
 ```
 
 ## Preview
