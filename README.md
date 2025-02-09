@@ -3,8 +3,6 @@
 
 Current version: v1.0.0 (18/01/2025)
 
-[BetterDiscord download]()
-
 CSS link
 ```
 https://raw.githubusercontent.com/FO-Lighty/ClearDark-Plus/refs/heads/main/css/source.css
