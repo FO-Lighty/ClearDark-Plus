@@ -1,9 +1,9 @@
 # ClearDark +
 #### Translucent anime character / Clear Dark Glass Discord theme
 
-## Current version: v1.0.1 (31/01/2025)
+## Current version: v1.0.1 (03/15/2025)
 
-**Changelog** : [Changelog v1.0.1](https://github.com/FO-Lighty/ClearDark-Plus/blob/1b730107d94fc58d3aeb7ec03bdb9c2ed94f5530/changelog.md)
+**Changelog** : [Changelog v1.1.0](https://fo-lighty.github.io/ClearDark-Plus/changelog)
 
 #### **CSS link**
 ```
@@ -14,23 +14,23 @@ https://fo-lighty.github.io/ClearDark-Plus/css/source.css
 
 #### Main chat area
 
-![preview_1](https://github.com/FO-Lighty/ClearDark-Plus/blob/main/preview/main_chat_area.png?raw=true)
+![preview_1](assets/preview/main_chat_area.png)
 
 #### User server info
 
-![preview_2](https://github.com/FO-Lighty/ClearDark-Plus/blob/main/preview/user_server_info.png?raw=true)
+![preview_2](assets/preview/user_server_info.png)
 
 #### User info popout
 
-![preview_3](https://github.com/FO-Lighty/ClearDark-Plus/blob/main/preview/user_info_pop.png?raw=true)
+![preview_3](assets/preview/user_info_pop.png)
 
 #### User settings
 
-![preview_4](https://github.com/FO-Lighty/ClearDark-Plus/blob/main/preview/user_settings.png?raw=true)
+![preview_4](assets/preview/user_settings.png)
 
 #### DMs
 
-![preview_5](https://github.com/FO-Lighty/ClearDark-Plus/blob/main/preview/DMs.png?raw=true)
+![preview_5](assets/preview/DMs.png)
 
 
 ## About
