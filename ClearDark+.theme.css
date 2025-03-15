@@ -1,15 +1,15 @@
-/*
+/**
  * @name Clear Dark +
- * @version 1.0.1
+ * @version 1.1.0
  * @description Translucent anime character / Clear Dark Glass Discord theme
  * @author Lighty
  * @authorId 975102868564639835
  */
 
-@import url(https://capnkitten.github.io/BetterDiscord/Themes/Translucence/css/source.css);
+@import url(https://fo-lighty.github.io/ClearDark-Plus/css/source.css);
 
 :root {
-	--app-bg: url(https://github.com/FO-Lighty/ClearDark-Plus/blob/main/preview/image_bg/Dark-Clear+_BG.jpeg?raw=true);
+	--app-bg: url(https://github.com/FO-Lighty/ClearDark-Plus/blob/main/preview/image_bg/hatsune-miku.jpg?raw=true);
 	--app-blur: 6px;
 	--app-margin: 24px;
 	--app-radius: 8px; /*	-	*/
