@@ -1,4 +1,4 @@
-# Translucence
+# ClearDark+
 
 ## Changelog
 
