@@ -50,7 +50,7 @@ Installing betterdiscord themes is really easy!
 ## Variables
 
 #### App elements
- - `--app-bg` - The background image for the entire Discord app. Default: `url([https://i.imgur.com/U8bSjj5.jpg](https://initiate.alphacoders.com/image_requests/509102-final.jpeg))`
+ - `--app-bg` - The background image for the entire Discord app. Default: `url(https://fo-lighty.github.io/ClearDark-Plus/assets/images/hatsune-miku.jpg)`
  - `--app-blur` - The strength of the blur for every element that has one. Default: `6px`
  - `--app-margin` - The margin surrounding the content area. Default: `24px`
  - `--app-radius` - The border radius of the app and every element that has a border radius. Default: `8px`
