@@ -7,7 +7,7 @@
 
 #### **CSS link**
 ```
-https://raw.githubusercontent.com/FO-Lighty/ClearDark-Plus/refs/heads/main/css/source.css
+https://fo-lighty.github.io/ClearDark-Plus/css/source.css
 ```
 
 ## Preview
