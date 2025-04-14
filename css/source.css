@@ -1,17 +1,18 @@
 :root {
   /* APP ELEMENTS */
+  --app-bg: url(https://fo-lighty.github.io/ClearDark-Plus/assets/images/hatsune-miku.jpg);
   --app-blur: 6px;
   --app-margin: 24px;
   --app-radius: 10px;
   --main-rgb: 0,0,0;
-  --main-content-opacity: 0.2;
-  --sidebar-opacity: 0.4;
+  --main-content-opacity: 0.515;
+  --sidebar-opacity: 0.8;
   --main-content-color: rgba(var(--main-rgb), var(--main-content-opacity));
   --sidebar-color: rgba(var(--main-rgb), var(--sidebar-opacity));
   /* ACCENT HSL AND TEXT COLOR SETTINGS */
   --accent-hue: 156;
   --accent-saturation: 77.5%;
-  --accent-lightness: 47.1%;
+  --accent-lightness: 47.5%;
   --accent-hsl: var(--accent-hue),calc(var(--accent-saturation) * var(--saturation-factor)),var(--accent-lightness);
   --accent-opacity: 1;
   --accent-text-color: hsl(0,0%,0%);
@@ -30,13 +31,13 @@
   --mention-hsl: var(--mention-hue),calc(var(--mention-saturation) * var(--saturation-factor)),var(--mention-lightness);
   --mention-opacity: 1;
   /* REPLY HSL COLOR SETTINGS */
-  --reply-hue: 226;
+  --reply-hue: 210;
   --reply-saturation: 77.4%;
   --reply-lightness: 61.8%;
   --reply-hsl: var(--reply-hue),calc(var(--reply-saturation) * var(--saturation-factor)),var(--reply-lightness);
   --reply-opacity: 1;
   /* MESSAGE COLOR SETTINGS */
-  --message-color: hsl(0,0%,0%,0.4);
+  --message-color: hsl(0,0%,0%,0.41);
   --message-color-hover: hsl(0,0%,0%,0.55);
   --message-radius: var(--app-radius);
   --message-padding-top: 8px;
