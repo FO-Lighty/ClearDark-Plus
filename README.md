@@ -49,23 +49,23 @@ Installing betterdiscord themes is really easy!
 
 ## Variables
 
-#### App elements
+#### App elements:
  - `--app-bg` - The background image for the entire Discord app. Default: `url(https://fo-lighty.github.io/ClearDark-Plus/assets/images/Dark-Clear+_BG.jpeg)`
  - `--app-blur` - The strength of the blur for every element that has one. Default: `6px`
  - `--app-margin` - The margin surrounding the content area. Default: `24px`
  - `--app-radius` - The border radius of the app and every element that has a border radius. Default: `8px`
- - `--sidebar-color` - The background color of the sidebars. Default: `rgba(0,0,0, 0.8)`
- - `--main-content-color` - The background color of the main content areas. Default: `rgba(0,0,0, 0.515)`
+ - `--sidebar-color` - The background color of the sidebars. Default: `hsl(0,0%,0%,0.8)`
+ - `--main-content-color` - The background color of the main content areas. Default: `hsl(0,0%,0%,0.515)`
 
-#### Accent color
+#### Accent color:
  - `--accent-hue` - The hue value for the accent color of the theme. Default: `195`
  - `--accent-saturation` - The saturation value for the accent color of the theme. Default: `77.5%`
  - `--accent-lightness` - The lightness value for the accent color of the theme. Default: `47.5%`
  - `--accent-opacity` - The opacity of everything, excluding text, that uses the accent color. Default: `1`
- - `--accent-text-color` - The text color for buttons and other various elements with the accent background color. Default: `#000`
+ - `--accent-text-color` - The text color for buttons and other various elements with the accent background color. Default: `hsl(0,0%,0%)`
 
-#### Messages
- - `--message-color` - The background color for messages. Default: `rgba(0,0,0, 0.51)`
+#### Messages:
+ - `--message-color` - The background color for messages. Default: `hsl(0,0%,0%,0.51)`
  - `--message-radius` - The border radius for messages. Default: `8px`
  - `--message-padding-top` - The top and bottom padding for messages. Default: `8px`
  - `--message-padding-side` - The left and right padding for messages. Default: `8px`
@@ -74,33 +74,33 @@ Installing betterdiscord themes is really easy!
  - `--mention-lightness` - The lightness value for the message mention color. Default: `47.1%`
  - `--mention-opacity` - The opacity of the message mention color. Default: `1`
  - `--reply-hue` - The hue value for the reply message color. Default: `210`
- - `--reply-saturation` - The saturation value for the reply message color. Default: `77.6%`
+ - `--reply-saturation` - The saturation value for the reply message color. Default: `77.4%`
  - `--reply-lightness` - The lightness value for the reply message color. Default: `61.8%`
  - `--reply-opacity` - The opacity of the reply message color. Default: `1`
 
-#### Textareas and inputs
- - `--textarea-color` - The background color for any textareas and inputs. Default: `0,0,0`
+#### Textareas and inputs:
+ - `--textarea-color` - The background color for any textareas and inputs. Default: `255,255,255`
  - `--textarea-alpha` - The opacity for any textareas and inputs. Default: `0.15`
- - `--textarea-text-color` - The text color for textareas and inputs. Default: `#fff`
+ - `--textarea-text-color` - The text color for textareas and inputs. Default: `hsl(0, 100%, 100%)`
  - `--textarea-radius` - The border radius for textareas (not inputs). Default: `22px`
  - `--input-height` - The height for inputs. Default: `36px`
  - `--input-radius` - The border radius for inputs (not textareas). Default: `18px`
 
-#### Cards
- - `--card-color` - The background color for cards. Default: `rgba(0,0,0, 0.4)`
- - `--card-color-hover` - The background color for hovering over cards (if there is a hover animation). Default: `rgba(0,0,0, 0.5)`
- - `--card-color-select` The background color for the selected cards. Default: `rgba(0,0,0, 0.7)`
+#### Cards:
+ - `--card-color` - The background color for cards. Default: `hsl(0,0%,0%,0.4)`
+ - `--card-color-hover` - The background color for hovering over cards (if there is a hover animation). Default: `hsl(0,0%,0%,0.5)`
+ - `--card-color-select` The background color for the selected cards. Default: `hsl(0,0%,0%,0.7)`
  - `--card-radius` - The border radius for cards. Default: `8px`
 
-#### Buttons
+#### Buttons:
  - `--button-height` - The height for buttons. Default: `32px`
  - `--button-padding` - The padding for buttons. Default: `0 16px`
  - `--button-color` - The background color for most buttons. Default: `#d73d3d`
- - `--button-action-color` - The background color for hovering and clicking on buttons (has a lowered opacity). Default: `#000`
+ - `--button-action-color` - The background color for hovering and clicking on buttons (has a lowered opacity). Default: `hsl(0,0%,0%)`
  - `--button-text-color` - The text color for any buttons that use `--button-color`. Default: `#000`
- - `--button-radius` - The border radius for buttons. Default: `8px`
+ - `--button-radius` - The border radius for buttons. Default: `16px`
 
-#### Popouts and modals
+#### Popouts and modals:
  - `--popout-color` - The background color for modals/popouts. Default: `rgba(0,0,0, 0.55)`
  - `--popout-blur` - The blur strength for modals/popouts. Default: `5px`
  - `--popout-header-opacity` - The header opacity for modals/popouts. Default: `0.3`
