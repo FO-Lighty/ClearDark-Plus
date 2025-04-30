@@ -1,8 +1,8 @@
 /**
  * @name Clear Dark +
- * @version 1.2.1
+ * @version 1.3.0
  * @description Translucent anime character / Clear Dark Glass Discord theme
- * @author Lighty
+ * @author Lighty.Jr
  * @authorId 975102868564639835
  */
 
@@ -10,17 +10,17 @@
 
 :root {
 	/* APP ELEMENTS */
-	--app-bg: url(https://fo-lighty.github.io/ClearDark-Plus/assets/images/hatsune-miku.jpg);
+	--app-bg: url(https://fo-lighty.github.io/ClearDark-Plus/assets/images/Samurai.jpeg);
 	--app-blur: 6px;
 	--app-margin: 24px;
 	--app-radius: 8px;
 
 	/* ACCENT HSL AND TEXT COLOR SETTINGS */
-	--accent-hue: 195;
-	--accent-saturation: 77.5%;
-	--accent-lightness: 47.5%;
+	--accent-hue: 206;
+	--accent-saturation: 22%;
+	--accent-lightness: 49%;
 	--accent-opacity: 1;
-	--accent-text-color: hsl(0,0%,0%);
+	--accent-text-color: hsl(216,17%,94%);
 
 	/* SIDEBARS AND CHAT AREA COLOR SETTINGS */
 	--sidebar-color: hsl(0,0%,0%,0.8);
@@ -42,7 +42,7 @@
 	--textarea-color: 255,255,255;
 	--textarea-alpha: 0.1;
 	--textarea-alpha-focus: 0.15;
-	--textarea-text-color: hsl(0, 100%, 100%);
+	--textarea-text-color: hsl(0,100%,100%);
 	--textarea-radius: 22px;
 
 	/* CARD SETTINGS */
