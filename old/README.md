@@ -12,26 +12,7 @@ https://fo-lighty.github.io/ClearDark-Plus/css/source.css
 
 ## Preview
 
-#### Main chat area
-
-![preview_1](assets/preview/main_chat_area.png)
-
-#### User server info
-
-![preview_2](assets/preview/user_server_info.png)
-
-#### User info popout
-
-![preview_3](assets/preview/user_info_pop.png)
-
-#### User settings
-
-![preview_4](assets/preview/user_settings.png)
-
-#### DMs
-
-![preview_5](assets/preview/DMs.png)
-
+#### NOT AVAIBLE ANYMORE!
 
 ## About
 
