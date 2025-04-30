@@ -2,6 +2,10 @@
 
 ## Changelog
 
+### v1.3.0 (04/30/2025)
+
+* Old assets have been moved to a dedicated directory to facilitate the introduction of modern design, and potentially a theme refresh.
+
 ### v1.2.1 (04/14/2025)
 
 * Fixed **hitbox problem** with the Discord **toolbar** (minimize, maximize, and close buttons).
@@ -15,4 +19,4 @@
 * Fix the background that's no longer displaying correctly after 1 week.
 
 #### v1.0.0 (01/18/2025)
-* Initial release
+* Initial release.
