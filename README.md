@@ -50,7 +50,7 @@ Installing betterdiscord themes is really easy!
 ## Variables
 
 #### App elements:
- - `--app-bg` - The background image for the entire Discord app. Default: `url(https://fo-lighty.github.io/ClearDark-Plus/assets/images/Dark-Clear+_BG.jpeg)`
+ - `--app-bg` - The background image for the entire Discord app. Default: `url(https://fo-lighty.github.io/ClearDark-Plus/assets/images/Samurai.jpeg)`
  - `--app-blur` - The strength of the blur for every element that has one. Default: `6px`
  - `--app-margin` - The margin surrounding the content area. Default: `24px`
  - `--app-radius` - The border radius of the app and every element that has a border radius. Default: `8px`
@@ -58,11 +58,11 @@ Installing betterdiscord themes is really easy!
  - `--main-content-color` - The background color of the main content areas. Default: `hsl(0,0%,0%,0.515)`
 
 #### Accent color:
- - `--accent-hue` - The hue value for the accent color of the theme. Default: `195`
- - `--accent-saturation` - The saturation value for the accent color of the theme. Default: `77.5%`
- - `--accent-lightness` - The lightness value for the accent color of the theme. Default: `47.5%`
+ - `--accent-hue` - The hue value for the accent color of the theme. Default: `206`
+ - `--accent-saturation` - The saturation value for the accent color of the theme. Default: `22%`
+ - `--accent-lightness` - The lightness value for the accent color of the theme. Default: `49%`
  - `--accent-opacity` - The opacity of everything, excluding text, that uses the accent color. Default: `1`
- - `--accent-text-color` - The text color for buttons and other various elements with the accent background color. Default: `hsl(0,0%,0%)`
+ - `--accent-text-color` - The text color for buttons and other various elements with the accent background color. Default: `hsl(216,17%,94%)`
 
 #### Messages:
  - `--message-color` - The background color for messages. Default: `hsl(0,0%,0%,0.51)`
