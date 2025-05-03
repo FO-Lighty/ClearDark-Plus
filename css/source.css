@@ -599,12 +599,6 @@ body {
 .toolbar_bba883 .button__201d5:after {
   --button-action-color: #fff;
 }
-#app-mount .toolbar__9293f .iconWrapper__9293f .iconBadge__9293f {
-  border-radius: 50%;
-  box-shadow: 0 0 calc(var(--glow-intensity) * 10px) calc(var(--glow-intensity) * 1px) hsl(var(--accent-hsl));
-}
-#app-mount .toolbar__9293f .iconWrapper__9293f.selected__9293f {
-  filter: drop-shadow(0 0 calc(var(--glow-intensity) * 8px) hsl(var(--accent-hsl), 0.35)) drop-shadow(0 0 calc(var(--glow-intensity) * 2px) hsl(var(--accent-hsl), 0.35));
 
 /*
  *
@@ -735,11 +729,6 @@ body {
 .channelTextAreaDisabled__74017 .scrollableContainer__74017 {
   opacity: 1;
 }
-
-body .message__5126c .channelTextArea__5126c:focus-within,
-#app-mount .message__5126c .channelTextArea__5126c:focus-within {
-  border-color: hsl(var(--accent-hsl));
-  box-shadow: 0 0 calc(var(--input-glow-intensity) * 20px) calc(var(--input-glow-intensity) * 5px) hsl(var(--accent-hsl), 0.25);
 
 .wrapper__44df5 {
   padding: 12px 0;
