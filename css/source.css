@@ -31,9 +31,9 @@
   --mention-hsl: var(--mention-hue),calc(var(--mention-saturation) * var(--saturation-factor)),var(--mention-lightness);
   --mention-opacity: 1;
   /* REPLY HSL COLOR SETTINGS */
-  --reply-hue: 210;
-  --reply-saturation: 77.4%;
-  --reply-lightness: 61.8%;
+  --reply-hue: 206;
+  --reply-saturation: 22%;
+  --reply-lightness: 49%;
   --reply-hsl: var(--reply-hue),calc(var(--reply-saturation) * var(--saturation-factor)),var(--reply-lightness);
   --reply-opacity: 1;
   /* MESSAGE COLOR SETTINGS */
@@ -964,16 +964,6 @@ body {
 .hasCounter.membersWrap_c8ffbb .members_c8ffbb {
   margin-top: 41px !important;
 }
-
-/*
- *
- *  BETTERDISCORD PLUGIN -> SpotifyControls
- *
- */
-#vc-spotify-player {
-  background-color: transparent !important;
-}
-
 /*
  *
  *  BETTERDISCORD NOTICES
@@ -1007,7 +997,7 @@ body {
   height: 18px;
   top: 20px;
   right: 20px;
-  -webkit-mask-image: url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/files/icons/outline/close.svg);
+  -webkit-mask-image: url(https://fo-lighty.github.io/ClearDark-Plus/assets/icons/close.svg);
   -webkit-mask-repeat: no-repeat;
   background-color: var(--header-secondary);
   background-image: none;
