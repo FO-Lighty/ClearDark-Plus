@@ -16,6 +16,14 @@
   --accent-hsl: var(--accent-hue),calc(var(--accent-saturation) * var(--saturation-factor)),var(--accent-lightness);
   --accent-opacity: 1;
   --accent-text-color: hsl(216,17%,94%);
+  /* GLOW EFFECT*/
+  --chat-glow-intensity: var(--glow-intensity);
+  --channel-glow-intensity: var(--glow-intensity);
+  --members-glow-intensity: var(--glow-intensity);
+  --input-glow-intensity: var(--glow-intensity);
+  --server-glow-intensity: var(--glow-intensity);
+  --talking-bar: rgb(var(--accent));
+  --talking-glow: rgb(var(--accent));
   /* ALERT HSL AND TEXT COLOR SETTINGS */
   --alert-hue: 359;
   --alert-saturation: 66.7%;
@@ -591,6 +599,12 @@ body {
 .toolbar_bba883 .button__201d5:after {
   --button-action-color: #fff;
 }
+#app-mount .toolbar__9293f .iconWrapper__9293f .iconBadge__9293f {
+  border-radius: 50%;
+  box-shadow: 0 0 calc(var(--glow-intensity) * 10px) calc(var(--glow-intensity) * 1px) hsl(var(--accent-hsl));
+}
+#app-mount .toolbar__9293f .iconWrapper__9293f.selected__9293f {
+  filter: drop-shadow(0 0 calc(var(--glow-intensity) * 8px) hsl(var(--accent-hsl), 0.35)) drop-shadow(0 0 calc(var(--glow-intensity) * 2px) hsl(var(--accent-hsl), 0.35));
 
 /*
  *
