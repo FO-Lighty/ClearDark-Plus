@@ -1,5 +1,5 @@
 /**
- * @name Clear Dark +
+ * @name Clear Dark + Assassin Creed Special Theme
  * @version 1.3.0 Special
  * @description Clear Dark Glass Special Discord theme / assassins creed shadows theme
  * @author Lighty.Jr
@@ -33,9 +33,9 @@
 	--message-padding-side: 8px;
 
 	/* REPLY HSL COLOR SETTINGS */
-	--reply-hue: 210;
-	--reply-saturation: 77.4%;
-	--reply-lightness: 61.8%;
+	--reply-hue: 79;
+	--reply-saturation: 19%;
+	--reply-lightness: 48%;
 	--reply-opacity: 1;
 
 	/* TEXTAREA SETTINGS */
