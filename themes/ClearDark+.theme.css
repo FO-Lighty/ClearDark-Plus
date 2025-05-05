@@ -33,9 +33,9 @@
 	--message-padding-side: 8px;
 
 	/* REPLY HSL COLOR SETTINGS */
-	--reply-hue: 210;
-	--reply-saturation: 20%;
-	--reply-lightness: 39%;
+	--reply-hue: 204;
+	--reply-saturation: 25%;
+	--reply-lightness: 50%;
 	--reply-opacity: 1;
 
 	/* TEXTAREA SETTINGS */
