@@ -5,7 +5,10 @@
 ### v1.3.1 (05/05/2025)
 
 * Fix a probleme with the reply halo using a wrong color.
+
 * **Compatibility issue resolved** between the default and special themes within the theme folder.
+
+* The code has been **improved to load faster** on startup.
 
 ### v1.3.0 (04/30/2025)
 
