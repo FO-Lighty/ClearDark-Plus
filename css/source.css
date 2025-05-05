@@ -39,9 +39,9 @@
   --mention-hsl: var(--mention-hue),calc(var(--mention-saturation) * var(--saturation-factor)),var(--mention-lightness);
   --mention-opacity: 1;
   /* REPLY HSL COLOR SETTINGS */
-  --reply-hue: 206;
-  --reply-saturation: 22%;
-  --reply-lightness: 49%;
+	--reply-hue: 210;
+	--reply-saturation: 20%;
+	--reply-lightness: 39%;
   --reply-hsl: var(--reply-hue),calc(var(--reply-saturation) * var(--saturation-factor)),var(--reply-lightness);
   --reply-opacity: 1;
   /* MESSAGE COLOR SETTINGS */
