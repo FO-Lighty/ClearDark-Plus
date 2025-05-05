@@ -8,7 +8,7 @@
 
 * **Compatibility issue resolved** between the default and special themes within the theme folder.
 
-* The code has been **improved to load faster** on startup.
+* The code has been **improved to load faster**.
 
 ### v1.3.0 (04/30/2025)
 
