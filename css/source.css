@@ -6288,7 +6288,7 @@ body {
   border-left: 4px solid;
 }
 .visual-refresh .popoutContainer__0f481 {
-  background-color: hsl(0 0% 0% / 100%);
+  background-color: hsl(0deg 0% 0% / 5%);
   backdrop-filter: blur(8px);
   box-shadow: var(--shadow-border),var(--shadow-low);
 }
@@ -6348,6 +6348,10 @@ body {
 .visual-refresh .messageContainer__95796 {
   background-color: transparent;
   border: none;
+}
+.visual-refresh .content__908e2 {
+  background: var(--bg-overlay-chat,hsl(var(--accent-hue), 21%, 24%));
+  padding-left: var(--space-4);
 }
 .visual-refresh .recentMentionsPopout__95796 {
   background-color: transparent;
