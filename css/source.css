@@ -6288,7 +6288,7 @@ body {
   border-left: 4px solid;
 }
 .visual-refresh .popoutContainer__0f481 {
-  background-color: none;
+  background-color: var(--card-color);
   backdrop-filter: blur(8px);
   box-shadow: var(--shadow-border),var(--shadow-low);
 }
