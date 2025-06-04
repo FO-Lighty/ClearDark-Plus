@@ -6289,8 +6289,14 @@ body {
 }
 .visual-refresh .popoutContainer__0f481 {
   background-color: hsl(0deg 0% 0% / 0%);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(5px);
   box-shadow: var(--shadow-border),var(--shadow-low);
+  background-color: hsl(0deg 0% 0% / 0%);
+  backdrop-filter: blur(5px);
+  box-shadow: var(--shadow-border),var(--shadow-low);
+  background: url("https://i0.wp.com/airlinkalaska.com/wp-content/uploads//aurora-2.jpg?resize=1024%2C683&ssl=1");
+  background-size: cover;
+  /* filter: blur(50px); */
 }
 .visual-refresh .contentWrapper__08434, .visual-refresh .contentWrapper_eab878 {
   background-color: transparent;
