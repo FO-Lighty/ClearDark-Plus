@@ -194,6 +194,7 @@ body {
 }
 
 .guildSection_d5cd2d {
+  background-image: linear-gradient(-90deg, rgba(0, 0, 0, 0.825), rgba(58, 78, 91, 1));
   background-color: var(--background-secondary-alt);
   padding: var(--custom-message-helpers-popout-padding-width);
 }
