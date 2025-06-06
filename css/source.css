@@ -6299,9 +6299,9 @@ body {
   backdrop-filter: blur(5px);
   box-shadow: var(--shadow-border),var(--shadow-low);
   background-color: hsl(0deg 0% 0% / 0%);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(8px);
   box-shadow: var(--shadow-border),var(--shadow-low);
-  background: url("https://i0.wp.com/airlinkalaska.com/wp-content/uploads//aurora-2.jpg?resize=1024%2C683&ssl=1");
+  background: var(--app-bg);
   background-size: cover;
   /* filter: blur(50px); */
 }
