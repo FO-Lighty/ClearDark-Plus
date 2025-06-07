@@ -2310,6 +2310,11 @@ body {
   border-bottom-color: var(--popout-color);
 }
 
+.contentOverlay__3f6fc{
+  background: var(--card-color)!important;
+  padding: 16px 28px;
+}
+
 /*
  *
  *  ACTIVITY LIST
