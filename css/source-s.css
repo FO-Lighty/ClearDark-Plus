@@ -194,7 +194,7 @@ body {
 }
 
 .guildSection_d5cd2d {
-  background-image: linear-gradient(-90deg, rgba(0, 0, 0, 0.825), rgba(68, 31, 24, 1));
+  background-image: linear-gradient(-90deg, rgba(0, 0, 0, 0.825), rgba(76, 81, 43, 1));
   background-color: var(--background-secondary-alt);
   padding: var(--custom-message-helpers-popout-padding-width);
 }
@@ -380,7 +380,7 @@ body {
 }
 
 .postEnrollmentBackground__636a2{
-  background-image: linear-gradient(-90deg, rgba(0, 0, 0, 0.8), rgba(68, 31, 24, 1)) !important;
+  background-image: linear-gradient(-90deg, rgba(0, 0, 0, 0.8), rgba(76, 81, 43, 1)) !important;
   background-color: rgba(0, 0, 0, 1) !important;
 }
 
