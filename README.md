@@ -39,6 +39,11 @@ This is the first Discord theme I ever worked on!
 Its purpose is essentially to create a light translucent black background and add an image to make it more personal!
 
 ### Installation
+Installation of BetterDiscord :
+- Download the installer on the official website (https://betterdiscord.app)
+- Open the installer (*BetterDiscord.exe*)
+- Follow the instruction and done!
+
 
 Installing betterdiscord themes is really easy!
 - Go into discord's settings
