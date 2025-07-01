@@ -751,6 +751,10 @@ body {
   border-radius: var(--message-radius);
 }
 
+.cozy_c19a55 .timestamp_c19a55.alt_c19a55 {
+  color: hsl(var(--textarea-text-color)) !important;
+}
+
 .typing_b88801 {
   position: absolute;
   width: calc(100% - 32px);
