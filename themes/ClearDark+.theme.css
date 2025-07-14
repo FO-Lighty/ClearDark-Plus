@@ -82,4 +82,5 @@
 	/* BACKGROUND MODIFIER SETTINGS */
 	--background-modifier-hover: hsl(0,0%,100%,0.075);
 	--background-modifier-selected: hsl(0,0%,100%,0.125);
+	--background-modifier-transparent: hsl(0,0%,0%,0.15);
 }
