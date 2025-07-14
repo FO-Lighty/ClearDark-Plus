@@ -21,6 +21,7 @@
 	--accent-lightness: 49%;
 	--accent-opacity: 1;
 	--accent-text-color: hsl(216,17%,94%);
+	--accent-color: hsl(206,22%,49%);
 
 	/* SIDEBARS AND CHAT AREA COLOR SETTINGS */
 	--sidebar-color: hsl(0,0%,0%,0.8);
