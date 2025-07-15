@@ -194,6 +194,11 @@ body {
   backdrop-filter: blur(var(--popout-blur));
 }
 
+.card__73069 {
+  padding-right: 32px;
+  padding-bottom: 10px;
+}
+
 /*
  *
  *  TITLE BAR
