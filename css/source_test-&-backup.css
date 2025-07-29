@@ -1,39 +1,24 @@
 :root {
   /* APP ELEMENTS */
-  --app-bg: url(https://fo-lighty.github.io/ClearDark-Plus/assets/images/Samurai.jpg); /* MODIFIED */
-  --main-content-opacity: 0.515; /* MODIFIED */
-  --sidebar-opacity: 0.8; /* MODIFIED */
-  --accent-hue: 206; /* MODIFIED */
-  --accent-saturation: 22%; /* MODIFIED */
-  --accent-lightness: 49%; /* MODIFIED */
-  --accent-text-color: hsl(216,17%,94%); /* MODIFIED */
-  --reply-hue: 210; /* MODIFIED */
-  --reply-saturation: 20%; /* MODIFIED */
-  --reply-lightness: 39%; /* MODIFIED */
-
-  /* VARIABLES ADDED BY THE FIRST CODE */
-  --chat-glow-intensity: var(--glow-intensity);
-  --channel-glow-intensity: var(--glow-intensity);
-  --members-glow-intensity: var(--glow-intensity);
-  --input-glow-intensity: var(--glow-intensity);
-  --server-glow-intensity: var(--glow-intensity);
-  --talking-bar: rgb(var(--accent));
-  --talking-glow: rgb(var(--accent));
-
-  /* VARIABLES KEPT FROM THE SECOND CODE */
+  --app-bg: url(https://fo-lighty.github.io/ClearDark-Plus/assets/images/Samurai.jpg);
   --app-blur: 6px;
   --app-margin: 24px;
   --app-radius: 10px;
   --main-rgb: 0,0,0;
+  --main-content-opacity: 0.515;
+  --sidebar-opacity: 0.8;
   --main-content-color: rgba(var(--main-rgb), var(--main-content-opacity));
   --sidebar-color: rgba(var(--main-rgb), var(--sidebar-opacity));
-  --text-normal: var(--interactive-normal);
-
-  /* ACCENT HSL (updates automatically) */
+  /* ACCENT HSL AND TEXT COLOR SETTINGS */
+  --accent-hue: 206;
+  --accent-saturation: 22%;
+  --accent-lightness: 49%;
   --accent-hsl: var(--accent-hue),calc(var(--accent-saturation) * var(--saturation-factor)),var(--accent-lightness);
   --accent-opacity: 1;
-
-  /* ALERT HSL (unchanged) */
+  --accent-text-color: hsl(216,17%,94%);
+  --accent-secondary-color: hsl(from hsl(var(--accent-hsl)) h calc(s * 0.1) l / 0.35); /*TO CHANGE*/
+  --accent-secondary-text-color: hsl(0,0%,94%); /*TO CHANGE*/
+  /* ALERT HSL AND TEXT COLOR SETTINGS */
   --alert-hue: 359;
   --alert-saturation: 66.7%;
   --alert-lightness: 54.1%;
@@ -41,19 +26,19 @@
   --alert-opacity: 1;
   --alert-action-color: hsl(0,0%,100%);
   --alert-text-color: hsl(0,0%,100%);
-
-  /* MENTION HSL */
+  /* MENTION HSL COLOR SETTINGS */
   --mention-hue: var(--accent-hue);
   --mention-saturation: var(--accent-saturation);
   --mention-lightness: var(--accent-lightness);
   --mention-hsl: var(--mention-hue),calc(var(--mention-saturation) * var(--saturation-factor)),var(--mention-lightness);
   --mention-opacity: 1;
-
-  /* REPLY HSL */
+  /* REPLY HSL COLOR SETTINGS */
+  --reply-hue: 210;
+  --reply-saturation: 20%;
+  --reply-lightness: 39%;
   --reply-hsl: var(--reply-hue),calc(var(--reply-saturation) * var(--saturation-factor)),var(--reply-lightness);
   --reply-opacity: 1;
-
-  /* OTHER VARIABLES */
+  /* MESSAGE COLOR SETTINGS */
   --message-color: hsl(0,0%,0%,0.4);
   --message-color-hover: hsl(0,0%,0%,0.55);
   --message-radius: var(--app-radius);
@@ -61,6 +46,7 @@
   --message-padding-side: 8px;
   --notification-color: hsl(0,0%,100%);
   --list-item-radius: var(--app-radius);
+  /* TEXTAREA SETTINGS */
   --textarea-color: 255,255,255;
   --textarea-alpha: 0.1;
   --textarea-alpha-focus: 0.15;
@@ -69,21 +55,26 @@
   --textarea-radius: 28px;
   --textarea-block-color: hsl(0,0%,0%,0.4);
   --textarea-block-text-color: #ccc;
+  /* INPUT SETTINGS */
   --input-height: 36px;
   --input-radius: calc(var(--input-height) / 2);
+  /* CARD SETTINGS */
   --card-color: hsl(0,0%,0%,0.4);
   --card-color-hover: hsl(0,0%,0%,0.5);
   --card-color-select: hsl(0,0%,0%,0.625);
   --card-radius: var(--app-radius);
   --card-header-shadow: 0px 3px 9px 0px hsl(0,0%,0%,0.25);
+  /* BUTTON SETTINGS */
   --button-height: 32px;
   --button-padding: 0 16px;
   --button-color: hsla(var(--accent-hsl),var(--accent-opacity));
   --button-action-color: hsl(0,0%,0%);
   --button-text-color: var(--accent-text-color);
   --button-radius: 16px;
+  /* SWITCH SETTINGS */
   --switch-slider-color: hsla(218,4.6%,46.9%,0.85);
   --switch-knob-color: hsl(0,0%,13%);
+  /* POPOUT SETTINGS */
   --popout-color: hsl(0,0%,0%,0.55);
   --popout-blur: 8px;
   --popout-header-opacity: 0.3;
@@ -95,22 +86,26 @@
   --spotify-color: 29,185,84;
   --server-folder-color: hsl(0,0%,100%,0.1);
   --supporter-color: hsla(var(--accent-hsl),var(--accent-opacity));
+  /* TOOLTIP SETTINGS */
   --tooltip-color: hsla(var(--accent-hsl),var(--accent-opacity));
   --tooltip-text-color: var(--accent-text-color);
   --tooltip-font-size: 14px;
   --tooltip-padding: 8px 12px;
   --tooltip-radius: var(--app-radius);
   --tooltip-shadow: var(--elevation-high);
+  /* ANIMATION SETTINGS */
   --transition-time: 250ms;
   --transition-type: cubic-bezier(0.4,0,0.2,1);
+  /* SCROLLBAR SETTINGS */
   --scrollbar-color: 255,255,255;
   --scrollbar-color-alt: 0,0,0;
   --scrollbar-opacity: 0.2;
   --scrollbar-opacity-hover: 0.3;
   --scrollbar-width: 10px;
+  /* TEXT COLOR SETTINGS */
+  --text-normal: var(--interactive-normal);
 }
 
-/* THIS BLOCK IS IDENTICAL IN BOTH FILES */
 .visual-refresh.theme-dark, .visual-refresh.theme-light {
   /* TEXT COLOR SETTINGS */
   --text-primary: hsl(0,0%,100%);
@@ -136,6 +131,7 @@
   --text-brand: hsl(var(--accent-hsl));
   --text-link: hsl(var(--accent-hsl));
 }
+
 /*
  *
  *  APP ELEMENTS
@@ -192,11 +188,6 @@ body {
   border-radius: var(--popout-radius);
   box-shadow: var(--popout-shadow);
   backdrop-filter: blur(var(--popout-blur));
-}
-
-.card__73069 {
-  padding-right: 32px;
-  padding-bottom: 10px;
 }
 
 /*
@@ -1782,6 +1773,7 @@ body {
   background-image: linear-gradient(0deg, transparent, transparent 1px, hsl(var(--accent-hsl)) 0, hsl(var(--accent-hsl)) 2px, transparent 0) !important;
 }
 
+/* BUTTONS -> CALL BUTTONS */
 .colorable_f1ceac {
   --button-background: var(--background-modifier-hover);
   --button-text-color: #fff;
@@ -1844,6 +1836,85 @@ body {
 .questionMark-3V9mGJ .icon-3JHfo7 {
   color: var(--accent-text-color);
   filter: none;
+}
+
+/* BUTTONS -> BUTTON V2 */
+.button__6af3a {
+  --button-background: hsla(var(--accent-hsl),var(--accent-opacity));
+  --button-text-color: var(--accent-text-color);
+  --button-outline: none;
+  background-color: var(--button-background) !important;
+  border: var(--button-outline) !important;
+  color: var(--button-text-color) !important;
+  border: var(--button-outline) !important;
+}
+.button__6af3a:after {
+  position: absolute;
+  content: " ";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--button-action-color);
+  border-radius: var(--button-radius);
+  opacity: 0;
+  pointer-events: none;
+  transition: var(--default-time) var(--default-animation) opacity;
+}
+.button__6af3a:hover:after {
+  opacity: 0.075;
+}
+.button__6af3a:active:after {
+  opacity: 0.15;
+}
+.button__6af3a .buttonChildrenWrapper__6af3a {
+  min-width: 0 !important;
+  height: var(--button-height);
+  padding: 0 !important;
+  line-height: var(--button-height);
+  color: inherit;
+  overflow: visible;
+}
+.button__6af3a .buttonChildrenWrapper__6af3a svg {
+  height: var(--button-height);
+}
+.button__6af3a .text-sm\/medium_cf4812,
+.button__6af3a .text-md\/medium_cf4812,
+.button__6af3a .text-lg\/medium_cf4812 {
+  text-shadow: none;
+}
+
+/* BUTTONS -> BUTTON V2 -> COLORS */
+.primary__6af3a {
+  --button-background: hsl(var(--accent-hsl));
+  --button-text-color: var(--accent-text-color);
+}
+
+.secondary__6af3a {
+  --button-background: var(--accent-secondary-color);
+  --button-text-color: var(--accent-secondary-text-color);
+}
+
+.critical-primary__6af3a {
+  --button-background: hsl(var(--alert-hsl));
+  --button-text-color: var(--alert-text-color);
+}
+
+.critical-secondary__6af3a {
+  --button-background: hsl(from hsl(var(--alert-hsl)) h s l / 0.25);
+  --button-text-color: hsl(from hsl(var(--alert-hsl)) h s calc(l * 0.96));
+}
+
+/* BUTTONS -> BUTTON V2 -> SIZES */
+.sm__6af3a,
+.md__6af3a,
+.lg__6af3a {
+  min-width: var(--button-height) !important;
+  height: var(--button-height) !important;
+  min-height: var(--button-height) !important;
+  padding: var(--button-padding) !important;
+  line-height: var(--button-height) !important;
+  border-radius: var(--button-radius) !important;
 }
 
 /*
@@ -4471,35 +4542,6 @@ body {
 
 /*
  *
- *  ROLE PREVIEW POPOUT
- *
- */
-.container-3ssFyj {
-  background-color: transparent;
-  border-radius: var(--popout-radius);
-  box-shadow: none;
-  overflow: hidden;
-}
-.container-3ssFyj:before {
-  position: absolute;
-  content: " ";
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: var(--popout-color);
-  border-radius: var(--popout-radius);
-  box-shadow: var(--popout-shadow);
-  backdrop-filter: blur(var(--popout-blur));
-  pointer-events: none;
-  z-index: -1;
-}
-.container-3ssFyj .item-1BCeuB {
-  border-radius: var(--list-item-radius);
-}
-
-/*
- *
  *	SEARCH POPOUT
  *
  */
@@ -5123,12 +5165,6 @@ body {
 .actionContainer__6446f .actionContainer__6446f {
   padding: 0;
   background-color: transparent;
-}
-
-.searchContainer-3slruV .richTag_fea832 {
-  margin: 4px 0 4px 4px;
-  background-color: var(--card-color);
-  border-radius: 13px;
 }
 
 .keywordsTextArea__6a631 {
@@ -6400,4 +6436,11 @@ body {
   background-color: transparent;
 }
 
-/*# sourceMappingURL=main.css.map */
+.align-chat-input .attachWrapper__0923f {
+  padding: 0;
+}
+.align-chat-input .attachButtonInner__0923f,
+.align-chat-input .button__24af7:not(.noHover__24af7),
+.align-chat-input .emojiButton__04eed {
+  border-radius: var(--space-16);
+}
