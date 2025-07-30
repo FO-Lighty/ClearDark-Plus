@@ -2896,6 +2896,11 @@ body {
   z-index: -1;
 }
 
+.guildSection_d5cd2d {
+  background-color: hsla(206, 22%, 49%, 0.33) !important;
+  padding: var(--custom-message-helpers-popout-padding-width);
+}
+
 /*
  *
  *  POLLS
