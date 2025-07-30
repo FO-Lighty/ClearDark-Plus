@@ -55,33 +55,50 @@ Installing betterdiscord themes is really easy!
 ## Variables
 
 #### App elements:
- - `--app-bg` - The background image for the entire Discord app. Default: `url(https://fo-lighty.github.io/ClearDark-Plus/assets/images/Samurai.jpeg)`
- - `--app-blur` - The strength of the blur for every element that has one. Default: `6px`
- - `--app-margin` - The margin surrounding the content area. Default: `24px`
- - `--app-radius` - The border radius of the app and every element that has a border radius. Default: `8px`
- - `--sidebar-color` - The background color of the sidebars. Default: `hsl(0,0%,0%,0.8)`
- - `--main-content-color` - The background color of the main content areas. Default: `hsl(0,0%,0%,0.515)`
+ - `--app-bg` - The background image for the entire app. Default: `url(https://fo-lighty.github.io/ClearDark-Plus/assets/images/Samurai.jpg)`
+ - `--app-blur` - The blur intensity applied to the background image. Default: `6px`
+ - `--app-margin` - The margin around the main interface panels. Default: `24px`
+ - `--app-radius` - The corner radius for the main elements. Default: `10px`
+ - `--main-rgb` - The base RGB color used for backgrounds. Default: `0,0,0`
+ - `--main-content-opacity` - The background opacity for the main content area. Default: `0.515`
+ - `--sidebar-opacity` - The background opacity for the sidebar. Default: `0.8`
+ - `--main-content-color` - The final color for the main content area (combines `--main-rgb` and `--main-content-opacity`). Default: `rgba(var(--main-rgb), var(--main-content-opacity))`
+ - `--sidebar-color` - The final color for the sidebar (combines `--main-rgb` and `--sidebar-opacity`). Default: `rgba(var(--main-rgb), var(--sidebar-opacity))`
 
 #### Accent color:
- - `--accent-hue` - The hue value for the accent color of the theme. Default: `206`
- - `--accent-saturation` - The saturation value for the accent color of the theme. Default: `22%`
- - `--accent-lightness` - The lightness value for the accent color of the theme. Default: `49%`
- - `--accent-opacity` - The opacity of everything, excluding text, that uses the accent color. Default: `1`
- - `--accent-text-color` - The text color for buttons and other various elements with the accent background color. Default: `hsl(216,17%,94%)`
+ - `--accent-hue` - The **hue** for the main accent color. Default: `206`
+ - `--accent-saturation` - The **saturation** for the main accent color. Default: `22%`
+ - `--accent-lightness` - The **lightness** for the main accent color. Default: `49%`
+ - `--accent-hsl` - Combines the HSL values to create the final accent color; not meant to be changed directly. Default: `var(...)`
+ - `--accent-opacity` - The **opacity** for elements using the accent color. Default: `1`
+ - `--accent-text-color` - The **text color** for elements with an accent color background. Default: `hsl(216,17%,94%)`
+ - `--accent-secondary-color` - A more subtle, secondary accent color. Default: `hsl(...)`
+ - `--accent-secondary-text-color` - The text color for elements using the secondary accent color. Default: `hsl(0,0%,94%)`
+ - `--accent-hsl-darker` - A **darker shade** used within the theme's accent palette. Default: `hsl(210, 21%, 13%)`
+ - `--accent-hsl-even-darker` - An **even darker shade** used within the theme's accent palette. Default: `hsl(210, 21%, 5%)`
+
+#### Alert:
+ - `--alert-hue` - The **hue** for alert messages. Default: `359`
+ - `--alert-saturation` - The **saturation** for alert messages. Default: `66.7%`
+ - `--alert-lightness` - The **lightness** for alert messages. Default: `54.1%`
+ - `--alert-opacity` - The **opacity** for alert messages. Default: `1`
+ - `--alert-action-color` - The **color** for alert actions. Default: `hsl(0,0%,100%)`
+ - `--alert-text-color` - The **color** for alert text. Default: `hsl(0,0%,100%)`
 
 #### Messages:
- - `--message-color` - The background color for messages. Default: `hsl(0,0%,0%,0.51)`
- - `--message-radius` - The border radius for messages. Default: `8px`
- - `--message-padding-top` - The top and bottom padding for messages. Default: `8px`
- - `--message-padding-side` - The left and right padding for messages. Default: `8px`
- - `--mention-hue` - The hue value for the message mention color. Default: `156`
- - `--mention-saturation` - The saturation value for the message mention color. Default: `77.5%`
- - `--mention-lightness` - The lightness value for the message mention color. Default: `47.1%`
- - `--mention-opacity` - The opacity of the message mention color. Default: `1`
- - `--reply-hue` - The hue value for the reply message color. Default: `210`
- - `--reply-saturation` - The saturation value for the reply message color. Default: `77.4%`
- - `--reply-lightness` - The lightness value for the reply message color. Default: `61.8%`
- - `--reply-opacity` - The opacity of the reply message color. Default: `1`
+ - `--message-color` - The **color** for messages. Default: `hsl(0,0%,0%,0.51)`
+ - `--message-color-hover` - The **color** for messages when hovered. Default: `hsl(0,0%,0%,0.55)`
+ - `--message-radius` - The **border-radius** for messages. Default: `8px`
+ - `--message-padding-top` - The **top padding** for messages. Default: `8px`
+ - `--message-padding-side` - The **side padding** for messages. Default: `8px`
+ - `--mention-hue` - The **hue** value for the message mention color. Default: `156`
+ - `--mention-saturation` - The **saturation** value for the message mention color. Default: `77.5%`
+ - `--mention-lightness` - The **lightness** value for the message mention color. Default: `47.1%`
+ - `--mention-opacity` - The **opacity** of the message mention color. Default: `1`
+ - `--reply-hue` - The **hue** for reply messages. Default: `210`
+ - `--reply-saturation` - The **saturation** for reply messages. Default: `20%`
+ - `--reply-lightness` - The **lightness** for reply messages. Default: `39%`
+ - `--reply-opacity` - The **opacity** for reply messages. Default: `1`
 
 #### Textareas and inputs:
  - `--textarea-color` - The background color for any textareas and inputs. Default: `255,255,255`
