@@ -774,6 +774,13 @@ body {
   color: var(--textarea-block-text-color);
 }
 
+.content__908e2 {
+  width: 120px;
+  padding: 2px 0;
+  background-color: hsl(206,calc(22% * 1), 49%) !important; /*TO CHANGE & ADD DARKER VERSION ACCENT*/
+  text-align: center;
+}
+
 /* MAIN TEXTAREA -> APPS AND COMMANDS BUTTON */
 .channelAppLauncher_e6e74f {
   margin: 0;
@@ -962,15 +969,6 @@ body {
 
 .hasCounter.membersWrap_c8ffbb .members_c8ffbb {
   margin-top: 41px !important;
-}
-
-/*
- *
- *  BETTERDISCORD PLUGIN -> SpotifyControls
- *
- */
-#vc-spotify-player {
-  background-color: transparent !important;
 }
 
 /*
