@@ -18,7 +18,8 @@
   --accent-text-color: hsl(216,17%,94%);
   --accent-secondary-color: hsl(from hsl(var(--accent-hsl)) h calc(s * 0.1) l / 0.35);
   --accent-secondary-text-color: hsl(0,0%,94%); /*TO CHANGE*/
-  --accent-hue-darker: hsl(210, 21%, 13%);
+  --accent-hsl-darker: hsl(210, 21%, 13%);
+  --accent-hsl-even-darker: hsl(210, 21%, 5%);
   /* ALERT HSL AND TEXT COLOR SETTINGS */
   --alert-hue: 359;
   --alert-saturation: 66.7%;
@@ -778,7 +779,7 @@ body {
 .content__908e2 {
   width: 120px;
   padding: 2px 0;
-  background-color: hsl(var(--accent-hue-darker)) !important;
+  background-color: hsl(var(--accent-hsl-darker)) !important;
   text-align: center;
 }
 
@@ -6124,6 +6125,37 @@ body {
 
 .selectedBackground_e681d1 {
   display: none;
+}
+
+/*
+ *
+ *  SHOP
+ *
+ */
+.shop__08415 {
+  background-color: var(--accent-hsl-darker);
+}
+
+.darkCardBackground_c3d04b, .lightCardBackground_c3d04b {
+  background-color: hsl(var(--accent-hsl)) !important;
+  border-top: 1px solid var(--border-faint);
+}
+
+.inventoryWrapper__1feb0, .page__1feb0 {
+  background-color: var(--accent-hsl-darker);
+}
+
+.visual-refresh .container__9293f {
+  background-color: var(--accent-hsl-even-darker);
+}
+
+/*
+ *
+ *  NITRO HOME
+ *
+ */
+.mainPageScroller_ca1a02 {
+  background: var(--accent-hue-darker);
 }
 
 /*
