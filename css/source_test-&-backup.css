@@ -16,8 +16,9 @@
   --accent-hsl: var(--accent-hue),calc(var(--accent-saturation) * var(--saturation-factor)),var(--accent-lightness);
   --accent-opacity: 1;
   --accent-text-color: hsl(216,17%,94%);
-  --accent-secondary-color: hsl(from hsl(var(--accent-hsl)) h calc(s * 0.1) l / 0.35); /*TO CHANGE*/
+  --accent-secondary-color: hsl(from hsl(var(--accent-hsl)) h calc(s * 0.1) l / 0.35);
   --accent-secondary-text-color: hsl(0,0%,94%); /*TO CHANGE*/
+  --accent-hue-darker: hsl(210, 21%, 13%);
   /* ALERT HSL AND TEXT COLOR SETTINGS */
   --alert-hue: 359;
   --alert-saturation: 66.7%;
@@ -777,7 +778,7 @@ body {
 .content__908e2 {
   width: 120px;
   padding: 2px 0;
-  background-color: hsl(206,calc(22% * 1), 49%) !important; /*TO CHANGE & ADD DARKER VERSION ACCENT*/
+  background-color: hsl(var(--accent-hue-darker)) !important;
   text-align: center;
 }
 
