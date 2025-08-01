@@ -6,11 +6,11 @@
 
 * **Fixed** Discord conflict issues with the new version.
 
-* **Resolved** incorrect text color display.
+* Resolved incorrect text color display.
 
 * **Improved** Discord's new HUD.
 
-* **Addressed** plugin compatibility issues.
+* Addressed plugin compatibility issues.
 
 * **Enhanced** animation performance for transitions and rendering containers.
 
