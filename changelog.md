@@ -2,6 +2,20 @@
 
 ## Changelog
 
+### v1.4.0 (08/01/2025)
+
+* **Fixed** Discord conflict issues with the new version.
+
+* **Resolved** incorrect text color display.
+
+* **Improved** Discord's new HUD.
+
+* **Addressed** plugin compatibility issues.
+
+* **Enhanced** animation performance for transitions and rendering containers.
+
+* **Updated** the guide on the [GitHub project's](https://fo-lighty.github.io/ClearDark-Plus) main page.
+
 ### v1.3.1 (05/05/2025)
 
 * Fix a probleme with the reply halo using a wrong color.
