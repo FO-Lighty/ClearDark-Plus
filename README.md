@@ -1,9 +1,9 @@
 # ClearDark +
 #### Translucent anime character / Clear Dark Glass Discord theme
 
-## Current version: v1.3.1 (05/05/2025)
+## Current version: v1.4.0 (08/01/2025)
 
-**Changelog** : [Changelog v1.3.1](https://fo-lighty.github.io/ClearDark-Plus/changelog)
+**Changelog** : [Changelog v1.4.0](https://fo-lighty.github.io/ClearDark-Plus/changelog)
 
 #### **CSS link**
 ```
@@ -54,7 +54,7 @@ Installing betterdiscord themes is really easy!
 
 ## Variables
 
-#### App elements:
+#### App Elements:
  - `--app-bg` - The background image for the entire app. Default: `url(https://fo-lighty.github.io/ClearDark-Plus/assets/images/Samurai.jpg)`
  - `--app-blur` - The blur intensity applied to the background image. Default: `6px`
  - `--app-margin` - The margin around the main interface panels. Default: `24px`
@@ -65,7 +65,7 @@ Installing betterdiscord themes is really easy!
  - `--main-content-color` - The final color for the main content area (combines `--main-rgb` and `--main-content-opacity`). Default: `rgba(var(--main-rgb), var(--main-content-opacity))`
  - `--sidebar-color` - The final color for the sidebar (combines `--main-rgb` and `--sidebar-opacity`). Default: `rgba(var(--main-rgb), var(--sidebar-opacity))`
 
-#### Accent color:
+#### Accent Color:
  - `--accent-hue` - The **hue** for the main accent color. Default: `206`
  - `--accent-saturation` - The **saturation** for the main accent color. Default: `22%`
  - `--accent-lightness` - The **lightness** for the main accent color. Default: `49%`
@@ -100,32 +100,52 @@ Installing betterdiscord themes is really easy!
  - `--reply-lightness` - The **lightness** for reply messages. Default: `39%`
  - `--reply-opacity` - The **opacity** for reply messages. Default: `1`
 
-#### Textareas and inputs:
- - `--textarea-color` - The background color for any textareas and inputs. Default: `255,255,255`
- - `--textarea-alpha` - The opacity for any textareas and inputs. Default: `0.15`
- - `--textarea-text-color` - The text color for textareas and inputs. Default: `hsl(0, 100%, 100%)`
- - `--textarea-radius` - The border radius for textareas (not inputs). Default: `22px`
- - `--input-height` - The height for inputs. Default: `36px`
- - `--input-radius` - The border radius for inputs (not textareas). Default: `18px`
+#### Textareas and Inputs:
+ - `--textarea-color` - The **base RGB color** for the text area. Default: `255,255,255`
+ - `--textarea-alpha` - The **alpha (opacity) value** for the text area when not focused. Default: `0.1`
+ - `--textarea-alpha-focus` - The **alpha (opacity) value** for the text area when focused. Default: `0.15`
+ - `--textarea-text-color` - The **color** of the text within the text area. Default: `hsl(0,0%,100%)`
+ - `--textarea-placeholder-color` - The **color** of the placeholder text within the text area. Default: `hsl(0,0%,90%)`
+ - `--textarea-radius` - The **border-radius** for the text area. Default: `28px`
+ - `--textarea-block-color` - The **background color** for blocked text areas. Default: `hsl(0,0%,0%,0.4)`
+ - `--textarea-block-text-color` - The **text color** for blocked text areas. Default: `#ccc`
+ - `--input-height` - The **height** of input fields. Default: `36px`
+ - `--input-radius` - The **border-radius** of input fields, calculated as half of `--input-height`.
 
 #### Cards:
- - `--card-color` - The background color for cards. Default: `hsl(0,0%,0%,0.4)`
- - `--card-color-hover` - The background color for hovering over cards (if there is a hover animation). Default: `hsl(0,0%,0%,0.5)`
- - `--card-color-select` The background color for the selected cards. Default: `hsl(0,0%,0%,0.7)`
- - `--card-radius` - The border radius for cards. Default: `8px`
+ - `--card-color` - The **background color** for cards. Default: `hsl(0,0%,0%,0.4)`
+ - `--card-color-hover` - The **background color** for cards when hovered. Default: `hsl(0,0%,0%,0.5)`
+ - `--card-color-select` - The **background color** for selected cards. Default: `hsl(0,0%,0%,0.625)`
+ - `--card-radius` - The **border-radius** for cards. Default: `var(--app-radius)`
+ - `--card-header-shadow` - The **box shadow** for card headers. Default: `0px 3px 9px 0px hsl(0,0%,0%,0.25)`
 
 #### Buttons:
- - `--button-height` - The height for buttons. Default: `32px`
- - `--button-padding` - The padding for buttons. Default: `0 16px`
- - `--button-color` - The background color for most buttons. Default: `#d73d3d`
- - `--button-action-color` - The background color for hovering and clicking on buttons (has a lowered opacity). Default: `hsl(0,0%,0%)`
- - `--button-text-color` - The text color for any buttons that use `--button-color`. Default: `#000`
- - `--button-radius` - The border radius for buttons. Default: `16px`
+ - `--button-height` - The **height** of buttons. Default: `32px`
+ - `--button-padding` - The **padding** for buttons (top/bottom and left/right). Default: `0 16px`
+ - `--button-color` - The **background color** of buttons, derived from `--accent-hsl` and `--accent-opacity`.
+ - `--button-action-color` - The **color** of button actions (e.g., icons). Default: `hsl(0,0%,0%)`
+ - `--button-text-color` - The **color** of button text. Default: `var(--accent-text-color)`
+ - `--button-radius` - The **border-radius** for buttons. Default: `16px`
 
-#### Popouts and modals:
- - `--popout-color` - The background color for modals/popouts. Default: `rgba(0,0,0, 0.55)`
- - `--popout-blur` - The blur strength for modals/popouts. Default: `5px`
- - `--popout-header-opacity` - The header opacity for modals/popouts. Default: `0.3`
- - `--popout-header-shadow`- The shadow for headers in modals/popouts. Default: `0px 3px 9px 0px rgba(0,0,0, 0.25)`
- - `--popout-radius` - The border radius for modals/popouts. Default: `8px`
- - `--popout-shadow` - The shadow for modals/popouts. Default: `0 8px 10px 1px rgba(0,0,0, 0.14)`
+#### Switch Settings:
+ - `--switch-slider-color` - The **color** of the switch slider. Default: `hsla(218,4.6%,46.9%,0.85)`
+ - `--switch-knob-color` - The **color** of the switch knob. Default: `hsl(0,0%,13%)`
+
+#### Popouts and Modals:
+ - `--popout-color` - The **background color** for popout elements. Default: `hsl(0,0%,0%,0.55)`
+ - `--popout-blur` - The **blur effect** applied to popout elements. Default: `8px`
+ - `--popout-header-opacity` - The **opacity** of popout headers. Default: `0.3`
+ - `--popout-header-shadow` - The **box shadow** for popout headers. Default: `0px 3px 9px 0px hsl(0,0%,0%,0.25)`
+ - `--popout-radius` - The **border-radius** for popout elements. Default: `var(--app-radius)`
+ - `--popout-shadow` - The **box shadow** for popout elements. Default: `0 8px 10px 1px hsl(0,0%,0%,0.14), 0 3px 14px 2px hsl(0,0%,0%,0.12), 0 5px 5px -3px hsl(0,0%,0%,0.2)`
+ - `--nowplaying-color` - The **RGB color** for "now playing" indicators. Default: `88,101,242`
+ - `--streaming-color` - The **RGB color** for streaming indicators. Default: `89,54,149`
+ - `--spotify-color` - The **RGB color** associated with Spotify. Default: `29,185,84`
+ - `--server-folder-color` - The **background color** for server folders. Default: `hsl(0,0%,100%,0.1)`
+
+#### Scrollbar Settings
+ - `--scrollbar-color` - The **RGB color** for the scrollbar thumb. Default: `255,255,255`
+ - `--scrollbar-color-alt` - The **alternate RGB color** for the scrollbar track or background. Default: `0,0,0`
+ - `--scrollbar-opacity` - The **opacity** of the scrollbar when not hovered. Default: `0.2`
+ - `--scrollbar-opacity-hover` - The **opacity** of the scrollbar when hovered. Default: `0.3`
+ - `--scrollbar-width` - The **width** of the scrollbar. Default: `10px`
