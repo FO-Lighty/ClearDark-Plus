@@ -6476,3 +6476,7 @@ body {
 .align-chat-input .emojiButton__04eed {
   border-radius: var(--space-16);
 }
+
+.align-chat-input .scrollerSpacer__36d07 {
+  height: 0px !important;
+}
