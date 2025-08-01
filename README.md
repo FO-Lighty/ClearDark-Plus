@@ -1,7 +1,7 @@
 # ClearDark +
 #### Translucent anime character / Clear Dark Glass Discord theme
 
-## Current version: v1.4.0 (08/01/2025)
+## Current version: v1.4.1 (08/01/2025)
 
 **Changelog** : [Changelog v1.4.0](https://fo-lighty.github.io/ClearDark-Plus/changelog)
 
