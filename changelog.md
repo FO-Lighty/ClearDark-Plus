@@ -2,6 +2,10 @@
 
 ## Changelog
 
+### v1.4.1 (08/01/2025)
+
+* **Fixed** an issue where the background wasn't displaying.
+
 ### v1.4.0 (08/01/2025)
 
 * **Fixed** Discord conflict issues with the new version.
