@@ -3,7 +3,7 @@
 
 ## Current version: v1.4.1 (08/01/2025)
 
-**Changelog** : [Changelog v1.4.0](https://fo-lighty.github.io/ClearDark-Plus/changelog)
+**Changelog** : [Changelog v1.4.1](https://fo-lighty.github.io/ClearDark-Plus/changelog)
 
 #### **CSS link**
 ```
