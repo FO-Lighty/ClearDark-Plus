@@ -12,6 +12,9 @@ https://fo-lighty.github.io/ClearDark-Plus/css/source.css
 
 ## Preview
 
+> [!IMPORTANT]  
+> The previews currently displayed represent an **older version of the theme (v1.3.0)**. The **latest version (v1.4.2)** offers significant enhancements, providing a greater and much smoother experience than what's shown in these previews.
+
 #### Main chat area
 
 ![preview_1](assets/preview/main_chat_area.png)
