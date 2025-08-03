@@ -2,6 +2,10 @@
 
 ## Changelog
 
+### v1.4.2 (08/03/2025)
+
+* **Adjusted** the theme description for coherence.
+
 ### v1.4.1 (08/01/2025)
 
 * **Fixed** an issue where the background wasn't displaying.
