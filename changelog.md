@@ -6,6 +6,8 @@
 
 * **Adjusted** the theme description for coherence.
 
+* **Updated** the guide on the [GitHub project's](https://fo-lighty.github.io/ClearDark-Plus) main page.
+
 ### v1.4.1 (08/01/2025)
 
 * **Fixed** an issue where the background wasn't displaying.
@@ -21,8 +23,6 @@
 * Addressed plugin compatibility issues.
 
 * **Enhanced** animation performance for transitions and rendering containers.
-
-* **Updated** the guide on the [GitHub project's](https://fo-lighty.github.io/ClearDark-Plus) main page.
 
 ### v1.3.1 (05/05/2025)
 
