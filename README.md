@@ -62,17 +62,15 @@ Installing betterdiscord themes is really easy!
  - `--main-rgb` - The **base RGB color** used for backgrounds. Default: `0,0,0`
  - `--main-content-opacity` - The **background opacity** for the main content area. Default: `0.515`
  - `--sidebar-opacity` - The **background opacity** for the sidebar. Default: `0.8`
- - `--main-content-color` - The **final color** for the main content area (combines `--main-rgb` and `--main-content-opacity`). Default: `rgba(var(--main-rgb), var(--main-content-opacity))`
- - `--sidebar-color` - The **final color** for the sidebar (combines `--main-rgb` and `--sidebar-opacity`). Default: `rgba(var(--main-rgb), var(--sidebar-opacity))`
 
 #### Accent Color:
  - `--accent-hue` - The **hue** for the main accent color. Default: `206`
  - `--accent-saturation` - The **saturation** for the main accent color. Default: `22%`
  - `--accent-lightness` - The **lightness** for the main accent color. Default: `49%`
- - `--accent-hsl` - Combines the HSL values to create the final accent color; not meant to be changed directly. Default: `var(...)`
+ - `--accent-hsl` - Combines the HSL values to create the final accent color; not meant to be changed directly. Default: `var(--accent-hue),calc(var(--accent-saturation) * var(--saturation-factor)),var(--accent-lightness)`
  - `--accent-opacity` - The **opacity** for elements using the accent color. Default: `1`
  - `--accent-text-color` - The **text color** for elements with an accent color background. Default: `hsl(216,17%,94%)`
- - `--accent-secondary-color` - A more subtle, secondary accent color. Default: `hsl(...)`
+ - `--accent-secondary-color` - A more subtle, secondary accent color. Default: `hsl(from hsl(var(--accent-hsl)) h calc(s * 0.1) l / 0.35)`
  - `--accent-secondary-text-color` - The text color for elements using the secondary accent color. Default: `hsl(0,0%,94%)`
  - `--accent-hsl-darker` - A **darker shade** used within the theme's accent palette. Default: `hsl(210, 21%, 13%)`
  - `--accent-hsl-even-darker` - An **even darker shade** used within the theme's accent palette. Default: `hsl(210, 21%, 5%)`
@@ -110,21 +108,18 @@ Installing betterdiscord themes is really easy!
  - `--textarea-block-color` - The **background color** for blocked text areas. Default: `hsl(0,0%,0%,0.4)`
  - `--textarea-block-text-color` - The **text color** for blocked text areas. Default: `#ccc`
  - `--input-height` - The **height** of input fields. Default: `36px`
- - `--input-radius` - The **border-radius** of input fields, calculated as half of `--input-height`.
 
 #### Cards:
  - `--card-color` - The **background color** for cards. Default: `hsl(0,0%,0%,0.4)`
  - `--card-color-hover` - The **background color** for cards when hovered. Default: `hsl(0,0%,0%,0.5)`
  - `--card-color-select` - The **background color** for selected cards. Default: `hsl(0,0%,0%,0.625)`
- - `--card-radius` - The **border-radius** for cards. Default: `var(--app-radius)`
  - `--card-header-shadow` - The **box shadow** for card headers. Default: `0px 3px 9px 0px hsl(0,0%,0%,0.25)`
 
 #### Buttons:
  - `--button-height` - The **height** of buttons. Default: `32px`
  - `--button-padding` - The **padding** for buttons (top/bottom and left/right). Default: `0 16px`
- - `--button-color` - The **background color** of buttons, derived from `--accent-hsl` and `--accent-opacity`.
+ - `--button-color` - The **background color** of buttons, derived from `--accent-hsl` and `--accent-opacity`. Default: `hsla(var(--accent-hsl),var(--accent-opacity))`
  - `--button-action-color` - The **color** of button actions (e.g., icons). Default: `hsl(0,0%,0%)`
- - `--button-text-color` - The **color** of button text. Default: `var(--accent-text-color)`
  - `--button-radius` - The **border-radius** for buttons. Default: `16px`
 
 #### Switch Settings:
@@ -136,7 +131,6 @@ Installing betterdiscord themes is really easy!
  - `--popout-blur` - The **blur effect** applied to popout elements. Default: `8px`
  - `--popout-header-opacity` - The **opacity** of popout headers. Default: `0.3`
  - `--popout-header-shadow` - The **box shadow** for popout headers. Default: `0px 3px 9px 0px hsl(0,0%,0%,0.25)`
- - `--popout-radius` - The **border-radius** for popout elements. Default: `var(--app-radius)`
  - `--popout-shadow` - The **box shadow** for popout elements. Default: `0 8px 10px 1px hsl(0,0%,0%,0.14), 0 3px 14px 2px hsl(0,0%,0%,0.12), 0 5px 5px -3px hsl(0,0%,0%,0.2)`
  - `--nowplaying-color` - The **RGB color** for "now playing" indicators. Default: `88,101,242`
  - `--streaming-color` - The **RGB color** for streaming indicators. Default: `89,54,149`
