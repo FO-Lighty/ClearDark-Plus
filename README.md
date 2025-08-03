@@ -55,15 +55,15 @@ Installing betterdiscord themes is really easy!
 ## Variables
 
 #### App Elements:
- - `--app-bg` - The background image for the entire app. Default: `url(https://fo-lighty.github.io/ClearDark-Plus/assets/images/Samurai.jpg)`
- - `--app-blur` - The blur intensity applied to the background image. Default: `6px`
- - `--app-margin` - The margin around the main interface panels. Default: `24px`
- - `--app-radius` - The corner radius for the main elements. Default: `10px`
- - `--main-rgb` - The base RGB color used for backgrounds. Default: `0,0,0`
- - `--main-content-opacity` - The background opacity for the main content area. Default: `0.515`
- - `--sidebar-opacity` - The background opacity for the sidebar. Default: `0.8`
- - `--main-content-color` - The final color for the main content area (combines `--main-rgb` and `--main-content-opacity`). Default: `rgba(var(--main-rgb), var(--main-content-opacity))`
- - `--sidebar-color` - The final color for the sidebar (combines `--main-rgb` and `--sidebar-opacity`). Default: `rgba(var(--main-rgb), var(--sidebar-opacity))`
+ - `--app-bg` - The **background image** for the entire app. Default: `url(https://fo-lighty.github.io/ClearDark-Plus/assets/images/Samurai.jpg)`
+ - `--app-blur` - The **blur intensity** applied to the background image. Default: `6px`
+ - `--app-margin` - The **margin** around the main interface panels. Default: `24px`
+ - `--app-radius` - The **corner radius** for the main elements. Default: `10px`
+ - `--main-rgb` - The **base RGB color** used for backgrounds. Default: `0,0,0`
+ - `--main-content-opacity` - The **background opacity** for the main content area. Default: `0.515`
+ - `--sidebar-opacity` - The **background opacity** for the sidebar. Default: `0.8`
+ - `--main-content-color` - The **final color** for the main content area (combines `--main-rgb` and `--main-content-opacity`). Default: `rgba(var(--main-rgb), var(--main-content-opacity))`
+ - `--sidebar-color` - The **final color** for the sidebar (combines `--main-rgb` and `--sidebar-opacity`). Default: `rgba(var(--main-rgb), var(--sidebar-opacity))`
 
 #### Accent Color:
  - `--accent-hue` - The **hue** for the main accent color. Default: `206`
