@@ -140,7 +140,7 @@ Installing betterdiscord themes is really easy!
  - `--spotify-color` - The **RGB color** associated with Spotify. Default: `29,185,84`
  - `--server-folder-color` - The **background color** for server folders. Default: `hsl(0,0%,100%,0.1)`
 
-#### Scrollbar Settings
+#### Scrollbar Settings:
  - `--scrollbar-color` - The **RGB color** for the scrollbar thumb. Default: `255,255,255`
  - `--scrollbar-color-alt` - The **alternate RGB color** for the scrollbar track or background. Default: `0,0,0`
  - `--scrollbar-opacity` - The **opacity** of the scrollbar when not hovered. Default: `0.2`
