@@ -357,6 +357,14 @@ body {
   border-bottom-color: var(--background-modifier-accent);
 }
 
+.status_d878e7 {
+  margin-right: 20px;
+}
+
+.card__73069:not(.outline__73069) {
+  padding: 20px;
+}
+
 /* PANELS -> QUEST */
 .wrapper__0d616 {
   background-color: transparent !important;
