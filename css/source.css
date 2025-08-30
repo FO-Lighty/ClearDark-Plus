@@ -509,6 +509,11 @@ body {
   border-radius: 0 0 15px 15px;
 }
 
+.container_e131a9{
+  background: linear-gradient(to bottom, transparent, var(--card-color) 15%, rgb(0, 0, 0) 100%);
+}
+
+
 /*
  *
  *	VOICE & VIDEO CALL
