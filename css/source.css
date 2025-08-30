@@ -488,7 +488,7 @@ body {
 }
 
 .chatTypingGradientNotAtBottom__36d07 {
-  background: none !important;
+  background: linear-gradient(to bottom,transparent,var(--textarea-block-color) 72px,rgb(0,0,0) 100%) !important;
 }
 
 .chatTypingGradientAtBottom__36d07 {
@@ -496,7 +496,7 @@ body {
 }
 
 .chatTypingGradientNotAtBottom__36d07 {
-  background: none !important;
+  background: linear-gradient(to bottom,transparent,var(--textarea-block-color) 72px,rgb(0,0,0) 100%) !important;
 }
 
 .chatGradientBase__36d07 {
