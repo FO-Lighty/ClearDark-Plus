@@ -479,6 +479,14 @@ body {
   color: var(--accent-text-color);
 }
 
+.chatGradient__36d07{
+  background: none !important;
+}
+
+.chatTypingGradientAtBottom__36d07 {
+  background: none !important;
+}
+
 /*
  *
  *	VOICE & VIDEO CALL
