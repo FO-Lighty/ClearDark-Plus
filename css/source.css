@@ -479,11 +479,27 @@ body {
   color: var(--accent-text-color);
 }
 
-.chatGradient__36d07{
+.chatGradient__36d07 {
   background: none !important;
 }
 
 .chatTypingGradientAtBottom__36d07 {
+  background: none !important;
+}
+
+.chatTypingGradientNotAtBottom__36d07 {
+  background: none !important;
+}
+
+.chatTypingGradientAtBottom__36d07 {
+  background: none !important;
+}
+
+.chatTypingGradientNotAtBottom__36d07 {
+  background: none !important;
+}
+
+.chatGradientBase__36d07 {
   background: none !important;
 }
 
