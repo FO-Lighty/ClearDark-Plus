@@ -481,26 +481,32 @@ body {
 
 .chatGradient__36d07 {
   background: none !important;
+  border-radius: 0 0 15px 15px;
 }
 
 .chatTypingGradientAtBottom__36d07 {
   background: none !important;
+  border-radius: 0 0 15px 15px;
 }
 
 .chatTypingGradientNotAtBottom__36d07 {
   background: linear-gradient(to bottom,transparent,var(--textarea-block-color) 72px,rgb(0,0,0) 100%) !important;
+  border-radius: 0 0 15px 15px;
 }
 
 .chatTypingGradientAtBottom__36d07 {
   background: none !important;
+  border-radius: 0 0 15px 15px;
 }
 
 .chatTypingGradientNotAtBottom__36d07 {
   background: linear-gradient(to bottom,transparent,var(--textarea-block-color) 72px,rgb(0,0,0) 100%) !important;
+  border-radius: 0 0 15px 15px;
 }
 
 .chatGradientBase__36d07 {
   background: none !important;
+  border-radius: 0 0 15px 15px;
 }
 
 /*
