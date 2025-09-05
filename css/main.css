@@ -1,7 +1,9 @@
 /*!
- * * ClearVision v7.0.1 by ClearVision Team
+ *  *ClearDark+ v2 by Lighty*
  *
  */
+
+/* -------------------------- */
 
 /*
  *
@@ -28,13 +30,6 @@
   }
 }
 
----
-
-/*
- *
- * ClearVision V7.0.1 by ClearVision Team
- *
- */
 .info__2debe::after {
   content: "ClearVision" " " "7.0.1";
   color: var(--text-muted);
