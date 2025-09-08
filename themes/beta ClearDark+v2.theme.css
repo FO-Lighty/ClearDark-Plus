@@ -12,16 +12,16 @@
 /* SETTINGS */
 :root {
   /* ACCENT COLORS */
-  --main-color: hsl(213, 79%, 54%); /* main accent color (hex, rgb or hsl) [default: #2780e6] */
-  --hover-color: hsl(212, 71%, 41%); /* hover accent color (hex, rgb or hsl) [default: #1e63b3] */
-  --success-color: hsl(153, 46%, 49%); /* positive accent color (hex, rgb or hsl) [default: #43b581] */
-  --danger-color: hsl(0, 58%, 38%); /* danger accent color (hex, rgb or hsl) [default: #982929] */
+  --main-color: #2780e6; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
+  --hover-color: #1e63b3; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] */
+  --success-color: #43b581; /* positive accent color (hex, rgb or hsl) [default: #43b581] */
+  --danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */
   /* STATUS COLORS */
-  --online-color: hsl(153, 46%, 49%); /* online status color (hex, rgb or hsl) [default: #43b581] */
-  --idle-color: hsl(38, 97%, 54%); /* idle status color (hex, rgb or hsl) [default: #faa61a] */
-  --dnd-color: hsl(0, 58%, 38%); /* dnd status color (hex, rgb or hsl) [default: #982929] */
-  --streaming-color: hsl(265, 43%, 40%); /* streaming status color (hex, rgb or hsl) [default: #593695] */
-  --offline-color: hsl(0, 0%, 50%); /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
+  --online-color: #43b581; /* online status color (hex, rgb or hsl) [default: #43b581] */
+  --idle-color: #faa61a; /* idle status color (hex, rgb or hsl) [default: #faa61a] */
+  --dnd-color: #982929; /* dnd status color (hex, rgb or hsl) [default: #982929] */
+  --streaming-color: #593695; /* streaming status color (hex, rgb or hsl) [default: #593695] */
+  --offline-color: #808080; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
   /* APP BACKGROUND */
   --background-shading-percent: 100%; /* app background shading amount (0 for complete smoothness) [default: 100%] */
   --background-image: url("https://fo-lighty.github.io/ClearDark-Plus/assets/images/Samurai.jpeg"); /* app background image (link must be HTTPS) [default: url(https://fo-lighty.github.io/ClearDark-Plus/assets/images/Samurai.jpeg)]*/
@@ -67,8 +67,8 @@
   --popout-shading: rgba(252, 252, 252, 0.7); /* popouts background shading color [default: rgba(252, 252, 252, 0.7)] */
   --modal-shading: rgba(252, 252, 252, 0.5); /* modals background shading color [default: rgba(0, 0, 0, 0.6)] */
   --input-shading: rgba(0, 0, 0, 0.3); /* inputs background shading color [default: rgba(0, 0, 0, 0.6)] */
-  --normal-text: hsl(230, 8%, 23%); /* text color [default: #36363c] */
-  --muted-text: hsl(230, 4%, 48%); /* muted text color [default: #75757e] */
+  --normal-text: #36363c; /* text color [default: #36363c] */
+  --muted-text: #75757e; /* muted text color [default: #75757e] */
 }
 
 /* ASH THEME */
@@ -78,8 +78,8 @@
   --popout-shading: rgba(0, 0, 0, 0.6); /* popouts background shading color [default: rgba(0, 0, 0, 0.6)] */
   --modal-shading: rgba(0, 0, 0, 0.4); /* modals background shading color [default: rgba(0, 0, 0, 0.4)] */
   --input-shading: rgba(255, 255, 255, 0.05); /* inputs background shading color [default: rgba(255, 255, 255, 0.05)] */
-  --normal-text: hsl(240, 2%, 86%); /* text color [default: #d8d8db] */
-  --muted-text: hsl(240, 2%, 69%); /* muted text color [default: #aeaeb4] */
+  --normal-text: #d8d8db; /* text color [default: #d8d8db] */
+  --muted-text: #aeaeb4; /* muted text color [default: #aeaeb4] */
 }
 
 /* DARK THEME */
@@ -89,8 +89,8 @@
   --popout-shading: rgba(0, 0, 0, 0.7); /* popouts background shading color [default: rgba(0, 0, 0, 0.7)] */
   --modal-shading: rgba(0, 0, 0, 0.5); /* modals background shading color [default: rgba(0, 0, 0, 0.6)] */
   --input-shading: rgba(255, 255, 255, 0.05); /* inputs background shading color [default: rgba(255, 255, 255, 0.05)] */
-  --normal-text: hsl(0, 0%, 98%); /* text color [default: #fbfbfb] */
-  --muted-text: hsl(240, 4%, 59%); /* muted text color [default: #94949c] */
+  --normal-text: #fbfbfb; /* text color [default: #fbfbfb] */
+  --muted-text: #94949c; /* muted text color [default: #94949c] */
 }
 
 /* ONYX THEME */
@@ -100,8 +100,8 @@
   --popout-shading: rgba(0, 0, 0, 0.8); /* popouts background shading color [default: rgba(0, 0, 0, 0.8)] */
   --modal-shading: rgba(0, 0, 0, 0.6); /* modals background shading color [default: rgba(0, 0, 0, 0.6)] */
   --input-shading: rgba(255, 255, 255, 0.05); /* inputs background shading color [default: rgba(255, 255, 255, 0.05)] */
-  --normal-text: hsl(240, 1%, 87%); /* text color [default: #dcdcde] */
-  --muted-text: hsl(240, 2%, 54%); /* muted text color [default: #86868e] */
+  --normal-text: #dcdcde; /* text color [default: #dcdcde] */
+  --muted-text: #86868e; /* muted text color [default: #86868e] */
 }
 
 /* ADD ADDITIONAL CSS BELOW HERE */
