@@ -7,7 +7,9 @@
  */
 
 /* IMPORT CSS */
-@import url("https://fo-lighty.github.io/ClearDark-Plus/css/main.css");
+@import url("https://clearvision.github.io/ClearVision-v7/main.css");
+@import url("https://clearvision.github.io/ClearVision-v7/betterdiscord.css");
+@import url("https://clearvision.github.io/ClearVision-v7/vencord.css");
 
 /* SETTINGS */
 :root {
