@@ -3379,8 +3379,8 @@ code {
 }
 
 .container__06283 {
-    -webkit-mask-image: url(https://clearvision.github.io/icons/pill.svg);
-    mask-image: url(https://clearvision.github.io/icons/pill.svg);
+    -webkit-mask-image: url(https://fo-lighty.github.io/ClearDark-Plus/assets/icons/pill.svg);
+    mask-image: url(https://fo-lighty.github.io/ClearDark-Plus/assets/icons/pill.svg);
     background: var(--hsl-main-color) !important
 }
 
@@ -4247,7 +4247,7 @@ code {
     --streaming-color: #593695;
     --offline-color: #808080;
     --background-shading-percent: 100%;
-    --background-image: url(https://clearvision.github.io/images/sapphire.jpg);
+    --background-image: url(https://fo-lighty.github.io/ClearDark-Plus/assets/images/Samurai.jpeg);
     --background-position: center;
     --background-size: cover;
     --background-attachment: fixed;
@@ -4262,7 +4262,7 @@ code {
     --user-modal-size: var(--background-size);
     --user-modal-attachment: var(--background-attachment);
     --user-modal-filter: var(--background-filter);
-    --home-icon: url(https://clearvision.github.io/icons/discord.svg);
+    --home-icon: url(https://fo-lighty.github.io/ClearDark-Plus/assets/icons/discord.svg);
     --home-size: cover;
     --main-font: "gg sans", Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
     --code-font: Consolas, "gg mono", "Liberation Mono", Menlo, Courier, monospace;
