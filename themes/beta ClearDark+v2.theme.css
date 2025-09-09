@@ -2,12 +2,12 @@
  * @name ClearDark+ v2.0.0-B
  * @author Lighty.Jr
  * @version 2.0.0-B
- * @description Translucent Clear Dark Glass Discord theme.
+ * @description Translucent Clear Dark Glass Discord theme
  * @website https://fo-lighty.github.io/ClearDark-Plus/
  */
 
 /* IMPORT CSS */
-@import url("https://fo-lighty.github.io/ClearDark-Plus/css/main.css");
+@import url("https://fo-lighty.github.io/ClearDark-Plus/css/source_test-&-backup.css");
 @import url("https://fo-lighty.github.io/ClearDark-Plus/css/additional.css");
 /* SETTINGS */
 :root {
