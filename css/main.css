@@ -80,11 +80,11 @@
 }
 
 .lookFilled__201d5.colorGreen__201d5:hover {
-    background-color: hsl(from var(--hsl-success-color) hsl/0.8)
+    background-color: hsl(from var(--hsl-success-color) h s l/0.8)
 }
 
 .lookFilled__201d5.colorGreen__201d5:disabled {
-    background-color: hsl(from var(--hsl-success-color) hsl/0.8)
+    background-color: hsl(from var(--hsl-success-color) h s l/0.8)
 }
 
 .lookFilled__201d5.colorRed__201d5 {
@@ -93,7 +93,7 @@
 }
 
 .lookFilled__201d5.colorRed__201d5:hover {
-    background-color: hsl(from var(--hsl-danger-color) hsl/0.8)
+    background-color: hsl(from var(--hsl-danger-color) h s l/0.8)
 }
 
 .lookFilled__201d5.colorRed__201d5:disabled {
@@ -123,8 +123,8 @@
 }
 
 .lookOutlined__201d5.colorGreen__201d5:hover {
-    border-color: hsl(from var(--hsl-success-color) hsl/0.8);
-    background-color: hsl(from var(--hsl-success-color) hsl/0.8)
+    border-color: hsl(from var(--hsl-success-color) h s l/0.8);
+    background-color: hsl(from var(--hsl-success-color) h s l/0.8)
 }
 
 .lookOutlined__201d5.colorRed__201d5 {
@@ -134,8 +134,8 @@
 }
 
 .lookOutlined__201d5.colorRed__201d5:hover {
-    border-color: hsl(from var(--hsl-danger-color) hsl/0.8);
-    background-color: hsl(from var(--hsl-danger-color) hsl/0.8);
+    border-color: hsl(from var(--hsl-danger-color) h s l/0.8);
+    background-color: hsl(from var(--hsl-danger-color) h s l/0.8);
     color: var(--button-outline-brand-text)
 }
 
@@ -189,7 +189,7 @@
 }
 
 .active__6af3a:hover {
-    background: hsl(from var(--hsl-success-color) hsl/0.8);
+    background: hsl(from var(--hsl-success-color) h s l/0.8);
     border-color: rgba(0,0,0,0)
 }
 
@@ -199,7 +199,7 @@
 }
 
 .critical-primary__6af3a:hover {
-    background: hsl(from var(--hsl-danger-color) hsl/0.8);
+    background: hsl(from var(--hsl-danger-color) h s l/0.8);
     border-color: rgba(0,0,0,0)
 }
 
@@ -211,10 +211,9 @@
 
 .critical-secondary__6af3a:hover {
     background: rgba(0,0,0,0);
-    border-color: hsl(from var(--hsl-danger-color) hsl/0.8);
+    border-color: hsl(from var(--hsl-danger-color) h s l/0.8);
     color: var(--control-text-critical-primary-default)
 }
-
 
 .checkbox_f525d3 {
     border-radius: 4px
@@ -224,7 +223,6 @@
     border-color: var(--hsl-main-color);
     background-color: rgba(0,0,0,0)
 }
-
 
 .wrapper_3412a {
     background: var(--hsl-input-shading);
@@ -243,7 +241,6 @@
 .input__0f084::placeholder {
     color: var(--text-muted)
 }
-
 
 .item__001a7[aria-checked=true] {
     background-color: rgba(0,0,0,0)
@@ -283,7 +280,6 @@
     background-color: var(--radio-bar-accent-color, var(--hsl-main-color))
 }
 
-
 .slider_a562c8 .bar_a562c8,.slider_a562c8 .markDash_a562c8 {
     background: var(--hsl-card-shading)
 }
@@ -298,7 +294,7 @@
 
 
 .container__6f89e {
-    background: hsl(from var(--interactive-normal) hsl/0.2) !important
+    background: hsl(from var(--interactive-normal) h s l/0.2) !important
 }
 
 .container__6f89e.checked__6f89e {
@@ -395,7 +391,7 @@
 }
 
 .app__160d8 {
-    background: hsl(from var(--hsl-background-shading) hsl/calc(var(--background-shading-percent) * 0.1))
+    background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.1))
 }
 
 .bg__960e4 {
@@ -461,15 +457,15 @@ code {
 }
 
 .colorBrand__6e2b9 {
-    --custom-notice-background: hsl(from var(--hsl-main-color) hsl/.8)
+    --custom-notice-background: hsl(from var(--hsl-main-color) h s l/.8)
 }
 
 .colorDanger__6e2b9 {
-    --custom-notice-background: hsl(from var(--hsl-danger-color) hsl/.8)
+    --custom-notice-background: hsl(from var(--hsl-danger-color) h s l/.8)
 }
 
 .colorStreamerMode__6e2b9 {
-    --custom-notice-background: hsl(from var(--hsl-streaming-color) hsl/.8)
+    --custom-notice-background: hsl(from var(--hsl-streaming-color) h s l/.8)
 }
 
 
@@ -573,7 +569,7 @@ code {
 }
 
 .chatContent_f75fb0,.scroller__28a87 {
-    background: hsl(from var(--hsl-background-shading) hsl/calc(var(--background-shading-percent) * 0.4))
+    background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.4))
 }
 
 .wrapper_d852db,.wrapper_fc8177 {
@@ -591,7 +587,7 @@ code {
 }
 
 .noChannel__01d5c {
-    background: hsl(from var(--hsl-background-shading) hsl/calc(var(--background-shading-percent) * 0.4))
+    background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.4))
 }
 
 .chatHeaderBar_dc83f5 {
@@ -599,7 +595,7 @@ code {
 }
 
 .role_b4b2c3 {
-    background: hsl(from var(--custom-role-label-color) hsl/0.2)
+    background: hsl(from var(--custom-role-label-color) h s l/0.2)
 }
 
 
@@ -662,7 +658,7 @@ code {
 }
 
 .callContainer_cb9592 {
-    background: hsl(from var(--hsl-background-shading) hsl/calc(var(--background-shading-percent) * 0.4));
+    background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.4));
     border: none
 }
 
@@ -699,7 +695,7 @@ code {
 }
 
 .wrapper_cb9592.minimum_cb9592 {
-    background: hsl(from var(--hsl-background-shading) hsl/calc(var(--background-shading-percent) * 0.6))
+    background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.6))
 }
 
 .quickSelectPopout_ebaca5 {
@@ -807,8 +803,8 @@ code {
 }
 
 .replying__5126c {
-    --background-mentioned: hsl(from var(--hsl-main-color) hsl/.1);
-    --background-mentioned-hover: hsl(from var(--hsl-hover-color) hsl/.1);
+    --background-mentioned: hsl(from var(--hsl-main-color) h s l/.1);
+    --background-mentioned-hover: hsl(from var(--hsl-hover-color) h s l/.1);
     background: var(--background-mentioned)
 }
 
@@ -832,8 +828,8 @@ code {
 }
 
 .mentioned__5126c {
-    --background-mentioned: hsl(from var(--hsl-main-color) hsl/.1);
-    --background-mentioned-hover: hsl(from var(--hsl-hover-color) hsl/.1)
+    --background-mentioned: hsl(from var(--hsl-main-color) h s l/.1);
+    --background-mentioned-hover: hsl(from var(--hsl-hover-color) h s l/.1)
 }
 
 .mentioned__5126c:before {
@@ -1007,13 +1003,13 @@ code {
 }
 
 .votedStyles_a1443c {
-    --custom-poll-style-vote-percentage: hsl(from var(--hsl-main-color) hsl/.2);
+    --custom-poll-style-vote-percentage: hsl(from var(--hsl-main-color) h s l/.2);
     --custom-poll-style-border: var(--hsl-main-color)
 }
 
 
 .container_f369db {
-    background: hsl(from var(--hsl-background-shading) hsl/calc(var(--background-shading-percent) * 0.3))
+    background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.3))
 }
 
 .header_f369db {
@@ -1161,7 +1157,7 @@ code {
 }
 
 .container_fb64c9 {
-    background: hsl(from var(--hsl-background-shading) hsl/calc(var(--background-shading-percent) * 0.5))
+    background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.5))
 }
 
 .iconWrapper__54b20 {
@@ -1184,7 +1180,7 @@ code {
 .newMessagesBar__0f481 {
     top: 4px;
     right: 8px;
-    background: hsl(from var(--hsl-main-color) hsl/0.9);
+    background: hsl(from var(--hsl-main-color) h s l/0.9);
     border-radius: 4px;
     transition: all .1s ease-in-out
 }
@@ -1217,7 +1213,7 @@ code {
 }
 
 .reactions__23977 .reactionMe__23977 {
-    background: hsl(from var(--hsl-main-color) hsl/0.15);
+    background: hsl(from var(--hsl-main-color) h s l/0.15);
     border-color: var(--hsl-main-color)
 }
 
@@ -1247,12 +1243,12 @@ code {
 
 
 .searchResultsWrap_a9e706 {
-    background: hsl(from var(--hsl-background-shading) hsl/calc(var(--background-shading-percent) * 0.3));
+    background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.3));
     border: none
 }
 
 .searchHeader_f3b986 {
-    background: hsl(from var(--hsl-background-shading) hsl/calc(var(--background-shading-percent) * 0.4))
+    background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.4))
 }
 
 .searchResult__02a39 {
@@ -1271,7 +1267,7 @@ code {
 
 
 :is(.theme-dark,.theme-light) .themed__9293f {
-    background: hsl(from var(--hsl-background-shading) hsl/calc(var(--background-shading-percent) * 0.5))
+    background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.5))
 }
 
 :is(.theme-dark,.theme-light) .dot__9293f {
@@ -1322,7 +1318,7 @@ code {
 }
 
 .members_c8ffbb {
-    background: hsl(from var(--hsl-background-shading) hsl/calc(var(--background-shading-percent) * 0.3))
+    background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.3))
 }
 
 .mulitplePlaceholderUsername__27cc6,.placeholderAvatar__27cc6,.placeholderUsername__27cc6 {
@@ -1753,12 +1749,12 @@ code {
 
 
 :is(.theme-dark,.theme-light) .header__0b563 {
-    background: hsl(from var(--hsl-background-shading) hsl/calc(var(--background-shading-percent) * 0.5)) !important;
+    background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.5)) !important;
     border-top: none
 }
 
 .container__0b563 {
-    background: hsl(from var(--hsl-background-shading) hsl/calc(var(--background-shading-percent) * 0.4)) !important
+    background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.4)) !important
 }
 
 .pageBody__41ed7 {
@@ -1836,7 +1832,7 @@ code {
 
 
 .container__551b0 {
-    background: hsl(from var(--hsl-background-shading) hsl/calc(var(--background-shading-percent) * 0.2))
+    background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.2))
 }
 
 .navItem__551b0 {
@@ -1871,7 +1867,7 @@ code {
 }
 
 .relative__8a7fc {
-    background: hsl(from var(--hsl-background-shading) hsl/calc(var(--background-shading-percent) * 0.5))
+    background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.5))
 }
 
 .iconButton__8a7fc {
@@ -1887,7 +1883,7 @@ code {
 }
 
 .scroller__23746 {
-    background: hsl(from var(--hsl-background-shading) hsl/calc(var(--background-shading-percent) * 0.4))
+    background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.4))
 }
 
 :is(.theme-dark,.theme-light) .card__84e3e {
@@ -1930,7 +1926,7 @@ code {
 }
 
 .container_cbd375 {
-    background: hsl(from var(--hsl-background-shading) hsl/calc(var(--background-shading-percent) * 0.4))
+    background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.4))
 }
 
 .container_cec934 {
@@ -1960,7 +1956,7 @@ code {
 }
 
 .peopleColumn__133bf {
-    background: hsl(from var(--hsl-background-shading) hsl/calc(var(--background-shading-percent) * 0.4))
+    background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.4))
 }
 
 .blockedIgnoredSettingsNotice__6811a {
@@ -2039,7 +2035,7 @@ code {
 }
 
 .container__7d20c {
-    background: hsl(from var(--hsl-background-shading) hsl/calc(var(--background-shading-percent) * 0.2))
+    background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.2))
 }
 
 .scroller__7d20c {
@@ -2083,7 +2079,7 @@ code {
 
 
 .list_f391e3 {
-    background: hsl(from var(--hsl-background-shading) hsl/calc(var(--background-shading-percent) * 0.4))
+    background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.4))
 }
 
 
@@ -2097,7 +2093,7 @@ code {
 }
 
 .mainPageScroller_ca1a02,.allPerksScroller_ca1a02 {
-    background: hsl(from var(--hsl-background-shading) hsl/calc(var(--background-shading-percent) * 0.4))
+    background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.4))
 }
 
 .mainPageScroller_ca1a02 {
@@ -2164,7 +2160,7 @@ code {
 
 
 .background__7449f :is(.scrollerBase__99f8c,.scrollerBase_d125d2) {
-    background: hsl(from var(--hsl-background-shading) hsl/calc(var(--background-shading-percent) * 0.4))
+    background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.4))
 }
 
 .row_d13feb {
@@ -2192,7 +2188,7 @@ code {
 }
 
 .contentContainer__89463 {
-    background: hsl(from var(--hsl-background-shading) hsl/calc(var(--background-shading-percent) * 0.4))
+    background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.4))
 }
 
 .container__5573a {
@@ -2215,7 +2211,7 @@ code {
 }
 
 .sidebarContainer__89463 {
-    background: hsl(from var(--hsl-background-shading) hsl/calc(var(--background-shading-percent) * 0.3))
+    background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.3))
 }
 
 .container__6c253 {
@@ -2229,7 +2225,7 @@ code {
 }
 
 .shop__6db1d {
-    background: hsl(from var(--hsl-background-shading) hsl/calc(var(--background-shading-percent) * 0.4))
+    background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.4))
 }
 
 .shop__08415 {
@@ -2379,7 +2375,7 @@ code {
 }
 
 .channelHeader__35a7e {
-    background: hsl(from var(--hsl-main-color) hsl/0.8);
+    background: hsl(from var(--hsl-main-color) h s l/0.8);
     padding-left: 20px;
     padding-right: 6px;
     border-radius: 8px
@@ -2471,7 +2467,7 @@ code {
 }
 
 .colorDanger_c1e9c4:active:not(.hideInteraction_c1e9c4) {
-    background-color: hsl(from var(--hsl-danger-color) hsl/0.8);
+    background-color: hsl(from var(--hsl-danger-color) h s l/0.8);
     color: var(--interactive-active)
 }
 
@@ -2578,7 +2574,7 @@ code {
 }
 
 .wrapper__14245 {
-    background: hsl(from var(--hsl-main-color) hsl/0.8);
+    background: hsl(from var(--hsl-main-color) h s l/0.8);
     margin-bottom: 10px;
     border-radius: 4px
 }
@@ -2619,7 +2615,7 @@ code {
 }
 
 .categoryFadeBlurple_d02962 {
-    background: hsl(from var(--hsl-main-color) hsl/0.8)
+    background: hsl(from var(--hsl-main-color) h s l/0.8)
 }
 
 .categoryFadeBlurple_d02962,.categoryFadeBlurple_d02962:hover {
@@ -3054,7 +3050,7 @@ code {
 }
 
 .user-profile-sidebar:not(.custom-user-profile-theme) {
-    background: hsl(from var(--hsl-background-shading) hsl/calc(var(--background-shading-percent) * 0.3))
+    background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.3))
 }
 
 
@@ -3127,11 +3123,11 @@ code {
 }
 
 .contentRegion__23e6b {
-    background: hsl(from var(--hsl-background-shading) hsl/calc(var(--background-shading-percent) * 0.4))
+    background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.4));
 }
 
 .contentRegionScroller__23e6b {
-    background: rgba(0,0,0,0)
+    background: rgba(0,0,0,0);
 }
 
 .contentColumnDefault__23e6b {
@@ -3209,7 +3205,7 @@ code {
 }
 
 .sidebarRegionScroller__23e6b {
-    background: hsl(from var(--hsl-background-shading) hsl/calc(var(--background-shading-percent) * 0.3));
+    background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.3));
     padding: 20px 8px 60px 20px
 }
 
@@ -3414,7 +3410,7 @@ code {
 }
 
 .nowPlaying_cc46f0 {
-    background: hsl(from "color.success" hsl/0.8)
+    background: hsl(from "color.success" h s l/0.8)
 }
 
 .addGamePopout_cc46f0 {
@@ -3461,7 +3457,7 @@ code {
 }
 
 .item__344e6.selected__344e6 {
-    background-color: hsl(from var(--hsl-main-color) hsl/0.4)
+    background-color: hsl(from var(--hsl-main-color) h s l/0.4)
 }
 
 .deny__344e6 {
@@ -3470,7 +3466,7 @@ code {
 }
 
 .deny__344e6.selected__344e6 {
-    background-color: hsl(from var(--hsl-danger-color) hsl/0.6)
+    background-color: hsl(from var(--hsl-danger-color) h s l/0.6)
 }
 
 .allow__344e6 {
@@ -3479,7 +3475,7 @@ code {
 }
 
 .allow__344e6.selected__344e6 {
-    background-color: hsl(from var(--hsl-success-color) hsl/0.6)
+    background-color: hsl(from var(--hsl-success-color) h s l/0.6)
 }
 
 
@@ -3714,7 +3710,7 @@ code {
 
 
 .panels_c48ade {
-    background: hsl(from var(--hsl-background-shading) hsl/calc(var(--background-shading-percent) * 0.5));
+    background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.5));
     border-radius: 0;
     border: none;
     width: 100%;
@@ -3736,13 +3732,13 @@ code {
 }
 
 :is(.theme-light,.theme-dark) .button_e131a9.buttonColor_e131a9.buttonActive_e131a9 {
-    background: hsl(from var(--hsl-main-color) hsl/0.4);
+    background: hsl(from var(--hsl-main-color) h s l/0.4);
     color: var(--button-secondary-text);
-    border-color: hsl(from var(--hsl-main-color) hsl/0.2)
+    border-color: hsl(from var(--hsl-main-color) h s l/0.2)
 }
 
 :is(.theme-light,.theme-dark) .button_e131a9.buttonColor_e131a9.buttonActive_e131a9:hover {
-    background: hsl(from var(--hsl-hover-color) hsl/0.3)
+    background: hsl(from var(--hsl-hover-color) h s l/0.3)
 }
 
 .noiseCancellationPopout_e131a9 {
@@ -3935,7 +3931,7 @@ code {
 }
 
 .container__2637a {
-    background: hsl(from var(--hsl-background-shading) hsl/calc(var(--background-shading-percent) * 0.2))
+    background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.2))
 }
 
 .animatedContainer_f37cb1 {
@@ -4099,7 +4095,7 @@ code {
 
 
 .privateChannels__35e86 {
-    background: hsl(from var(--hsl-background-shading) hsl/calc(var(--background-shading-percent) * 0.2))
+    background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.2))
 }
 
 .scroller__99e7c {
@@ -4209,7 +4205,7 @@ code {
     --hsl-popout-shading: hsl(from var(--popout-shading) h calc(var(--saturation-factor, 1) * s) l/alpha);
     --hsl-modal-shading: hsl(from var(--modal-shading) h calc(var(--saturation-factor, 1) * s) l/alpha);
     --hsl-input-shading: hsl(from var(--input-shading) h calc(var(--saturation-factor, 1) * s) l/alpha);
-    --hsl-input-border-shading: hsl(from var(--hsl-input-shading) hsl/.1)
+    --hsl-input-border-shading: hsl(from var(--hsl-input-shading) h s l/.1)
 }
 
 :root {
