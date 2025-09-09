@@ -234,6 +234,31 @@
     box-shadow: 0 0 2px 0 var(--hsl-main-color)
 }
 
+/*--------Feature (Card & Messages & Reply)--------*/
+
+.wrapper_c19a55.cozy_c19a55, .wrapper_c19a55.compact_c19a55 {
+    padding: var(--message-padding-top) var(--message-padding-side) !important;
+    padding-right: 8px !important;
+    border: 2px solid transparent;
+}
+
+.wrapper_c19a55:not(.groupStart__5126c), .wrapper_c19a55.compact_c19a55 {
+    margin-top: 2px;
+}
+
+.wrapper_c19a55 {
+    background-color: var(--card-color) !important;
+    margin-left: 68px;
+    margin-right: 16px;
+}
+
+.wrapper_c19a55.mentioned__5126c {
+    border-color: hsla(206,calc(22% * 1), 49%, 1);
+    box-shadow: 0px 0px 13px 4px hsla(206,calc(22% * 1), 49%, 1);
+}
+
+/*--------Feature (Card & Messages & Reply)--------*/
+
 .input__0f084::-moz-placeholder {
     color: var(--text-muted)
 }
