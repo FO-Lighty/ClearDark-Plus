@@ -850,12 +850,8 @@ code {
 }
 
 
-.divider__908e2 {
+ {
     --divider-color: var(--hsl-main-color)
-}
-
-.divider__908e2.hasContent__908e2 {
-    border-color: rgba(0,0,0,0)
 }
 
 .content__908e2 {
@@ -949,20 +945,6 @@ code {
     background: rgba(0,0,0,0)
 }
 
-.replying__5126c {
-    --background-mentioned: hsl(from var(--hsl-main-color) h s l/.1);
-    --background-mentioned-hover: hsl(from var(--hsl-hover-color) h s l/.1);
-    background: var(--background-mentioned)
-}
-
-.replying__5126c:hover,.replying__5126c .selected__5126c {
-    background: var(--background-mentioned-hover) !important
-}
-
-.replying__5126c::before {
-    background: var(--hsl-hover-color)
-}
-
 .wrapper_f61d60 {
     background-color: var(--hsl-main-color);
     color: var(--text-default);
@@ -972,15 +954,6 @@ code {
 
 .wrapper_f61d60:hover {
     background-color: var(--hsl-hover-color)
-}
-
-.mentioned__5126c {
-    --background-mentioned: hsl(from var(--hsl-main-color) h s l/.1);
-    --background-mentioned-hover: hsl(from var(--hsl-hover-color) h s l/.1)
-}
-
-.mentioned__5126c:before {
-    background-color: var(--hsl-main-color)
 }
 
 .blockquoteContainer__75297 .blockquoteDivider__75297 {
