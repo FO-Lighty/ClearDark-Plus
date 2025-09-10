@@ -292,8 +292,8 @@
 }
 
 .wrapper_c19a55.replying__5126c {
-  border-color: rgba(var(--reply-accent), 1);
-  box-shadow: 0px 0px 13px 4px rgba(var(--reply-accent), 1);
+  border-color: rgb(var(--reply-accent));
+  box-shadow: 0px 0px 13px 4px rgb(var(--reply-accent));
 }
 
 .wrapper_c19a55.replying__5126c:before {
