@@ -56,7 +56,7 @@
   /* MESSAGE COLOR SETTINGS */
   --message-color: hsl(0,0%,0%,0.4);
   --message-color-hover: hsl(0,0%,0%,0.55);
-  --message-radius: var(--app-radius);
+  --message-radius: 10px;
   --message-padding-top: 8px;
   --message-padding-side: 8px;
   /* USER MODAL BACKGROUND */
