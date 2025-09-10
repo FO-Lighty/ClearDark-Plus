@@ -1,15 +1,16 @@
 /**
- * @name ClearDark+ v2.0.0-B
+ * @name ClearDark+ v2.0.0
  * @author Lighty.Jr
- * @version 2.0.0-B
- * @description Translucent Clear Dark Glass Discord theme
- * @website https://fo-lighty.github.io/ClearDark-Plus/
+ * @version 2.0.0
+ * @description Version 2 of that Translucent Clear Dark Glass Discord theme
+ * @website https://fo-lighty.github.io/ClearDark-Plus
+ * @source https://github.com/FO-Lighty/ClearDark-Plus
  */
 
-/* IMPORT CSS */
-@import url("https://fo-lighty.github.io/ClearDark-Plus/css/main.css");
-@import url("https://fo-lighty.github.io/ClearDark-Plus/css/additional.css");
-/* SETTINGS */
+  /* IMPORT CSS */
+  @import url("https://fo-lighty.github.io/ClearDark-Plus/css/main.css");
+  @import url("https://fo-lighty.github.io/ClearDark-Plus/css/additional.css");
+  /* SETTINGS */
 :root {
   /* ACCENT COLORS */
   --main-color: #618098; /* main accent color (hex, rgb or hsl) [default: #618098] */
@@ -125,5 +126,3 @@
   --normal-text: #dcdcde; /* text color [default: #dcdcde] */
   --muted-text: #86868e; /* muted text color [default: #86868e] */
 }
-
-/* ADD ADDITIONAL CSS BELOW HERE */
