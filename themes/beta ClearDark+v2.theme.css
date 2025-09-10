@@ -16,6 +16,7 @@
   --hover-color: #8199ad; /* hover accent color (hex, rgb or hsl) [default: #8199ad] */
   --success-color: #43b581; /* positive accent color (hex, rgb or hsl) [default: #43b581] */
   --danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */
+  --accent-text-color: hsl(216,17%,94%);
   /* STATUS COLORS */
   --online-color: #43b581; /* online status color (hex, rgb or hsl) [default: #43b581] */
   --idle-color: #faa61a; /* idle status color (hex, rgb or hsl) [default: #faa61a] */
