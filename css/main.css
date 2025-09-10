@@ -216,42 +216,54 @@
 }
 
 .container__87bf1 {
-  background-color: var(--switch-slider-color) !important;
+    background-color: var(--switch-slider-color) !important;
 }
+
 .container__87bf1 .slider__87bf1 rect {
-  fill: var(--switch-knob-color) !important;
+    fill: var(--switch-knob-color) !important;
 }
+
 .container__87bf1 .slider__87bf1 path {
-  fill: var(--switch-slider-color) !important;
+    fill: var(--switch-slider-color) !important;
 }
+
 .container__87bf1.checked__87bf1 {
-  --switch-slider-color: hsla(var(--hsl-main-color), 1);
-  --switch-knob-color: var(--accent-text-color);
+    --switch-slider-color: hsla(var(--hsl-main-color), 1);
+    --switch-knob-color: var(--accent-text-color);
 }
+
 .container__87bf1 svg {
-  filter: none;
+    filter: none;
+}
+
+.visual-refresh .bd-addon-card {
+    backdrop-filter: blur(3.5px) !important;
 }
 
 .bd-switch .bd-switch-body {
-  --switch-color: var(--switch-slider-color);
+    --switch-color: var(--switch-slider-color);
 }
+
 .bd-switch .bd-switch-body .bd-switch-handle {
-  fill: var(--switch-knob-color);
+    fill: var(--switch-knob-color);
 }
+
 .bd-switch input:active + .bd-switch-body {
-  --switch-color: var(--switch-slider-color);
+    --switch-color: var(--switch-slider-color);
 }
+
 .bd-switch input:checked + .bd-switch-body {
-  --switch-color: hsla(var(--hsl-main-color), 1);
-  --switch-knob-color: var(--accent-text-color);
+    --switch-color: hsla(var(--hsl-main-color), 1);
+    --switch-knob-color: var(--accent-text-color);
 }
+
 .bd-switch input:checked:active + .bd-switch-body {
-  --switch-color: hsla(var(--hsl-main-color), 1);
+    --switch-color: hsla(var(--hsl-main-color), 1);
 }
 
 .bd-switch-disabled {
-  opacity: 0.3;
-  filter: none;
+    opacity: 0.3;
+    filter: none;
 }
 
 .checkbox_f525d3 {
@@ -280,7 +292,7 @@
   margin-right: 16px;
   background-color: var(--message-color) !important;
   border-radius: var(--message-radius);
-  backdrop-filter: blur(3.5px);
+  backdrop-filter: blur(3.5px) !important;
 }
 
 .wrapper_c19a55:not(.groupStart__5126c), .wrapper_c19a55.compact_c19a55 {
