@@ -236,9 +236,9 @@
     filter: none;
 }
 
-.visual-refresh .bd-addon-card {
+/*.visual-refresh .bd-addon-card {
     backdrop-filter: blur(3.5px);
-}
+}*/
 
 .bd-switch .bd-switch-body {
     --switch-color: var(--switch-slider-color);
