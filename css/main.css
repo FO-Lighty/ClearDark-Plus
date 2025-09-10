@@ -258,7 +258,7 @@
 }
 
 .bd-switch input:checked:active + .bd-switch-body {
-    --switch-color: hsla(var(--hsl-main-color), 1);
+    --switch-color: rgb(var(--main-color));
 }
 
 .bd-switch-disabled {
