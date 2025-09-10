@@ -242,47 +242,60 @@
   background-color: var(--message-color) !important;
   border-radius: var(--message-radius);
 }
+
 .wrapper_c19a55:not(.groupStart__5126c), .wrapper_c19a55.compact_c19a55 {
   margin-top: 2px;
 }
+
 .wrapper_c19a55.cozy_c19a55, .wrapper_c19a55.compact_c19a55 {
   padding: var(--message-padding-top) var(--message-padding-side) !important;
   padding-right: 8px !important;
   border: 2px solid transparent;
 }
+
 .wrapper_c19a55.cozy_c19a55 .timestamp_c19a55.alt_c19a55 {
   left: -62px;
 }
+
 .wrapper_c19a55.compact_c19a55 {
   padding: 4px;
   padding-left: 6px;
 }
+
 .wrapper_c19a55.compact_c19a55 .timestamp_c19a55 {
   margin-right: 0.75rem;
 }
+
 .wrapper_c19a55.hasReply_c19a55 .avatar_c19a55 {
   top: 28px;
 }
+
 .wrapper_c19a55.hasReply_c19a55 .avatarDecoration_c19a55 {
   top: 26px;
 }
+
 .wrapper_c19a55 .channelTextArea__74017 {
   margin: 2px 0;
 }
+
 .wrapper_c19a55.mentioned__5126c {
-  border-color: hsla(var(--mention-hsl), 1);
-  box-shadow: 0px 0px 13px 4px hsla(var(--mention-hsl), 1);
+    border-color: hsla(206,calc(22% * 1), 49%, 1);
+    box-shadow: 0px 0px 13px 4px hsla(206,calc(22% * 1), 49%, 1);
 }
+
 .wrapper_c19a55.mentioned__5126c:before {
   display: none;
 }
+
 .wrapper_c19a55.mentioned__5126c .repliedMessage_c19a55:before {
-  border-color: hsl(var(--mention-hsl));
+  border-color: rgb(var(--mention-color));
 }
+
 .wrapper_c19a55.replying__5126c {
   border-color: rgba(var(--reply-accent), 1);
   box-shadow: 0px 0px 13px 4px rgba(var(--reply-accent), 1);
 }
+
 .wrapper_c19a55.replying__5126c:before {
   display: none;
 }
@@ -317,6 +330,7 @@
 .divider__908e2.hasContent__5126c {
   border-top: none;
 }
+
 .divider__908e2.hasContent__5126c:before, .divider__908e2.hasContent__5126c:after {
   position: absolute;
   content: " ";
@@ -327,9 +341,11 @@
   margin: auto 0;
   background-color: var(--background-modifier-accent);
 }
+
 .divider__908e2.hasContent__5126c:before {
   left: 0;
 }
+
 .divider__908e2.hasContent__5126c:after {
   right: 0;
 }
@@ -344,6 +360,7 @@
 .isUnread__908e2 {
   border-color: hsla(var(--main-color), 1);
 }
+
 .isUnread__908e2 .unreadPill__908e2 {
   background-color: hsla(var(--main-color), 1);
   color: var(--accent-text-color);
@@ -4357,10 +4374,9 @@ code {
     --hsl-channel-selected-bg: var(--channel-selected-bg);
     --hsl-channel-unread: var(--channel-unread);
     --hsl-channel-unread-hover: var(--channel-unread-hover);
-    --reply-hue: 210;
-    --reply-saturation: 20%;
-    --reply-lightness: 39%;
-    --reply-hsl: var(--reply-hue),calc(var(--reply-saturation) * var(--saturation-factor)),var(--reply-lightness);
+    --reply-accent: #506377;
+    --mention-color: var(--main-color);
+    --mention-opacity: 1;
     --message-color: hsl(0,0%,0%,0.4);
     --message-color-hover: hsl(0,0%,0%,0.55);
     --message-radius: 10px;
