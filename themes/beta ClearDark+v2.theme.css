@@ -41,7 +41,7 @@
   --user-popout-attachment: var(--background-attachment); /* user popout background attachment [default: var(--background-attachment)] */
   --user-popout-filter: var(--background-filter); /* user popout background adjustments (ex: blur, saturation, brightness) (more info: https://developer.mozilla.org/en-US/docs/Web/CSS/filter) [default: var(--background-filter);] */
   /* REPLY HSL COLOR SETTINGS */
-  --reply-accent: #506377; /* reply accent color (hex, rgb or hsl) [default: #506377] */
+  --reply-accent: #738292; /* reply accent color (hex, rgb or hsl) [default: #738292] */
   /* CARD SETTINGS */
   --card-color: hsl(0,0%,0%,0.4); /* the background color of the cards [default: hsl(0,0%,0%,0.4)] */
   --card-color-hover: hsl(0,0%,0%,0.5); /* the background color of the cards when hovered [default: hsl(0,0%,0%,0.5)] */
