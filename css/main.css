@@ -253,7 +253,7 @@
 }
 
 .bd-switch input:checked + .bd-switch-body {
-    --switch-color: hsla(var(--hsl-main-color), 1);
+    --switch-color: rgb(var(--main-color));
     --switch-knob-color: var(--accent-text-color);
 }
 
