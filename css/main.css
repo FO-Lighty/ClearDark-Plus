@@ -266,18 +266,12 @@
 .wrapper_c19a55.hasReply_c19a55 .avatarDecoration_c19a55 {
   top: 26px;
 }
-.wrapper_c19a55 .timestamp_c19a55 {
-  color: var(--text-normal);
-}
-.wrapper_c19a55 .timestamp_c19a55.alt_c19a55 {
-  color: var(--text-normal);
-}
 .wrapper_c19a55 .channelTextArea__74017 {
   margin: 2px 0;
 }
 .wrapper_c19a55.mentioned__5126c {
-  border-color: hsla(var(--mention-hsl), var(--mention-opacity));
-  box-shadow: 0px 0px 13px 4px hsla(var(--mention-hsl), var(--mention-opacity));
+  border-color: hsla(var(--mention-hsl), 1);
+  box-shadow: 0px 0px 13px 4px hsla(var(--mention-hsl), 1);
 }
 .wrapper_c19a55.mentioned__5126c:before {
   display: none;
@@ -286,8 +280,8 @@
   border-color: hsl(var(--mention-hsl));
 }
 .wrapper_c19a55.replying__5126c {
-  border-color: hsla(var(--reply-hsl), var(--reply-opacity));
-  box-shadow: 0px 0px 13px 4px hsla(var(--reply-hsl), var(--reply-opacity));
+  border-color: rgba(var(--reply-accent), 1);
+  box-shadow: 0px 0px 13px 4px rgba(var(--reply-accent), 1);
 }
 .wrapper_c19a55.replying__5126c:before {
   display: none;
@@ -348,10 +342,10 @@
 }
 
 .isUnread__908e2 {
-  border-color: hsla(var(--accent-hsl), var(--accent-opacity));
+  border-color: hsla(var(--main-color), 1);
 }
 .isUnread__908e2 .unreadPill__908e2 {
-  background-color: hsla(var(--accent-hsl), var(--accent-opacity));
+  background-color: hsla(var(--main-color), 1);
   color: var(--accent-text-color);
   text-shadow: none;
 }
@@ -359,8 +353,8 @@
   filter: none;
 }
 .isUnread__908e2 .unreadPillCapStroke__908e2 {
-  color: hsla(var(--accent-hsl), var(--accent-opacity));
-  fill: hsla(var(--accent-hsl), var(--accent-opacity));
+  color: rgba(var(--main-color), 1);
+  fill: rgba(var(--main-color), 1);
 }
 
 .repliedMessage_c19a55:before {
@@ -4363,6 +4357,15 @@ code {
     --hsl-channel-selected-bg: var(--channel-selected-bg);
     --hsl-channel-unread: var(--channel-unread);
     --hsl-channel-unread-hover: var(--channel-unread-hover);
+    --reply-hue: 210;
+    --reply-saturation: 20%;
+    --reply-lightness: 39%;
+    --reply-hsl: var(--reply-hue),calc(var(--reply-saturation) * var(--saturation-factor)),var(--reply-lightness);
+    --message-color: hsl(0,0%,0%,0.4);
+    --message-color-hover: hsl(0,0%,0%,0.55);
+    --message-radius: var(--app-radius);
+    --message-padding-top: 8px;
+    --message-padding-side: 8px;
     --font-primary: var(--main-font);
     --font-display: var(--main-font);
     --font-code: var(--code-font);
@@ -4391,6 +4394,10 @@ code {
     --background-size: cover;
     --background-attachment: fixed;
     --background-filter: saturate(calc(var(--saturation-factor, 1) * 1));
+    --background-modifier-hover: hsl(0,0%,100%,0.075);
+    --background-modifier-active: hsl(0,0%,100%,0.1);
+    --background-modifier-selected: hsl(0,0%,100%,0.125);
+    --background-modifier-accent: hsl(0,0%,100%,0.175);
     --user-popout-image: var(--background-image);
     --user-popout-position: var(--background-position);
     --user-popout-size: var(--background-size);
