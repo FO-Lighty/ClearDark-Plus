@@ -215,6 +215,45 @@
     color: var(--control-text-critical-primary-default)
 }
 
+.container__87bf1 {
+  background-color: var(--switch-slider-color) !important;
+}
+.container__87bf1 .slider__87bf1 rect {
+  fill: var(--switch-knob-color) !important;
+}
+.container__87bf1 .slider__87bf1 path {
+  fill: var(--switch-slider-color) !important;
+}
+.container__87bf1.checked__87bf1 {
+  --switch-slider-color: hsla(var(--hsl-main-color), 1);
+  --switch-knob-color: var(--accent-text-color);
+}
+.container__87bf1 svg {
+  filter: none;
+}
+
+.bd-switch .bd-switch-body {
+  --switch-color: var(--switch-slider-color);
+}
+.bd-switch .bd-switch-body .bd-switch-handle {
+  fill: var(--switch-knob-color);
+}
+.bd-switch input:active + .bd-switch-body {
+  --switch-color: var(--switch-slider-color);
+}
+.bd-switch input:checked + .bd-switch-body {
+  --switch-color: hsla(var(--hsl-main-color), 1);
+  --switch-knob-color: var(--accent-text-color);
+}
+.bd-switch input:checked:active + .bd-switch-body {
+  --switch-color: hsla(var(--hsl-main-color), 1);
+}
+
+.bd-switch-disabled {
+  opacity: 0.3;
+  filter: none;
+}
+
 .checkbox_f525d3 {
     border-radius: 4px
 }
@@ -4355,6 +4394,7 @@ code {
     --message-radius: 10px;
     --message-padding-top: 8px;
     --message-padding-side: 8px;
+    --accent-text-color: hsl(216,17%,94%);
     --font-primary: var(--main-font);
     --font-display: var(--main-font);
     --font-code: var(--code-font);
