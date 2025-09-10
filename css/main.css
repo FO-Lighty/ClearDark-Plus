@@ -253,12 +253,12 @@
 }
 
 .bd-switch input:checked + .bd-switch-body {
-    --switch-color: rgb(var(--main-color));
+    --switch-color: var(--main-color);
     --switch-knob-color: var(--accent-text-color);
 }
 
 .bd-switch input:checked:active + .bd-switch-body {
-    --switch-color: rgb(var(--main-color));
+    --switch-color: var(--main-color);
 }
 
 .bd-switch-disabled {
