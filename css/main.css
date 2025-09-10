@@ -4386,7 +4386,7 @@ code {
     --hsl-channel-selected-bg: var(--channel-selected-bg);
     --hsl-channel-unread: var(--channel-unread);
     --hsl-channel-unread-hover: var(--channel-unread-hover);
-    --reply-accent: #506377;
+    --reply-accent: #738292;
     --mention-color: var(--main-color);
     --mention-opacity: 1;
     --message-color: hsl(0,0%,0%,0.4);
