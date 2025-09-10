@@ -287,7 +287,15 @@ body {
  *
  */
 .panels_c48ade {
-  background-color: transparent;
+    background: hsl(from var(--hsl-background-shading) h s l / calc(var(--background-shading-percent)* 0.5));
+    border-radius: 0;
+    border: none;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 8px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .actionButtons_e131a9 .button__201d5 path[fill] {
