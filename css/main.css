@@ -280,6 +280,7 @@
   margin-right: 16px;
   background-color: var(--message-color) !important;
   border-radius: var(--message-radius);
+  backdrop-filter: blur(3.5px);
 }
 
 .wrapper_c19a55:not(.groupStart__5126c), .wrapper_c19a55.compact_c19a55 {
