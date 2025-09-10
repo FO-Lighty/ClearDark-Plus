@@ -237,7 +237,7 @@
 }
 
 .visual-refresh .bd-addon-card {
-    backdrop-filter: blur(3.5px) !important;
+    backdrop-filter: blur(3.5px);
 }
 
 .bd-switch .bd-switch-body {
