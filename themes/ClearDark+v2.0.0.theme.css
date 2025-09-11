@@ -17,7 +17,7 @@
   --hover-color: #8199ad; /* hover accent color (hex, rgb or hsl) [default: #8199ad] */
   --success-color: #43b581; /* positive accent color (hex, rgb or hsl) [default: #43b581] */
   --danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */
-  --accent-text-color: hsl(216,17%,94%);
+  --accent-text-color: hsl(216,17%,94%); /* The accent text color [default: hsl(216,17%,94%)]. */
   /* STATUS COLORS */
   --online-color: #43b581; /* online status color (hex, rgb or hsl) [default: #43b581] */
   --idle-color: #faa61a; /* idle status color (hex, rgb or hsl) [default: #faa61a] */
@@ -50,14 +50,14 @@
   --card-radius: 10px; /* the border radius of the cards [default: 10px] */
   --card-header-shadow: 0px 3px 9px 0px hsl(0,0%,0%,0.25); /* The box-shadow for the card header [default: 0px 3px 9px 0px hsl(0,0%,0%,0.25)] */
   /* MENTION HSL COLOR SETTINGS */
-  --mention-color: var(--main-color);
-  --mention-opacity: 1;
+  --mention-color: var(--main-color); /* The mention color [default: var(--main-color)]. */
+  --mention-opacity: 1; /* The opacity of the mention color [default: 1]. */
   /* MESSAGE COLOR SETTINGS */
-  --message-color: hsl(0,0%,0%,0.4);
-  --message-color-hover: hsl(0,0%,0%,0.55);
-  --message-radius: 10px;
-  --message-padding-top: 8px;
-  --message-padding-side: 8px;
+  --message-color: hsl(0,0%,0%,0.4); /* The background color of a message [default: hsl(0,0%,0%,0.4)]. */
+  --message-color-hover: hsl(0,0%,0%,0.55); /* The background color of a message when hovered [default: hsl(0,0%,0%,0.55)]. */
+  --message-radius: 10px; /* The border-radius of the messages [default: 10px]. */
+  --message-padding-top: 8px; /* The top padding of the messages [default: 8px]. */
+  --message-padding-side: 8px; /* The side padding of the messages [default: 8px]. */
   /* USER MODAL BACKGROUND */
   --user-modal-image: var(--background-image); /* user modal background image (link must be HTTPS) (not applied to nitro users) [default: var(--background-image)] */
   --user-modal-position: var(--background-position); /* user modal position [default: var(--background-position)] */
