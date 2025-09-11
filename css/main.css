@@ -1015,6 +1015,30 @@ code {
     border-radius: 0
 }
 
+.content__99f8c {
+    backdrop-filter: blur(2px);
+}
+
+.wrapper_ef3116.guilds_c48ade {
+    backdrop-filter: blur(2px);
+}
+
+.sidebarRegionScroller__23e6b {
+    backdrop-filter: blur(2px);
+}
+
+.bd-addon-list .bd-addon-header {
+    box-shadow: 0px 3px 9px 0px hsl(0,0%,0%,0.25)
+}
+
+.subtitleContainer_f75fb0 {
+    box-shadow: 0px 3px 9px 0px hsl(0,0%,0%,0.25)
+}
+
+.client-theme-color-picker .searchBar__35e86 {
+    box-shadow: 0px 3px 9px 0px hsl(0, 0%, 0%, 0.25);
+}
+
 .bumpBox_cacd02 {
     background: var(--hsl-card-shading)
 }
@@ -4419,6 +4443,7 @@ code {
     --font-display: var(--main-font);
     --font-code: var(--code-font);
     --focus-primary: var(--focus-color);
+    --app-blur: 6px;
     --main-color: #2780e6;
     --hover-color: #1e63b3;
     --success-color: #43b581;
