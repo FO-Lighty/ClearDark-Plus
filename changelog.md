@@ -2,6 +2,22 @@
 
 ## Changelog
 
+### v2.0.0 (10/03/2025)
+
+### **This new version** represents a complete overhaul of the theme, focusing on performance, stability, and a better user experience.
+
+* **A new theme version:** I've built the theme from the ground up for a fresher and more modern feel.
+
+* **Enhanced performance:** The code has been fully optimized to provide a smoother and more satisfying browsing experience.
+
+* **Improved features:** All previous features have been refined and improved.
+
+* **Bug fixes:** I've resolved numerous issues from the previous version.
+
+* **Greater customization:** The theme now offers more options for personalization.
+
+* **Discord-related fixes:** Fixed several problems caused by recent Discord updates that affected the theme's overall stability.
+
 ### v1.4.2 (08/03/2025)
 
 * **Adjusted** the theme description for coherence.
