@@ -285,8 +285,6 @@
     box-shadow: 0 0 2px 0 var(--hsl-main-color)
 }
 
-/*--------Feature (Card & Messages & Reply)--------*/
-
 .wrapper_c19a55 {
   margin-left: 68px;
   margin-right: 16px;
@@ -430,8 +428,6 @@
   border-color: var(--message-color);
   transform: translateX(-6px);
 }
-
-/*--------Feature (Card & Messages & Reply)--------*/
 
 .input__0f084::-moz-placeholder {
     color: var(--text-muted)
