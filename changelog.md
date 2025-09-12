@@ -16,6 +16,8 @@
 
 * **Greater customization:** The theme now offers more options for personalization.
 
+* The theme now **works on all classic Discord themes** (Light, Ash, Dark, Onyx). It will automatically adapt its styling to match.
+
 * **Discord-related fixes:** Fixed several problems caused by recent Discord updates that affected the theme's overall stability.
 
 ### v1.4.2 (08/03/2025)
