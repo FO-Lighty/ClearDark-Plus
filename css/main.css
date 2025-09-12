@@ -3938,6 +3938,7 @@ code {
     padding: 8px;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
+    backdrop-filter: blur(2px);
 }
 
 :is(.theme-light,.theme-dark) .panel__5dec7 {
