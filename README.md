@@ -1,4 +1,4 @@
-# ClearDark + v2
+# ClearDark+ v2
 #### **V2 has Arrived! The Translucent Dark Glass Theme You've Been Waiting For!**
 
 <br/>
