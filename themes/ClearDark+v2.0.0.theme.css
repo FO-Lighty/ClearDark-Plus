@@ -32,10 +32,10 @@
   --background-size: cover; /* app background size (px) [default: cover] */
   --background-attachment: fixed; /* app background attachment [default: fixed] */
   --background-filter: saturate(calc(var(--saturation-factor, 1) * 1)); /* app background adjustments (ex: blur, saturation, brightness) [default: saturate(calc(var(--saturation-factor, 1) * 1))] */
-  --background-modifier-hover: hsl(0,0%,100%,0.075);
-  --background-modifier-active: hsl(0,0%,100%,0.1);
-  --background-modifier-selected: hsl(0,0%,100%,0.125);
-  --background-modifier-accent: hsl(0,0%,100%,0.175);
+  --background-modifier-hover: hsl(0,0%,100%,0.075); /*The background modifier for hover effect [Default: hsl(0,0%,100%,0.075)]*/
+  --background-modifier-active: hsl(0,0%,100%,0.1); /*The background modifier for hover effect [Default: hsl(0,0%,100%,0.1)]*/
+  --background-modifier-selected: hsl(0,0%,100%,0.125); /*The background modifier for hover effect [Default: hsl(0,0%,100%,0.125)]*/
+  --background-modifier-accent: hsl(0,0%,100%,0.175); /*The background modifier for hover effect [Default: hsl(0,0%,100%,0.175)]*/
   /* USER POPOUT BACKGROUND */
   --user-popout-image: var(--background-image); /* user popout background image (link must be HTTPS) (not applied to nitro users) [default: var(--background-image)] */
   --user-popout-position: var(--background-position); /* user popout position [default: var(--background-position)] */
