@@ -1,7 +1,7 @@
 {
     "name": "Clear Dark +",
-    "description": "Translucent Clear Dark Glass Discord theme",
-    "version": "1.4.2",
+    "description": "Version 2 of that Translucent Clear Dark Glass Discord theme",
+    "version": "2.0.0",
     "author": "Lighty.Jr",
-    "theme": "ClearDark+.theme.css",
+    "theme": "ClearDark+v2.0.0.theme.css",
 }
