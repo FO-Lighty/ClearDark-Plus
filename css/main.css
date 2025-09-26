@@ -1031,10 +1031,6 @@ code {
     backdrop-filter: blur(2.5px);
 }
 
-.scroller__629e4 {
-    backdrop-filter: blur(2px);
-}
-
 .profile__9c3be {
     border-radius: var(--radius-lg) var(--radius-lg) 8px 8px !important;
 }
