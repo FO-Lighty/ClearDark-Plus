@@ -982,6 +982,10 @@
     z-index: -1
 }
 
+.container__8a031{
+    background: var(--hsl-background-shading)
+}
+
 .container_a2f514 {
     background: var(--hsl-background-shading)
 }
