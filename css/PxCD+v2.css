@@ -4825,7 +4825,7 @@ code {
     --hsl-channel-unread: var(--channel-unread);
     --hsl-channel-unread-hover: var(--channel-unread-hover);
     --reply-accent: #738292;
-    --switch-slider-color: hsla(218,4.6%,46.9%,0.85);
+    --switch-slider-color: hsla(57,69%,81%,0.85);
     --switch-knob-color: hsl(0,0%,13%);
     --mention-color: var(--main-color);
     --mention-opacity: 1;
@@ -4834,7 +4834,7 @@ code {
     --message-radius: 10px;
     --message-padding-top: 8px;
     --message-padding-side: 8px;
-    --accent-text-color: hsl(216,17%,94%);
+    --accent-text-color: hsl(57,69%,81%);
     --font-primary: var(--main-font);
     --font-display: var(--main-font);
     --font-code: var(--code-font);
