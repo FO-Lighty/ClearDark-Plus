@@ -4842,15 +4842,15 @@ code {
     --app-blur: 6px;
     --main-color: #c2be8b;
     --hover-color: #704852;
-    --success-color: #43b581;
+    --success-color: #9d9a71;
     --warning-color: #fff;
-    --danger-color: #982929;
+    --danger-color: #703f56;
     --info-color: #fff;
     --online-color: #43b581;
     --idle-color: #faa61a;
     --dnd-color: #982929;
     --streaming-color: #593695;
-    --offline-color: #808080;
+    --offline-color: #5a5a5a;
     --input-height: 36px;
     --input-radius: calc(var(--input-height) / 2);
     --card-color: hsl(0,0%,0%,0.4);
