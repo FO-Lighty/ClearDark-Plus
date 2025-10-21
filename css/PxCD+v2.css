@@ -4791,7 +4791,7 @@ code {
 }
 
 :is(.theme-light,.theme-dark,.theme-darker,.theme-midnight),:is(.theme-light,.theme-dark,.theme-darker,.theme-midnight):is(.theme-light,.theme-dark) {
-    --text-default: hsl(from var(--normal-text) h calc(var(--saturation-factor, 1) * s) l/alpha);
+    --text-default: hsl(from var(--normal-text) h calc(var(--saturation-factor, -1) * s) l/alpha);
     --text-muted: hsl(from var(--muted-text) h calc(var(--saturation-factor, 1) * s) l/alpha);
     --text-link: var(--hsl-main-color);
     --text-brand: var(--hsl-main-color);
