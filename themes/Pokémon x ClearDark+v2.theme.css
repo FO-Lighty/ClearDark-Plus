@@ -14,17 +14,17 @@
   /* SETTINGS */
 :root {
   /* ACCENT COLORS */
-  --main-color: #f2eeae; /* main accent color (hex, rgb or hsl) [default: #f2eeae] */
-  --hover-color: #d9734e; /* hover accent color (hex, rgb or hsl) [default: #d9734e] */
-  --success-color: #43b581; /* positive accent color (hex, rgb or hsl) [default: #43b581] */
-  --danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */
+  --main-color: #c2be8b; /* main accent color (hex, rgb or hsl) [default: #c2be8b] */
+  --hover-color: #704852; /* hover accent color (hex, rgb or hsl) [default: #d9734e] */
+  --success-color: #9d9a71; /* positive accent color (hex, rgb or hsl) [default: #43b581] */
+  --danger-color: #703f56; /* danger accent color (hex, rgb or hsl) [default: #982929] */
   --accent-text-color: hsl(216,17%,94%); /* The accent text color [default: hsl(216,17%,94%)]. */
   /* STATUS COLORS */
   --online-color: #43b581; /* online status color (hex, rgb or hsl) [default: #43b581] */
   --idle-color: #faa61a; /* idle status color (hex, rgb or hsl) [default: #faa61a] */
   --dnd-color: #982929; /* dnd status color (hex, rgb or hsl) [default: #982929] */
   --streaming-color: #593695; /* streaming status color (hex, rgb or hsl) [default: #593695] */
-  --offline-color: #808080; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
+  --offline-color: #5a5a5a; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
   /* APP BACKGROUND */
   --background-shading-percent: 100%; /* app background shading amount (0 for complete smoothness) [default: 100%] */
   --background-image: url(https://fo-lighty.github.io/ClearDark-Plus/assets/images/pikachu.jpg); /* app background image (link must be HTTPS) [default: url(https://fo-lighty.github.io/ClearDark-Plus/assets/images/pikachu.jpg)]*/
@@ -42,8 +42,8 @@
   --user-popout-size: var(--background-size); /* user popout size (px) [default: var(--background-size)] */
   --user-popout-attachment: var(--background-attachment); /* user popout background attachment [default: var(--background-attachment)] */
   --user-popout-filter: var(--background-filter); /* user popout background adjustments (ex: blur, saturation, brightness) (more info: https://developer.mozilla.org/en-US/docs/Web/CSS/filter) [default: var(--background-filter);] */
-  /* REPLY HSL COLOR SETTINGS */
-  --reply-accent: #738292; /* reply accent color (hex, rgb or hsl) [default: #738292] */
+  /* REPLY COLOR SETTINGS */
+  --reply-accent: #d4d2ae; /* reply accent color (hex, rgb or hsl) [default: #d4d2ae] */
   /* CARD SETTINGS */
   --card-color: hsl(0,0%,0%,0.4); /* the background color of the cards [default: hsl(0,0%,0%,0.4)] */
   --card-color-hover: hsl(0,0%,0%,0.5); /* the background color of the cards when hovered [default: hsl(0,0%,0%,0.5)] */
