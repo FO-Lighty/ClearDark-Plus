@@ -15,8 +15,8 @@
 :root {
   /* ACCENT COLORS */
   --main-color: #c2be8b; /* main accent color (hex, rgb or hsl) [default: #c2be8b] */
-  --hover-color: #704852; /* hover accent color (hex, rgb or hsl) [default: #d9734e] */
-  --success-color: #9d9a71; /* positive accent color (hex, rgb or hsl) [default: #43b581] */
+  --hover-color: #ddb39a; /* hover accent color (hex, rgb or hsl) [default: #ddb39a] */
+  --success-color: #9d9a71; /* positive accent color (hex, rgb or hsl) [default: #9d9a71] */
   --danger-color: #703f56; /* danger accent color (hex, rgb or hsl) [default: #982929] */
   --accent-text-color: hsl(0,0%,98%); /* The accent text color [default: hsl(216,17%,94%)]. */
   /* STATUS COLORS */
@@ -24,7 +24,7 @@
   --idle-color: #faa61a; /* idle status color (hex, rgb or hsl) [default: #faa61a] */
   --dnd-color: #982929; /* dnd status color (hex, rgb or hsl) [default: #982929] */
   --streaming-color: #593695; /* streaming status color (hex, rgb or hsl) [default: #593695] */
-  --offline-color: #5a5a5a; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
+  --offline-color: #5a5a5a; /* offline/invisible status color (hex, rgb or hsl) [default: #5a5a5a] */
   /* APP BACKGROUND */
   --background-shading-percent: 100%; /* app background shading amount (0 for complete smoothness) [default: 100%] */
   --background-image: url(https://fo-lighty.github.io/ClearDark-Plus/assets/images/pikachu.jpg); /* app background image (link must be HTTPS) [default: url(https://fo-lighty.github.io/ClearDark-Plus/assets/images/pikachu.jpg)]*/
