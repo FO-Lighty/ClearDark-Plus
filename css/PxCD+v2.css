@@ -4825,7 +4825,7 @@ code {
     --hsl-channel-unread: var(--channel-unread);
     --hsl-channel-unread-hover: var(--channel-unread-hover);
     --reply-accent: #738292;
-    --switch-slider-color: hsla(57,69%,81%,0.85);
+    --switch-slider-color: hsla(218,4.6%,46.9%,0.85);
     --switch-knob-color: hsl(0,0%,13%);
     --mention-color: var(--main-color);
     --mention-opacity: 1;
@@ -4840,8 +4840,8 @@ code {
     --font-code: var(--code-font);
     --focus-primary: var(--focus-color);
     --app-blur: 6px;
-    --main-color: #2780e6;
-    --hover-color: #1e63b3;
+    --main-color: #c2be8b;
+    --hover-color: #704852;
     --success-color: #43b581;
     --warning-color: #fff;
     --danger-color: #982929;
@@ -4918,7 +4918,7 @@ code {
     --popout-shading: rgba(0, 0, 0, 0.7);
     --modal-shading: rgba(0, 0, 0, 0.5);
     --input-shading: rgba(255, 255, 255, 0.05);
-    --normal-text: #fbfbfb;
+    --normal-text: #323232;
     --muted-text: #94949c
 }
 
