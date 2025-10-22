@@ -708,8 +708,8 @@
 }
 
 .wrapper_c19a55.mentioned__5126c {
-    border-color: hsla(206,calc(22% * 1), 49%, 1);
-    box-shadow: 0px 0px 13px 4px hsla(206,calc(22% * 1), 49%, 1);
+    border-color: hsla(var(--hsl-main-color);
+    box-shadow: 0px 0px 13px 4px hsla(var(--hsl-main-color);
 }
 
 .wrapper_c19a55.mentioned__5126c:before {
@@ -721,8 +721,8 @@
 }
 
 .wrapper_c19a55.replying__5126c {
-  border-color: hsla(206,calc(22% * 1), 49%, 1);
-  box-shadow: 0px 0px 13px 4px hsla(206,calc(22% * 1), 49%, 1);
+  border-color: hsla(var(--hsl-main-color);
+  box-shadow: 0px 0px 13px 4px hsla(var(--hsl-main-color);
 }
 
 .wrapper_c19a55.replying__5126c:before {
