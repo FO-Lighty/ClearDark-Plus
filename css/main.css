@@ -1565,6 +1565,10 @@ code {
     background: rgba(0,0,0,0)
 }
 
+.fullRegionDropdownButton_f1ceac.disconnect_f1ceac {
+    background-color: var(--hsl-danger-color);
+}
+
 .container_f69538,.container__0be77 {
     background: var(--hsl-card-shading);
     border: none
