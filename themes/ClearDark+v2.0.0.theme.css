@@ -2,7 +2,7 @@
  * @name ClearDark+
  * @author Lighty.Jr
  * @authorId 975102868564639835
- * @version 2.0.0
+ * @version 2.0.1
  * @description Version 2 of that Translucent Clear Dark Glass Discord theme
  * @website https://fo-lighty.github.io/ClearDark-Plus
  * @source https://github.com/FO-Lighty/ClearDark-Plus
@@ -19,6 +19,7 @@
   --success-color: #43b581; /* positive accent color (hex, rgb or hsl) [default: #43b581] */
   --danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */
   --accent-text-color: hsl(216,17%,94%); /* The accent text color [default: hsl(216,17%,94%)]. */
+  --hsl-danger-color-hover: hsl(0, 71%, 39%); /* The accent hover color [default: hsl(0,71%,39%)]. */
   /* STATUS COLORS */
   --online-color: #43b581; /* online status color (hex, rgb or hsl) [default: #43b581] */
   --idle-color: #faa61a; /* idle status color (hex, rgb or hsl) [default: #faa61a] */
