@@ -2,6 +2,12 @@
 
 ## Changelog
 
+### Version 2.0.1 (10/24/2025)
+
+* **Bug Fixes:** Addressed various outstanding issues.
+
+* **Discord-related fixes:** Fixed several problems caused by recent Discord updates that affected the theme's overall stability.
+
 ### v2.0.0 (10/03/2025)
 
 ### **This new version** represents a complete overhaul of the theme, focusing on performance, stability, and a better user experience.
