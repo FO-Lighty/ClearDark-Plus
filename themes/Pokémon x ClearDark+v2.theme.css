@@ -19,6 +19,7 @@
   --success-color: #9d9a71; /* positive accent color (hex, rgb or hsl) [default: #9d9a71] */
   --danger-color: #703f56; /* danger accent color (hex, rgb or hsl) [default: #982929] */
   --accent-text-color: hsl(0,0%,98%); /* The accent text color [default: hsl(0,0%,98%)]. */
+  --darker-main-color: hsl(45,18%,13%);
   /* STATUS COLORS */
   --online-color: #43b581; /* online status color (hex, rgb or hsl) [default: #43b581] */
   --idle-color: #faa61a; /* idle status color (hex, rgb or hsl) [default: #faa61a] */
