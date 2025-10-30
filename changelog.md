@@ -2,6 +2,14 @@
 
 ## Changelog
 
+### Version 2.0.2 (10/31/2025)
+
+* **New Color Shade**: Added a darker shade of the `main color`, named `darker-main-color`, for enhanced design versatility.
+
+* **Fixed** various bugs.
+
+* Continued updating the back-end code.
+
 ### Version 2.0.1 (10/24/2025)
 
 * **Bug Fixes:** Addressed various outstanding issues.
