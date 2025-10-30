@@ -4905,7 +4905,6 @@ code {
     --hsl-channel-unread: var(--channel-unread);
     --hsl-channel-unread-hover: var(--channel-unread-hover);
     --hsl-danger-color-hover: hsl(0, 71%, 39%);
-    --reply-accent: #738292;
     --switch-slider-color: hsla(218,4.6%,46.9%,0.85);
     --switch-knob-color: hsl(0,0%,13%);
     --mention-color: var(--main-color);
@@ -4933,6 +4932,7 @@ code {
     --darker-main-color: #060809;
     --streaming-color: #593695;
     --offline-color: #808080;
+    --reply-accent: #738292;
     --input-height: 36px;
     --input-radius: calc(var(--input-height) / 2);
     --card-color: hsl(0,0%,0%,0.4);
