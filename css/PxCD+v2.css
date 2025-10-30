@@ -4763,7 +4763,7 @@ code {
 
 .scroller__99e7c {
     background: rgba(0,0,0,0);
-    margin-bottom: var(--custom-app-panels-height, 0)
+    margin-bottom: 0px
 }
 
 .privateChannelsHeaderContainer__99e7c,.privateChannelsHeaderContainer__99e7c:hover {
