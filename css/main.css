@@ -4896,6 +4896,7 @@ code {
     --hsl-dnd-color: hsl(from var(--dnd-color) h calc(var(--saturation-factor, 1) * s) l/alpha);
     --hsl-streaming-color: hsl(from var(--streaming-color) h calc(var(--saturation-factor, 1) * s) l/alpha);
     --hsl-offline-color: hsl(from var(--offline-color) h calc(var(--saturation-factor, 1) * s) l/alpha);
+    --hsl-darker-main-color: hsl(from var(--darker-main-color h calc(var(--saturation-factor, 1) * s) 1/alpha);
     --hsl-channel-normal: var(--channel-normal);
     --hsl-channel-muted: var(--channel-muted);
     --hsl-channel-hover: var(--channel-hover);
@@ -4929,6 +4930,7 @@ code {
     --online-color: #43b581;
     --idle-color: #faa61a;
     --dnd-color: #982929;
+    --darker-main-color: #060809;
     --streaming-color: #593695;
     --offline-color: #808080;
     --input-height: 36px;
