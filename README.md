@@ -3,10 +3,10 @@
 
 <br/>
 
-## New version : ClearDark+ v2.0.1
+## New version : ClearDark+ v2.0.2
 Discord gets a sleek, luminous upgrade with the Translucent Dark Glass V2! It's clear, dark, and full of life, creating a modern and cheerful space for all your chats.
 
-* Check out the changelog : [Changelog v2.0.1](https://fo-lighty.github.io/ClearDark-Plus/changelog)
+* Check out the changelog : [Changelog v2.0.2](https://fo-lighty.github.io/ClearDark-Plus/changelog)
 
 #### **CSS link**
 
