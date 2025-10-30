@@ -4698,12 +4698,12 @@ code {
 }
 
 .stack_dbd263.scroller_ef3116.none_d125d2.scrollerBase_d125d2 {
-    margin-top: 10px
+    margin-top: 8px
 }
 
 .sidebarListRounded__5e434 {
     backdrop-filter: blur(2px);
-    border-start-start-radius: none
+    border-start-start-radius: 0
 }
 
 .sidebar__5e434:after {
@@ -4715,7 +4715,7 @@ code {
 }
 
 .wrapper_ef3116 {
-    background-color: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.35));
+    background-color: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0));
     backdrop-filter: blur(3px)
 }
 
