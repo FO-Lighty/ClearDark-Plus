@@ -26,7 +26,7 @@
 }
 
 .info__2debe::after {
-    content: "ClearDark+" " " "2.0.0";
+    content: "ClearDark+" " " "2.0.2";
     color: var(--text-muted);
     font-size: 12px;
     line-height: 1.3333333333;
@@ -46,7 +46,7 @@
 }
 
 .visual-refresh:not(.platform-osx) .leading_c38106::after {
-    content: "2.0.0";
+    content: "2.0.2";
     position: static;
     margin-top: -5px;
     margin-left: 5px;
