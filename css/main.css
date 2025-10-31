@@ -4747,6 +4747,38 @@ code {
     margin-bottom: 0px
 }
 
+.sidebar__5e434:after {
+    background: transparent
+}
+
+.searchBar_e6b769 {
+    box-shadow: 0px 3px 9px 0px hsl(0, 0%, 0%, 0.25)
+}
+
+.wrapper_ef3116 {
+    background-color: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0));
+    backdrop-filter: blur(3px)
+}
+
+.sidebarList__5e434 {
+    border: none
+}
+
+.panels__5e434 {
+    background: hsl(40, 23%, 3%, 0.895);
+}
+
+.container__37e49 {
+    background: hsl(0, 0%, 0%, 0.9)
+}
+
+.privateChannels_e6b769 {
+    background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.2));
+    backdrop-filter: blur(2px);
+    mask: linear-gradient(180deg, #000, transparent) bottom / 100% 30px no-repeat, linear-gradient(#000, #000) top / 100% calc(100% - 30px) no-repeat;
+    margin-bottom: calc(var(--custom-app-panels-height, 0) + var(--space-xs) - 16px);
+}
+
 .privateChannelsHeaderContainer__99e7c,.privateChannelsHeaderContainer__99e7c:hover {
     color: var(--hsl-main-color)
 }
