@@ -20,7 +20,7 @@
   --danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */
   --accent-text-color: hsl(216,17%,94%); /* The accent text color [default: hsl(216,17%,94%)]. */
   --hsl-danger-color-hover: hsl(0, 71%, 39%); /* The accent hover color [default: hsl(0,71%,39%)]. */
-  --darker-main-color: #060809 /* darker main accent color (hex, rgb or hsl) [default: #060809] */
+  --darker-main-color: #060809; /* darker main accent color (hex, rgb or hsl) [default: #060809] */
   /* STATUS COLORS */
   --online-color: #43b581; /* online status color (hex, rgb or hsl) [default: #43b581] */
   --idle-color: #faa61a; /* idle status color (hex, rgb or hsl) [default: #faa61a] */
@@ -70,9 +70,6 @@
   /* HOME ICON */
   --home-icon: url(https://fo-lighty.github.io/ClearDark-Plus/assets/icons/discord.svg); /* home button icon (link must be HTTPS) [default: url(https://fo-lighty.github.io/ClearDark-Plus/assets/icons/discord.svg)]*/
   --home-size: cover; /* home button icon size (px) [default:cover] */
-  /*SWITCH*/
-  --switch-slider-color: hsla(218,4.6%,46.9%,0.85); /* Color of the switch slider/track (hsla, rgb, or hex) [default: hsla(218, 4.6%, 46.9%, 0.85)] */
-  --switch-knob-color: hsl(0,0%,13%); /* Color of the switch knob/thumb (hsl, rgb, or hex) [default: hsl(0, 0%, 13%)] */
   /* FONTS */
   --main-font: "gg sans", "Helvetica Neue", Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [default: gg sans, Helvetica Neue, Helvetica, Arial, sans-serif] */
   --code-font: Consolas, "gg mono", "Liberation Mono", Menlo, Courier, monospace; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
