@@ -2817,7 +2817,7 @@ code {
 }
 
 .darkThemeGradient_b5b7aa {
-    background: linear-gradient(to top,hsl(45,18%,13%) 0,hsl(45 18% 13%/.5) 20.31%,hsl(45 18% 13%/0) 100%)
+    background: linear-gradient(to top,hsl(200,20%,3%) 0,hsl(200 20% 3%/.5) 20.31%,hsl(200 20% 3%/0) 100%)
 }
 
 .textOverflowBlur__956c6 {
@@ -4725,6 +4725,18 @@ code {
     color: #fff
 }
 
+.tutorialContainer__1f388 {
+    margin-bottom: 4px
+}
+
+.stack_dbd263.scroller_ef3116.none_d125d2.scrollerBase_d125d2 {
+    margin-top: 8px
+}
+
+.sidebarListRounded__5e434 {
+    backdrop-filter: blur(2px);
+    border-start-start-radius: 0
+}
 
 .privateChannels__35e86 {
     background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.2))
@@ -4732,7 +4744,7 @@ code {
 
 .scroller__99e7c {
     background: rgba(0,0,0,0);
-    margin-bottom: var(--custom-app-panels-height, 0)
+    margin-bottom: 0px
 }
 
 .privateChannelsHeaderContainer__99e7c,.privateChannelsHeaderContainer__99e7c:hover {
