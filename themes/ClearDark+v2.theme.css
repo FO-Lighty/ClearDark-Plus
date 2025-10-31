@@ -70,6 +70,9 @@
   /* HOME ICON */
   --home-icon: url(https://fo-lighty.github.io/ClearDark-Plus/assets/icons/discord.svg); /* home button icon (link must be HTTPS) [default: url(https://fo-lighty.github.io/ClearDark-Plus/assets/icons/discord.svg)]*/
   --home-size: cover; /* home button icon size (px) [default:cover] */
+  /*SWITCH*/
+  --switch-slider-color: hsla(218,4.6%,46.9%,0.85);
+  --switch-knob-color: hsl(0,0%,13%);
   /* FONTS */
   --main-font: "gg sans", "Helvetica Neue", Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [default: gg sans, Helvetica Neue, Helvetica, Arial, sans-serif] */
   --code-font: Consolas, "gg mono", "Liberation Mono", Menlo, Courier, monospace; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
