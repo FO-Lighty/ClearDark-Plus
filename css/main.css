@@ -26,7 +26,7 @@
 }
 
 .info__2debe::after {
-    content: "ClearDark+" " " "2.0.0";
+    content: "ClearDark+" " " "2.0.2";
     color: var(--text-muted);
     font-size: 12px;
     line-height: 1.3333333333;
@@ -46,7 +46,7 @@
 }
 
 .visual-refresh:not(.platform-osx) .leading_c38106::after {
-    content: "2.0.0";
+    content: "2.0.2";
     position: static;
     margin-top: -5px;
     margin-left: 5px;
@@ -2812,6 +2812,18 @@ code {
     border-color: var(--hsl-hover-color)
 }
 
+.heroAssetCont_c93f8c {
+    background-color: var(--hsl-card-shading)
+}
+
+.darkThemeGradient_b5b7aa {
+    background: linear-gradient(to top,hsl(45,18%,13%) 0,hsl(45 18% 13%/.5) 20.31%,hsl(45 18% 13%/0) 100%)
+}
+
+.textOverflowBlur__956c6 {
+    background: linear-gradient(transparent 50%, var(--hsl-card-shading) 100%);
+}
+
 .sidebarContainer__89463 {
     background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.3))
 }
@@ -2821,6 +2833,21 @@ code {
     border: none
 }
 
+.containerBackground_f48ee4 {
+    background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.4))
+}
+
+.scroller_f48ee4 {
+    background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.4))
+}
+
+.backgroundColor_b0db00 {
+    background: var(--card-color);
+}
+
+.buttonContainer_d38e00 {
+    background-color: var(--hsl-card-shading)
+}
 
 .shopScroll__1feb0,.shopScroll__08415,.page__1feb0 {
     background: rgba(0,0,0,0)
