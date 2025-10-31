@@ -642,7 +642,7 @@
 }
 
 .bd-switch .bd-switch-body {
-    --switch-color: rgb(114, 118, 125);
+    --switch-color: var(--switch-slider-color);
 }
 
 .checkbox_f525d3 {
