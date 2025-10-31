@@ -4881,7 +4881,7 @@ code {
     --hsl-popout-shading: hsl(from var(--popout-shading) h calc(var(--saturation-factor, 1) * s) l/alpha);
     --hsl-modal-shading: hsl(from var(--modal-shading) h calc(var(--saturation-factor, 1) * s) l/alpha);
     --hsl-input-shading: hsl(from var(--input-shading) h calc(var(--saturation-factor, 1) * s) l/alpha);
-    --hsl-input-border-shading: hsl(from var(--hsl-input-shading) h s l/.1);
+    --hsl-input-border-shading: hsl(from var(--hsl-input-shading) h s l/.1)
 }
 
 :root {
@@ -4896,7 +4896,6 @@ code {
     --hsl-dnd-color: hsl(from var(--dnd-color) h calc(var(--saturation-factor, 1) * s) l/alpha);
     --hsl-streaming-color: hsl(from var(--streaming-color) h calc(var(--saturation-factor, 1) * s) l/alpha);
     --hsl-offline-color: hsl(from var(--offline-color) h calc(var(--saturation-factor, 1) * s) l/alpha);
-    --hsl-darker-main-color: hsl(from var(--darker-main-color h calc(var(--saturation-factor, 1) * s) 1/alpha);
     --hsl-channel-normal: var(--channel-normal);
     --hsl-channel-muted: var(--channel-muted);
     --hsl-channel-hover: var(--channel-hover);
@@ -4904,7 +4903,7 @@ code {
     --hsl-channel-selected-bg: var(--channel-selected-bg);
     --hsl-channel-unread: var(--channel-unread);
     --hsl-channel-unread-hover: var(--channel-unread-hover);
-    --hsl-danger-color-hover: hsl(0, 71%, 39%);
+    --reply-accent: #738292;
     --switch-slider-color: hsla(218,4.6%,46.9%,0.85);
     --switch-knob-color: hsl(0,0%,13%);
     --mention-color: var(--main-color);
@@ -4929,10 +4928,8 @@ code {
     --online-color: #43b581;
     --idle-color: #faa61a;
     --dnd-color: #982929;
-    --darker-main-color: #060809;
     --streaming-color: #593695;
     --offline-color: #808080;
-    --reply-accent: #738292;
     --input-height: 36px;
     --input-radius: calc(var(--input-height) / 2);
     --card-color: hsl(0,0%,0%,0.4);
