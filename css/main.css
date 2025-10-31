@@ -4881,7 +4881,7 @@ code {
     --hsl-popout-shading: hsl(from var(--popout-shading) h calc(var(--saturation-factor, 1) * s) l/alpha);
     --hsl-modal-shading: hsl(from var(--modal-shading) h calc(var(--saturation-factor, 1) * s) l/alpha);
     --hsl-input-shading: hsl(from var(--input-shading) h calc(var(--saturation-factor, 1) * s) l/alpha);
-    --hsl-input-border-shading: hsl(from var(--hsl-input-shading) h s l/.1)
+    --hsl-input-border-shading: hsl(from var(--hsl-input-shading) h s l/.1);
 }
 
 :root {
