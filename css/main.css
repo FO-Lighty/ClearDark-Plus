@@ -619,10 +619,6 @@
     backdrop-filter: blur(3.5px);
 }
 
-.bd-switch .bd-switch-body {
-    --switch-color: var(--switch-slider-color);
-}
-
 .bd-switch .bd-switch-body .bd-switch-handle {
     fill: var(--switch-knob-color);
 }
@@ -643,6 +639,10 @@
 .bd-switch-disabled {
     opacity: 0.3;
     filter: none;
+}
+
+.bd-switch .bd-switch-body {
+    --switch-color: var(--switch-slider-color);
 }
 
 .checkbox_f525d3 {
