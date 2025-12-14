@@ -2,7 +2,6 @@
     from {
         right: 100%
     }
-
     to {
         right: 0
     }
@@ -12,11 +11,9 @@
     0% {
         opacity: .66
     }
-
     50% {
         opacity: .33
     }
-
     100% {
         opacity: .66
     }
@@ -24,41 +21,41 @@
 
 .visual-refresh .bd-store-card {
     background: var(--hsl-card-shading);
-    border: 1px solid rgba(0,0,0,0)
+    border: 1px solid rgba(0, 0, 0, 0);
 }
 
 .visual-refresh .bd-store-card:hover {
     background: var(--hsl-card-shading);
     box-shadow: none;
-    border-color: var(--hsl-main-color)
+    border-color: var(--hsl-main-color);
 }
 
 .visual-refresh .bd-addon-store-card {
     background: var(--hsl-card-shading);
-    border: 1px solid rgba(0,0,0,0)
+    border: 1px solid rgba(0, 0, 0, 0);
 }
 
 .visual-refresh .bd-addon-store-card:hover {
     background: var(--hsl-card-shading);
     box-shadow: none;
-    border-color: var(--hsl-main-color)
+    border-color: var(--hsl-main-color);
 }
 
 .visual-refresh .bd-addon-store-card .bd-addon-store-card-tag {
-    background: rgba(0,0,0,0);
-    border: 1px solid var(--hsl-main-color)
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid var(--hsl-main-color);
 }
 
 .visual-refresh .bd-addon-card {
     background: var(--hsl-card-shading);
-    border: 2px solid rgba(0,0,0,0)
+    border: 2px solid rgba(0, 0, 0, 0);
 }
 
 .visual-refresh .bd-addon-card:hover {
     background: var(--hsl-card-shading);
-    border-color: var(--hsl-main-color)
+    border-color: var(--hsl-main-color);
 }
 
 .visual-refresh .bd-addon-header {
-    background: var(--hsl-card-shading)
+    background: var(--hsl-card-shading);
 }
