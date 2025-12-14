@@ -20,7 +20,7 @@ to {
 }
 
 .info__2debe::after {
-    content:"ClearVision" " " "7.0.1";
+    content:"ClearVision" " " "2.2.0";
     color:var(--text-muted);
     font-size:12px;
     line-height:1.3333333333;
@@ -28,7 +28,7 @@ to {
     font-family:var(--font-primary)}
 
 .visual-refresh:not(.platform-osx) .leading_c38106::before {
-    content:"ClearVision";
+    content:"ClearDark+";
     position:static;
     margin-left:10px;
     font-size:16px;
@@ -38,7 +38,7 @@ to {
     filter:drop-shadow(0 0 5px var(--hsl-main-color))}
 
 .visual-refresh:not(.platform-osx) .leading_c38106::after {
-    content:"7.0.1";
+    content:"2.2.0";
     position:static;
     margin-top:-5px;
     margin-left:5px;
