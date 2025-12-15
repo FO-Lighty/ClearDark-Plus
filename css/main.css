@@ -4386,7 +4386,15 @@ code {
     --channel-selected-bg: var(--main-color);
     --channel-unread: var(--main-color);
     --channel-unread-hover: var(--hover-color);
-    --focus-color: var(--main-color)}
+    --focus-color: var(--main-color)
+
+    @supports (color: color-mix(in lch, red, blue)) {
+        .visual-refresh.theme-dark,
+        .visual-refresh .theme-dark {
+        --interactive-text-default: hsl(0,0%,79%);
+        --interactive-text-hover: hsl(0,0%,91%);
+        --interactive-text-active: hsl(0,0%,100%);
+        --interactive-muted: hsl(0,0%,43%)}}
 
 :is(.theme-light,.theme-dark .theme-light) {
     --background-shading: rgba(252, 252, 252, 0.3);
