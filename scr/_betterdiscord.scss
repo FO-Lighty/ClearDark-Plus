@@ -1,0 +1,41 @@
+@use 'backend' as *;
+
+// settings
+#{c(main visualRefresh)} {
+  // addon/theme stores
+  #{c(bd addonStore)} {
+    background: cv('shading.card');
+    border: 1px solid transparent;
+    &:hover {
+      background: cv('shading.card');
+      box-shadow: none;
+      border-color: cv('color.main');
+    }
+  }
+  // Inside addon store
+  #{c(bd addonStoreCard)} {
+    background: cv('shading.card');
+    border: 1px solid transparent;
+    &:hover {
+      background: cv('shading.card');
+      box-shadow: none;
+      border-color: cv('color.main');
+    }
+    #{c(bd addonStoreTag)} {
+      background: transparent;
+      border: 1px solid cv('color.main');
+    }
+  }
+  // actual addons
+  #{c(bd addonCard)} {
+    background: cv('shading.card');
+    border: 2px solid transparent;
+    &:hover {
+      background: cv('shading.card');
+      border-color: cv('color.main');
+    }
+  }
+  #{c(bd addonHeader)} {
+    background: cv('shading.card');
+  }
+}
