@@ -1,0 +1,166 @@
+@use 'start' as *;
+/*! ClearVision v#{$version} by #{$author} */
+
+// Import Functions, Variables, Mixins and Class list functionality.
+@use 'backend' as *;
+
+// Contains the theme proper.
+@use 'theme';
+
+/* Default Variables */
+$sf: var(--saturation-factor, 1);
+$calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
+// DO NOT DISTRIBUTE THESE; BACKEND ONLY STUFF.
+:is(#{c(main themeLight)}, #{c(main themeDark)}, #{c(main themeDarker)}, #{c(main themeMidnight)}) {
+  &,
+  &:is(#{c(main themeLight)}, #{c(main themeDark)}) {
+    // DO NOT EDIT THESE -- VARIABLES ARE NOT TO BE DISTRIBUTED TO END USER.
+    --text-default: hsl(from var(--normal-text) #{$calc});
+    --text-muted: hsl(from var(--muted-text) #{$calc});
+    --text-link: var(--hsl-main-color);
+    --text-brand: var(--hsl-main-color);
+    --text-feedback-positive: var(--hsl-success-color);
+    --text-danger: var(--hsl-danger-color);
+    
+    // shadings are defined in .theme-dark/.theme-light -- turns out every color variable discord uses also uses saturation-factor.
+    --hsl-background-shading: hsl(from var(--background-shading) #{$calc});
+    --hsl-card-shading: hsl(from var(--card-shading) #{$calc});
+    --hsl-popout-shading: hsl(from var(--popout-shading) #{$calc});
+    --hsl-modal-shading: hsl(from var(--modal-shading) #{$calc});
+    --hsl-input-shading: hsl(from var(--input-shading) #{$calc});
+    --hsl-input-border-shading: hsl(from var(--hsl-input-shading) h s l/.1);
+  }
+}
+:root {
+  // DO NOT EDIT THESE -- VARIABLES ARE NOT TO BE DISTRIBUTED TO END USER.
+  // generic colors
+  --hsl-main-color: hsl(from var(--main-color) #{$calc});
+  --hsl-hover-color: hsl(from var(--hover-color) #{$calc});
+  --hsl-success-color: hsl(from var(--success-color) #{$calc});
+  --hsl-warning-color: hsl(from var(--warning-color) #{$calc});
+  --hsl-danger-color: hsl(from var(--danger-color) #{$calc});
+  --hsl-info-color: hsl(from var(--info-color) #{$calc});
+  --hsl-online-color: hsl(from var(--online-color) #{$calc});
+  --hsl-idle-color: hsl(from var(--idle-color) #{$calc});
+  --hsl-dnd-color: hsl(from var(--dnd-color) #{$calc});
+  --hsl-streaming-color: hsl(from var(--streaming-color) #{$calc});
+  --hsl-offline-color: hsl(from var(--offline-color) #{$calc});
+
+  --hsl-channel-normal: var(--channel-normal);
+  --hsl-channel-muted: var(--channel-muted); 
+  --hsl-channel-hover: var(--channel-hover);
+  --hsl-channel-selected: var(--channel-selected);
+  --hsl-channel-selected-bg: var(--channel-selected-bg);
+  --hsl-channel-unread: var(--channel-unread);
+  --hsl-channel-unread-hover: var(--channel-unread-hover);
+
+  // fonts
+  --font-primary: var(--main-font);
+  --font-display: var(--main-font);
+  --font-code: var(--code-font);
+
+  --focus-primary: var(--focus-color);
+
+  // other stuff that the theme sets
+
+  // THESE VARIABLES ARE TO BE EDITED BY THE END USER
+  --main-color: #2780e6;
+  --hover-color: #1e63b3;
+  --success-color: #43b581;
+  --warning-color: #fff;
+  --danger-color: #982929;
+  --info-color: #fff;
+  --online-color: #43b581;
+  --idle-color: #faa61a;
+  --dnd-color: #982929;
+  --streaming-color: #593695;
+  --offline-color: #808080;
+
+  --background-shading-percent: 100%;
+  --background-image: url(https://clearvision.github.io/images/sapphire.jpg);
+  --background-position: center;
+  --background-size: cover;
+  --background-attachment: fixed;
+  --background-filter: saturate(calc(#{$sf} * 1));
+
+  --user-popout-image: var(--background-image);
+  --user-popout-position: var(--background-position);
+  --user-popout-size:  var(--background-size);
+  --user-popout-attachment: var(--background-attachment);
+  --user-popout-filter: var(--background-filter);
+
+  --user-modal-image: var(--background-image);
+  --user-modal-position: var(--background-position);
+  --user-modal-size: var(--background-size);
+  --user-modal-attachment: var(--background-attachment);
+  --user-modal-filter: var(--background-filter);
+
+  --home-icon: url(https://clearvision.github.io/icons/discord.svg);
+  --home-size: cover;
+
+  --main-font: 'gg sans', Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --code-font: Consolas, 'gg mono', 'Liberation Mono', Menlo, Courier, monospace;
+
+  --channel-normal: var(--interactive-text-default);
+  --channel-muted: var(--interactive-muted); 
+  --channel-hover: var(--interactive-text-hover);
+  --channel-selected: var(--interactive-text-active);
+  --channel-selected-bg: var(--main-color);
+  --channel-unread: var(--main-color);
+  --channel-unread-hover: var(--hover-color);
+
+  --focus-color: var(--main-color);
+}
+
+/* Light Theme */
+// overides discord defaults
+:is(#{c(main themeLight)}, #{c(main themeDark)} #{c(main themeLight)}) {
+  // THESE VARIABLES ARE TO BE EDITED BY THE END USER
+  --background-shading: rgba(252, 252, 252, 0.3);
+  --card-shading: rgba(252, 252, 252, 0.3);
+  --popout-shading: rgba(252, 252, 252, 0.7);
+  --modal-shading: rgba(252, 252, 252, 0.5);
+  --input-shading: rgba(0, 0, 0, 0.3);
+  // ALSO EDITABLE
+  --normal-text: #36363c;
+  --muted-text: #75757e;
+}
+
+/* Ash Theme */
+:is(#{c(main themeDark)}, #{c(main themeLight)} #{c(main themeDark)}) {
+  // THESE VARIABLES ARE TO BE EDITED BY THE END USER
+  --background-shading: rgba(0, 0, 0, 0.4);
+  --card-shading: rgba(0, 0, 0, 0.2);
+  --popout-shading: rgba(0, 0, 0, 0.6);
+  --modal-shading: rgba(0, 0, 0, 0.4);
+  --input-shading: rgba(255, 255, 255, 0.05);
+  // ALSO EDITABLE
+  --normal-text: #d8d8db;
+  --muted-text: #aeaeb4;
+}
+
+/* Dark Theme */
+:is(#{c(main themeDarker)}, #{c(main themeLight)} #{c(main themeDarker)}) {
+  // THESE VARIABLES ARE TO BE EDITED BY THE END USER
+  --background-shading: rgba(0, 0, 0, 0.6);
+  --card-shading: rgba(0, 0, 0, 0.3);
+  --popout-shading: rgba(0, 0, 0, 0.7);
+  --modal-shading: rgba(0, 0, 0, 0.5);
+  --input-shading: rgba(255, 255, 255, 0.05);
+  // ALSO EDITABLE
+  --normal-text: #fbfbfb;
+  --muted-text: #94949c;
+}
+
+/* Onyx Theme */
+:is(#{c(main themeMidnight)}, #{c(main themeLight)} #{c(main themeMidnight)}) {
+  // THESE VARIABLES ARE TO BE EDITED BY THE END USER
+  --background-shading: rgba(0, 0, 0, 0.8);
+  --card-shading: rgba(0, 0, 0, 0.4);
+  --popout-shading: rgba(0, 0, 0, 0.8);
+  --modal-shading: rgba(0, 0, 0, 0.6);
+  --input-shading: rgba(255, 255, 255, 0.05);
+  // ALSO EDITABLE
+  --normal-text: #dcdcde;
+  --muted-text: #86868e;
+}

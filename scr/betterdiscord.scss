@@ -1,0 +1,8 @@
+@use 'start' as *;
+/*! ClearVision - BetterDiscord Addon v#{$version} by #{$author} */
+
+// Import Functions, Variables, Mixins and Class list functionality.
+@use 'backend' as *;
+
+// Contains the theme proper.
+@use 'betterdiscord-theme';
