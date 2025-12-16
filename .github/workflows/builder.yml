@@ -1,0 +1,40 @@
+name: Builder
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      # The workflow only triggers if SCSS files in the src folder are modified
+      - 'src/**/*.scss' 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # 1. Download your code
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. Prepare the environment to install SASS
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          
+      # 3. Install the SASS compiler
+      - name: Install Sass
+        run: npm install -g sass
+
+      # 4. Execute compilation: src/main.scss -> main.css
+      - name: Builder CSS
+        # The 'main.css' destination is at the root, which is ideal for Discord
+        run: sass src/main.scss main.css
+
+      # 5. Update the main.css file on GitHub
+      - name: Deploy
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'Automated: SCSS to CSS Compilation (Version updated)'
+          files: 'main.css'
