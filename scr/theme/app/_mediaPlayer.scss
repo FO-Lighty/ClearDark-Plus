@@ -1,0 +1,17 @@
+@use 'backend' as *;
+
+// PROGRESS / VOLUME BAR
+#{c(media barProgress)} {
+  &,
+  &::before,
+  &::after {
+    background: cv('color.main');
+  }
+}
+#{c(media barGrabber)} {
+  &,
+  #{c(media barInteraction)}:hover &,
+  #{c(media barInteractionDragging)} & {
+    background: cv('color.main');
+  }
+}

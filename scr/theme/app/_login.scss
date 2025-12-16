@@ -1,0 +1,15 @@
+@use 'backend' as *;
+
+#{c(login authBox)} {
+  background-color: cv('shading.modal');
+}
+
+// ACCOUNT LIST
+#{c(login accountsList)} {
+  background-color: cv('shading.cardAlt');
+}
+
+// ADD ACCOUNT
+#{c(login addAccountNav)} {
+  background-color: transparent;
+}
