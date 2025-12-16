@@ -1,0 +1,39 @@
+@use 'start' as *;
+@use 'backend' as *;
+
+// Watermark
+#{c(settings sidebarInfo)} {
+  &::after {
+    content: $themeName ' ' $version;
+    color: cv('text.muted');
+    font-size: 12px;
+    line-height: calc(4 / 3);
+    font-weight: 400;
+    font-family: var(--font-primary);
+  }
+}
+#{c(main visualRefresh)}:not(#{c(os mac)}) {  
+  #{c(title leading container)} {
+    &::before {
+      content: $themeName;
+      position: static;
+      margin-left: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      color: cv('text.normal');
+      order: 2;
+      filter: drop-shadow(0 0 5px cv('color.main'));
+    }
+    &::after {
+      content: $version;
+      position: static;
+      margin-top: -5px;
+      margin-left: 5px;
+      font-family: cv('font.code');
+      font-size: 11px;
+      font-weight: 600;
+      color: cv('text.muted');
+      order: 3;
+    }
+  }
+}
