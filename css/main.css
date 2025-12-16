@@ -4386,7 +4386,7 @@ code {
     --channel-selected-bg: var(--main-color);
     --channel-unread: var(--main-color);
     --channel-unread-hover: var(--hover-color);
-    --focus-color: var(--main-color)
+    --focus-color: var(--main-color);
 
     @supports (color: color-mix(in lch, red, blue)) {
         .visual-refresh.theme-dark,
