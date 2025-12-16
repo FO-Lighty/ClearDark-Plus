@@ -1,0 +1,19 @@
+@use 'backend' as *;
+
+#{c(searchbar container)} {
+  background: cv('shading.input.bg');
+  border-color: cv('shading.input.border');
+  &:focus-within {
+    border-color: cv('color.main');
+    box-shadow: 0 0 2px 0 cv('color.main');
+  }
+}
+
+#{c(searchbar settings container)} {
+  background: cv('shading.input.bg');
+  border-color: cv('shading.input.border');
+  &:focus-within {
+    border-color: cv('color.main');
+    box-shadow: 0 0 2px 0 cv('color.main');
+  }
+}

@@ -1,0 +1,13 @@
+@use 'backend' as *;
+
+#{c(pagination pageButton)} {
+  &:hover {
+    background: cv('shading.hover');
+  }
+}
+#{c(pagination activeButton)} {
+  &,
+  &:hover {
+    background: cv('color.main');
+  }
+}

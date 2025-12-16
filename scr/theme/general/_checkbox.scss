@@ -1,0 +1,9 @@
+@use 'backend' as *;
+
+#{c(checkbox checkbox)} {
+  border-radius: 4px;
+  &#{c(checkbox checked)} {
+    border-color: cv('color.main');
+    background-color: transparent;
+  }
+}
