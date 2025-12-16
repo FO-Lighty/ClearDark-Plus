@@ -1,0 +1,12 @@
+@use 'backend' as *;
+
+#{c(modals root)} {
+  background: cv('shading.modal');
+  border: none;
+  box-shadow: none;
+}
+#{c(modals header)},
+#{c(modals body)},
+#{c(modals footer)} {
+  background: transparent;
+}

@@ -1,0 +1,10 @@
+@use 'backend' as *;
+
+#{c(modals upload drop modal)} {
+  #{c(modals upload drop bgScale)} {
+    background: cv('color.main');
+  }
+  #{c(modals upload inner)} {
+    border-color: var(--text-strong);
+  }
+}
