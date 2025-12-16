@@ -1,0 +1,101 @@
+@use 'backend' as *;
+
+// SETTINGS BACKGROUND
+#{c(main appLayer)} {
+  background-color: transparent;
+}
+#{c(settings contentRegion)} {
+  background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
+}
+#{c(settings contentRegionScroller)} {
+  background: transparent;
+}
+#{c(settings contentColumnDefault)} {
+  padding-top: 50px;
+}
+
+// GUILD/CHANNELS UNSAVED CHANGES
+#{c(settings noticeContainer)} {
+  background: cv('shading.popout');
+  border: none;
+}
+
+// CARD
+#{c(settings card primary)} {
+  &,
+  &#{c(settings card editable)} {
+    --__card-accent-color: var(--hsl-card-shading);
+    background: cv('shading.card');
+    border-color: transparent;    
+  }
+}
+#{c(settings card card)} {
+  a {
+    color: cv('color.main');
+  }
+}
+#{c(settings rowCard)} {
+  &::before {
+    background: cv('shading.card');
+    border-color: cv('color.main');
+  }
+}
+
+// COLLAPSEABLE
+#{c(settings collapseableRadio container)},
+#{c(settings collapseableRadio clickable)} {
+  background: transparent;
+}
+#{c(settings collapseableRadio backgroundModifierContainer)} {
+  background: cv('shading.card');
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  &:is(:hover, :active) {
+    &:not(#{c(settings collapseableRadio disabled)}) {
+      &:not(#{c(settings collapseableRadio noAction)}) {
+        background: cv('shading.card');
+      }
+    }      
+  }
+  &#{c(settings collapseableRadio selected)} {
+    // default colour ('none' option)
+    background: cv('shading.card');
+    border-color: cv('color.main');
+  }
+}
+#{c(settings collapseableRadio selected)} {
+  // specific colours
+  &#{c(settings collapseableRadio statusGreen)} {
+    border-color: var(--status-positive);
+  }
+  &#{c(settings collapseableRadio statusYellow)} {
+    border-color: var(--status-warning);
+  }
+  &#{c(settings collapseableRadio statusOrange)} {
+    border-color: var(--orange-360);
+  }
+  &#{c(settings collapseableRadio statusRed)} {
+    border-color: var(--status-danger);
+  }
+}
+#{c(settings collapseableRadio collapseable)} {
+  &,
+  &:active {
+    background: cv('shading.card');
+    border: none;
+  }
+}
+
+// REMOVE BUTTON
+#{c(settings removeButton default)} {
+  &,
+  &:hover {
+    background-color: cv('shading.popout');
+  }
+}
+
+// COLOUR PICKER
+#{c(settings colorPickerPopout)} {
+  background: cv('shading.popout');
+}

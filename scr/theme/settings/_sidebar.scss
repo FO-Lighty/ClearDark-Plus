@@ -1,0 +1,10 @@
+@use 'backend' as *;
+
+// SETTINGS SIDEBAR
+#{c(settings standardSidebarView)} {
+  background: transparent;
+}
+#{c(settings sidebarRegionScroller)} {
+  background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.3));
+  padding: 20px 8px 60px 20px;
+}
