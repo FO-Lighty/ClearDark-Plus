@@ -1,5 +1,5 @@
 @use 'start' as *;
-/*! ClearVision v#{$version} by #{$author} */
+/*! ClearDark+ v#{$version} by #{$author} */
 
 // Import Functions, Variables, Mixins and Class list functionality.
 @use 'backend' as *;
@@ -77,7 +77,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   --offline-color: #808080;
 
   --background-shading-percent: 100%;
-  --background-image: url(https://clearvision.github.io/images/sapphire.jpg);
+  --background-image: url(https://fo-lighty.github.io/ClearDark-Plus/assets/images/Samurai.jpeg);
   --background-position: center;
   --background-size: cover;
   --background-attachment: fixed;
@@ -95,7 +95,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   --user-modal-attachment: var(--background-attachment);
   --user-modal-filter: var(--background-filter);
 
-  --home-icon: url(https://clearvision.github.io/icons/discord.svg);
+  --home-icon: url(https://fo-lighty.github.io/ClearDark-Plus/assets/icons/discord.svg);
   --home-size: cover;
 
   --main-font: 'gg sans', Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
