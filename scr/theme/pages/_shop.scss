@@ -1,0 +1,62 @@
+@use 'backend' as *;
+
+
+#{c(shop scroll)},
+#{c(shop featuredScroll)},
+#{c(shop page)} {
+  background: transparent;
+}
+#{c(shop shop)} {
+  background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
+}
+#{c(shop featured)} {
+  background: transparent;
+}
+#{c(shop divider)} {
+  margin-top: 0;
+}
+
+// CARD
+#{c(shop card)} {
+  background: cv('shading.card');
+  border: 2px solid transparent;
+  &:hover {
+    border-color: cv('color.main');
+  }
+}
+
+// LOADING
+#{c(shop loadingCardSkeleton)},
+#{c(shop loadingFeaturedSkeleton)} {
+  background: cv('shading.cardAlt');
+}
+#{c(shop loadingCardBody)},
+#{c(shop loadingFeaturedBody)} {
+  background: cv('shading.cardAlt');
+}
+#{c(shop loadingCardContent)} {
+  background: transparent;
+}
+
+// FILTER
+#{c(shop filterBar)} {
+  background: transparent;
+}
+#{c(shop filterColorToggled)} {
+  outline-color: cv('color.main');
+}
+#{c(shop filterThemeToggled)} {
+  background: cv('shading.card');
+  border-color: cv('color.main');
+}
+
+// PREVIEW
+#{c(shop previewInfo)} {
+  background: transparent;
+}
+
+// orb drop down modal
+#{c(shop orbCard)} {
+  background: cv('shading.card');
+  border: 2px solid cv('color.main');
+}

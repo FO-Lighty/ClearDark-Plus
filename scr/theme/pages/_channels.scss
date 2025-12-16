@@ -1,0 +1,81 @@
+@use 'backend' as *;
+
+// HEADER
+:is(#{c(main themeDark)}, #{c(main themeLight)}) {
+  #{c(channelsPage header header)} {
+    background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.5)) !important;
+    border-top: none;
+  }
+}
+
+// BACKGROUND
+#{c(channelsPage container)} {
+  background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4)) !important;
+}
+
+// BROWSE CHANNELS
+#{c(channelsPage browse pageBody)} {
+  background: transparent;
+}
+#{c(channelsPage browse notice container)} {
+  background: cv('shading.card');
+  &#{c(channelsPage browse notice adminUpsell)} {
+    background: cv('color.main');
+  }
+}
+#{c(channelsPage browse channelRow)} {
+  background: cv('shading.card');
+  border: 2px solid transparent;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  &:hover {
+    &:not(#{c(channelsPage browse channelDisabled)}) {
+      background: cv('shading.card');
+      border-color: cv('color.main');
+    }
+  }
+}
+
+// CUSTOMIZE
+#{c(channelsPage customise prompt)} {
+  background: transparent;
+  border: none;
+}
+#{c(channelsPage customise optionWrapper)} {
+  background: cv('shading.card');
+  border: 2px solid transparent;
+  &:hover {
+    background: cv('shading.card');
+    border-color: cv('color.hover');;
+  }
+  &#{c(channelsPage customise optionSelected)} {
+    background: cv('shading.card');
+    border-color: cv('color.main');
+  }
+}
+#{c(channelsPage customise checkIcon)} {
+  background: cv('color.main');
+}
+#{c(channelsPage customise profileCard)} {
+  background: cv('shading.card');
+}
+#{c(channelsPage customise role)} {
+  background: transparent;
+  position: relative;
+}
+#{c(channelsPage customise roleDot)} {
+  &::before {
+    content: '';
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    position: absolute;
+    background: inherit;
+    opacity: 0.2;
+    border-radius: 4px;
+  }
+}
+#{c(channelsPage customise emptyPage)} {
+  background-color: transparent;
+}

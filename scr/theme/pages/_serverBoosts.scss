@@ -1,0 +1,35 @@
+@use 'backend' as *;
+
+#{c(serverBoosts container)} {
+  background: transparent;
+}
+#{c(serverBoosts contentContainer)} {
+  background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
+}
+
+
+// CARDS
+#{c(serverBoosts card)} {
+  background: cv('shading.card');
+  border-color: transparent;
+  #{c(serverBoosts parentCard)}:hover & {
+    background: cv('shading.card');
+    border-color: cv('color.hover');
+  }
+  &:is(#{c(serverBoosts cardActive)}, #{c(serverBoosts cardWarning)}) {
+    background: cv('shading.card');
+    #{c(serverBoosts parentCard)}:hover & {
+      background: cv('shading.card');
+      border-color: cv('color.hover');
+    }
+  }
+}
+
+// SIDEBAR
+#{c(serverBoosts sidebarContainer)} {
+  background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.3));
+}
+#{c(serverBoosts sidebarCard)} {
+  background: transparent;
+  border: none;
+}
