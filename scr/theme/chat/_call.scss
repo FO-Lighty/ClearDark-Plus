@@ -1,0 +1,65 @@
+@use 'backend' as *;
+
+#{c(call wrapper)},
+#{c(call channelChatWrapper)} {
+  background: transparent;
+}
+#{c(call container)} {
+  background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
+  border: none;
+}
+#{c(call root)} {
+  background: transparent;
+}
+
+// EMPTY CALL
+#{c(call gradientBackground)} {
+  background: none;
+}
+#{c(call gradientSphere)} {
+  background: none;
+  border: none;
+  animation: none;
+}
+#{c(call pulseGradient)} {
+  display: none;
+}
+
+// HEADER
+#{c(call clipBadgeIcon)} {
+  background: cv('color.main') !important;
+}
+
+// BUTTONS
+#{c(call participantsButton)} {
+  background: cv('shading.popout');
+}
+#{c(call buttonSection)} {
+  background: cv('shading.popout');
+  border: none;
+  border-radius: 4px;
+}
+#{c(call colorable)} {
+  &#{c(call disconnect)} {
+    background: cv('color.danger');
+  }
+}
+
+// USERS
+#{c(call tileBorder)} {
+  &#{c(call tileSpeaking)} {
+    box-shadow: inset 0 0 0 2px cv('color.main');
+  }
+}
+
+// DM CALL BG
+#{c(call wrapper)} {
+  &#{c(call minimum)} {
+    background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.6));
+  }
+}
+
+// REGION SELECTOR
+#{c(call quickSelectPopout)} {
+  background: cv('shading.popout')
+}
