@@ -1,3 +1,4 @@
+
 @use 'backend' as *;
 
 // HEADER
@@ -137,12 +138,6 @@
 // EMBED DOWNLOAD BUTTON
 #{c(embeds hoverButton group)} {
   background: cv('shading.popout');
-}
-#{c(embeds hoverButton button)} {
-  &#{c(embeds hoverButton selected)},
-  &:hover {
-    background: transparent;
-  }
 }
 
 // ATTACHMENTS
