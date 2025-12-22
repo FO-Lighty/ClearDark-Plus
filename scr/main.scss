@@ -10,7 +10,7 @@
 /* Default Variables */
 $sf: var(--saturation-factor, 1);
 $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
-// DO NOT DISTRIBUTE THESE; BACKEND ONLY STUFF.
+// DO NOT DISTRIBUTE THESE; BACKEND ONLY STUFF!
 :is(#{c(main themeLight)}, #{c(main themeDark)}, #{c(main themeDarker)}, #{c(main themeMidnight)}) {
   &,
   &:is(#{c(main themeLight)}, #{c(main themeDark)}) {
