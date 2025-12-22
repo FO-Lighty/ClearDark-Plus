@@ -6,7 +6,7 @@ on:
       - main
     paths:
       # The workflow only triggers if SCSS files in the src folder are modified
-      - 'src/**/*.scss' 
+      - 'scr/**/*.scss' 
 
 jobs:
   build:
