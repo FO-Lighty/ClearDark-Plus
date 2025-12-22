@@ -11,7 +11,7 @@
 }
 #{c(chat botTag)} {
   background: cv('color.main');
-  color: var(--text-strong);
+  color: cv('text.strong');
 }
 
 // EDITING
@@ -137,12 +137,6 @@
 // EMBED DOWNLOAD BUTTON
 #{c(embeds hoverButton group)} {
   background: cv('shading.popout');
-}
-#{c(embeds hoverButton button)} {
-  &#{c(embeds hoverButton selected)},
-  &:hover {
-    background: transparent;
-  }
 }
 
 // ATTACHMENTS
