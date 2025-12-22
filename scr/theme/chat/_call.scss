@@ -13,14 +13,6 @@
 }
 
 // EMPTY CALL
-#{c(call gradientBackground)} {
-  background: none;
-}
-#{c(call gradientSphere)} {
-  background: none;
-  border: none;
-  animation: none;
-}
 #{c(call pulseGradient)} {
   display: none;
 }
