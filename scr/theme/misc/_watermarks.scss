@@ -12,7 +12,7 @@
     font-family: var(--font-primary);
   }
 }
-#{c(main visualRefresh)}:not(#{c(os mac)}) {  
+:is(#{c(main themeDark)}, #{c(main themeLight)}):not(#{c(os mac)}) {  
   #{c(title leading container)} {
     &::before {
       content: $themeName;
