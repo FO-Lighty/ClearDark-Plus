@@ -160,14 +160,14 @@
 }
 
 // DIVIDERS
-#{c(chat messageListItem)},
-#{c(chat divider)} {
-  + #{c(chat message)} {
+#{c(chat, messageListItem)},
+#{c(chat, divider)} {
+  + #{c(chat, message)} {
     margin-top: 2px;
   }
 }
 
-#{c(chat divider)}#{c(chat hasContent)} {
+#{c(chat, divider)}#{c(chat, hasContent)} {
   border-top: none;
 
   &:before,
@@ -185,7 +185,6 @@
   &:before { left: 0; }
   &:after { right: 0; }
 }
-
 #{c(chat dividerDate)} {
   width: 120px;
   padding: 2px 0;
@@ -193,10 +192,10 @@
   text-align: center;
 }
 
-#{c(chat dividerUnread)} {
+#{c(chat, dividerUnread)} {
   border-color: hsla(var(--accent-hsl), var(--accent-opacity));
 
-  #{c(chat unreadPill)} {
+  #{c(chat, unreadPill)} {
     background-color: hsla(var(--accent-hsl), var(--accent-opacity));
     color: var(--accent-text-color);
     text-shadow: none;
@@ -302,8 +301,8 @@
 }
 
 // HAS THREAD
-#{c(chat cozy)} {
-  &#{c(chat hasThread)} {
+#{c(chat, cozy)} {
+  &#{c(chat, hasThread)} {
     // cozy view
     &::after {
       border-color: cv('color.main');
