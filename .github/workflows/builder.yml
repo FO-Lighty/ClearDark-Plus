@@ -30,7 +30,7 @@ jobs:
       # 4. Execute compilation: src/main.scss -> main.css
       - name: Builder CSS
         # The 'main.css' destination is at the root, which is ideal for Discord
-        run: sass scr/main.scss main.css
+        run: sass scr/main.scss main.css --load-path=scr
 
       # 5. Update the main.css file on GitHub
       - name: Deploy
