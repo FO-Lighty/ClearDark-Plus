@@ -639,7 +639,6 @@ $classes: (
       'avatar': '_44b0c28be7879b7b-avatar',
       // <img> ; has ::before
       // <svg>
-      'avatarDecoration': 'c19a557985eb7793-avatarDecoration',
       'cursorDefault': '_44b0c28be7879b7b-cursorDefault',
       // on <svg> tag. child <mask> with similar stuff again
       // <rect>
@@ -961,7 +960,6 @@ $classes: (
   ),
 
   'chat': (
-    'avatarDecoration': 'c19a557985eb7793-avatarDecoration',
     'cozy': 'c19a557985eb7793-cozy',
     'compact': 'c19a557985eb7793-compact',
     'chat': 'f75fb00fb7356cbe-chat',
@@ -999,7 +997,6 @@ $classes: (
     'cozyMessage': '_5126c0cd07f243a0-cozyMessage',
     'message': '_5126c0cd07f243a0-message',
     'messageWrapper': 'c19a557985eb7793-wrapper',
-    'messageCompact': 'c19a557985eb7793-compact',
     'markup': '_752971923a1e6683-markup',
     'markupInlineFormat': '_752971923a1e6683-inlineFormat',    
     'codeInline': 'inline',
@@ -1016,8 +1013,6 @@ $classes: (
 
     'divider': (
       'divider': '_908e20001ad67812-divider',
-      'dividerDate': '_908e20001ad67812-content',
-      'dividerUnread': '_908e20001ad67812-isUnread',
       'hasContent': '_908e20001ad67812-hasContent',
       'content': '_908e20001ad67812-content',
       'isUnread': '_908e20001ad67812-isUnread',
@@ -2393,7 +2388,6 @@ $classes: (
     'topicExpandable': '_6ec1a06139ec3b27-expandable',
     'avatars': '_488b1a4248d1b790-avatars',
     'avatar': 'f75fb00fb7356cbe-avatar',
-    'avatarDecoration': 'c19a557985eb7793-avatarDecoration',
     // on same line as chat-$suffix
     'tabBar': '_133bf5eea8e33a34-tabBar',
     'addFriend': '_133bf5eea8e33a34-addFriend',
