@@ -95,7 +95,7 @@
 
 ///extreme lazy shorthand with capital just in case
 @function c($query, $alias: false) {
-  @return $alias;
+  @return class($query, $alias);
 }
 @function C($query, $alias: false) {
   @return class($query, $alias);
