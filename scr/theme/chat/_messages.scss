@@ -2,6 +2,11 @@
 
 // HEADER
 #{c(chat chatAvatar)} {
+  width: 40px;
+  height: 40px;
+  top: 0;
+  left: -50px;
+  margin-top: 0;
   transition:
     all 0.3s ease-in-out,
     transform 0.1s ease-in-out;
@@ -9,9 +14,23 @@
     transform: scale(0.9);
   }
 }
+#{c(chat avatarDecoration)} {
+  top: -2px;
+  left: -54px;
+}
 #{c(chat botTag)} {
   background: cv('color.main');
   color: cv('text.strong');
+}
+
+// ACCESSIBILITY
+.a11y-font-scaled-down {
+  #{c(chat chatAvatar)} {
+    &:not(#{c(chat compact)}) {
+      top: 0;
+      left: -50px;
+    }
+  }
 }
 
 // EDITING
@@ -28,11 +47,30 @@
   }
 }
 
-// CODEBLOCK
-#{c(hljs hljs)} {
-  background: cv('shading.card');
-  border: 1px solid var(--border-normal);
+// MESSAGES WRAPPER
+#{c(chat messages)} {
+  margin-left: 68px;
+  margin-right: 16px;
+  background-color: var(--message-color) !important;
+  border-radius: var(--message-radius);
+  transition: 300ms ease background-color;
+  
+  &:not(#{c(chat messageGroupStart)}),
+  &#{c(chat compact)} {
+    margin-top: 2px;
+  }
+  &#{c(chat cozy)},
+  &#{c(chat compact)} {
+    padding: var(--message-padding-top) var(--message-padding-side) !important;
+    padding-right: 8px !important;
+    border: 2px solid transparent;
+  }
+  #{c(chat timestamp)} {
+    color: var(--text-normal);
+  }
 }
+
+// CODEBLOCK
 #{c(chat markup)} {
   code {
     background: cv('shading.card');
@@ -118,6 +156,59 @@
 #{c(chat quoteContainer)} {
   #{c(chat quoteDivider)} {
     border-radius: 0;
+  }
+}
+
+// DIVIDERS
+#{c(chat messageListItem)},
+#{c(chat divider)} {
+  + #{c(chat message)} {
+    margin-top: 2px;
+  }
+}
+
+#{c(chat divider)}#{c(chat hasContent)} {
+  border-top: none;
+
+  &:before,
+  &:after {
+    position: absolute;
+    content: " ";
+    width: calc(50% - 60px);
+    height: 1px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background-color: var(--background-modifier-accent);
+  }
+
+  &:before { left: 0; }
+  &:after { right: 0; }
+}
+
+#{c(chat dividerDate)} {
+  width: 120px;
+  padding: 2px 0;
+  background-color: var(--message-color);
+  text-align: center;
+}
+
+#{c(chat dividerUnread)} {
+  border-color: hsla(var(--accent-hsl), var(--accent-opacity));
+
+  #{c(chat unreadPill)} {
+    background-color: hsla(var(--accent-hsl), var(--accent-opacity));
+    color: var(--accent-text-color);
+    text-shadow: none;
+  }
+
+  #{c(chat unreadPillCap)} {
+    filter: none;
+  }
+
+  #{c(chat unreadPillCapStroke)} {
+    color: hsla(var(--accent-hsl), var(--accent-opacity));
+    fill: hsla(var(--accent-hsl), var(--accent-opacity));
   }
 }
 
@@ -296,4 +387,9 @@
 #{c(embeds poll votedStyles)} {
   --custom-poll-style-vote-percentage: hsl(from var(--hsl-main-color) h s l/.2);
   --custom-poll-style-border: var(--hsl-main-color);
+}
+
+// SCROLLER
+#{c(chat scrollerSpacer)} {
+  height: var(--space-16);
 }
