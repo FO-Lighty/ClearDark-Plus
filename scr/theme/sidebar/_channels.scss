@@ -3,7 +3,7 @@
 // NEW CHANNEL BADGE
 #{c(sidebar server channels newChannelBadge)} {
   background: cv('color.main') !important; //inline
-  color: var(--text-strong);
+  color: cv('text.strong');
 }
 
 // CHANNELS BACKGROUND
@@ -32,6 +32,12 @@
 #{c(sidebar server unreadBar old bar)} {
   background-color: cv('color.main');
   border-color: cv('color.main');
+}
+#{c(sidebar server unreadBar text)},
+#{c(sidebar server unreadBar icon)},
+#{c(sidebar server unreadBar old text)},
+#{c(sidebar server unreadBar old icon)} {
+  color: cv('text.strong') !important;
 }
 
 // THREAD SPINE
@@ -151,37 +157,13 @@
 #{c(sidebar server channels voice listGeneric)} {
   padding-left: 24px;
 }
-
-#{c(sidebar server channels voice user)} {
-  z-index: 1;
-  #{c(sidebar server channels voice userContent)} {
-    border-radius: 3px;
-    transition: all 0.15s ease-in-out;
-  }
-  #{c(sidebar server channels voice avatarSpeaking)} {
-    box-shadow: 0 0 0 2px cv('color.main'), inset 0 0 3px rgba(0, 0, 0, 0.5);
-    position: relative;
-    transition: all 0.1s ease-in-out;
-    &:after {
-      content: '';
-      top: -2px;
-      bottom: -2px;
-      width: 150px;
-      position: absolute;
-      height: 1.8em;
-      background: linear-gradient(to right, cv('color.main') 10%, transparent);
-      opacity: 0.5;
-      transition: all 0.1s ease-in-out, width 0.15s ease-in-out;
-      pointer-events: none;
-      z-index: -1;
-      border-radius: 999px 0 0 999px;
-    }
-  }
-  #{c(sidebar server channels voice username)} {
-    color: hsla(0, 0%, 100%, 0.5);
-    transition: all 0.1s ease-in-out;
-  }
-  #{c(sidebar server channels voice usernameSpeaking)} {
-    color: #fff;
-  }
+#{c(sidebar server channels voice avatar)}[style*='var(--status-speaking)']::before {
+  content: '';
+  width: 150px;
+  height: 24px;
+  position: absolute;
+  background: linear-gradient(to right, cv('color.main') 10%, transparent);
+  opacity: 0.5;
+  z-index: -1;
+  border-radius: 999px 0 0 999px;
 }
