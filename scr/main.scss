@@ -20,7 +20,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
     --text-link: var(--hsl-main-color);
     --text-brand: var(--hsl-main-color);
     --text-feedback-positive: var(--hsl-success-color);
-    --text-danger: var(--hsl-danger-color);
+    --text-feedback-critical: var(--hsl-danger-color);
     
     // shadings are defined in .theme-dark/.theme-light -- turns out every color variable discord uses also uses saturation-factor.
     --hsl-background-shading: hsl(from var(--background-shading) #{$calc});
@@ -77,7 +77,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   --offline-color: #808080;
 
   --background-shading-percent: 100%;
-  --background-image: url(https://fo-lighty.github.io/ClearDark-Plus/assets/images/Samurai.jpeg);
+  --background-image: url(https://clearvision.github.io/images/sapphire.jpg);
   --background-position: center;
   --background-size: cover;
   --background-attachment: fixed;
@@ -95,7 +95,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   --user-modal-attachment: var(--background-attachment);
   --user-modal-filter: var(--background-filter);
 
-  --home-icon: url(https://fo-lighty.github.io/ClearDark-Plus/assets/icons/discord.svg);
+  --home-icon: url(https://clearvision.github.io/icons/discord.svg);
   --home-size: cover;
 
   --main-font: 'gg sans', Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
