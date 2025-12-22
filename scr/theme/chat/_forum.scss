@@ -108,23 +108,10 @@
   background: transparent;
   border: none;
 }
-#{c(forums chat bar active)} {
-  color: cv('color.main');
-}
 
 // EMPTY
 #{c(forums empty)} {
   background: transparent;
-}
-#{c(forums emptyIcon)} {
-  background: cv('color.main');
-  color: var(--interactive-icon-active);
-}
-#{c(forums emptyCTA)} {
-  color: cv('color.main');
-  &:hover {
-    color: cv('color.hover');
-  }
 }
 
 // CARD LOADING
