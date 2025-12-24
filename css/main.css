@@ -687,21 +687,95 @@ code {
 }
 
 /*! ClearDark+ v2.3.1 by Lighty.Jr */
+._5126c0cd07f243a0-backgroundFlash:not([style$="0);"]) {
+  background-color: hsla(var(--accent-hsl), 0.3) !important;
+  transition: 200ms ease-out background-color;
+}
+._5126c0cd07f243a0-backgroundFlash[style="background-color: rgba(148, 156, 247, 0);"] {
+  background-color: hsla(var(--accent-hsl), 0) !important;
+  transition: 400ms background-color;
+}
+
+.full-motion ._5126c0cd07f243a0-message:hover {
+  background-color: var(--message-color-hover) !important;
+}
+
+._5126c0cd07f243a0-message {
+  margin-left: 68px;
+  margin-right: 16px;
+  background-color: var(--message-color) !important;
+  border-radius: var(--message-radius);
+  transition: 300ms ease background-color;
+}
+._5126c0cd07f243a0-message:not(._5126c0cd07f243a0-groupStart), ._5126c0cd07f243a0-message.c19a557985eb7793-compact {
+  margin-top: 2px;
+}
+._5126c0cd07f243a0-message.c19a557985eb7793-cozy, ._5126c0cd07f243a0-message.c19a557985eb7793-compact {
+  padding: var(--message-padding-top) var(--message-padding-side) !important;
+  padding-right: 8px !important;
+  border: 2px solid transparent;
+}
+._5126c0cd07f243a0-message.c19a557985eb7793-cozy .c19a557985eb7793-timestamp.c19a557985eb7793-alt {
+  left: -62px;
+}
+._5126c0cd07f243a0-message.c19a557985eb7793-compact {
+  padding: 4px;
+  padding-left: 6px;
+}
+._5126c0cd07f243a0-message.c19a557985eb7793-compact .c19a557985eb7793-timestamp {
+  margin-right: 0.75rem;
+}
+._5126c0cd07f243a0-message.c19a557985eb7793-hasReply .c19a557985eb7793-avatar {
+  top: 28px;
+}
+._5126c0cd07f243a0-message.c19a557985eb7793-hasReply .c19a557985eb7793-avatarDecoration {
+  top: 26px;
+}
+._5126c0cd07f243a0-message .c19a557985eb7793-timestamp {
+  color: var(--text-normal);
+}
+._5126c0cd07f243a0-message .c19a557985eb7793-timestamp.c19a557985eb7793-alt {
+  color: var(--text-normal);
+}
+._5126c0cd07f243a0-message .d9be463a3c35b91e-channelTextArea {
+  margin: 2px 0;
+}
+._5126c0cd07f243a0-message._5126c0cd07f243a0-mentioned {
+  border-color: hsla(var(--mention-hsl), var(--mention-opacity));
+  box-shadow: 0px 0px 13px 4px hsla(var(--mention-hsl), var(--mention-opacity));
+}
+._5126c0cd07f243a0-message._5126c0cd07f243a0-mentioned:before {
+  display: none;
+}
+._5126c0cd07f243a0-message._5126c0cd07f243a0-mentioned .c19a557985eb7793-repliedMessage:before {
+  border-color: hsl(var(--mention-hsl));
+}
+._5126c0cd07f243a0-message._5126c0cd07f243a0-mentioned .c19a557985eb7793-repliedMessageClickableSpine {
+  --message-color: hsl(var(--mention-hsl));
+  --message-color-hover: hsl(var(--mention-hsl));
+}
+._5126c0cd07f243a0-message._5126c0cd07f243a0-replying {
+  border-color: hsla(var(--reply-hsl), var(--reply-opacity));
+  box-shadow: 0px 0px 13px 4px hsla(var(--reply-hsl), var(--reply-opacity));
+}
+._5126c0cd07f243a0-message._5126c0cd07f243a0-replying:before {
+  display: none;
+}
+
+._36d072eab2b2e737-scrollerSpacer {
+  height: var(--space-16);
+}
+
+.c19a557985eb7793-cozy.c19a557985eb7793-hasThread::after {
+  display: none;
+}
+
 .c19a557985eb7793-avatar {
   width: 40px;
   height: 40px;
   top: 0;
   left: -50px;
   margin-top: 0;
-  transition: all 0.3s ease-in-out, transform 0.1s ease-in-out;
-}
-.c19a557985eb7793-avatar.c19a557985eb7793-clickable:active {
-  transform: scale(0.9);
-}
-
-._82f0793afa59e5dc-botTagRegular {
-  background: var(--hsl-main-color);
-  color: var(--text-strong);
 }
 
 .c19a557985eb7793-avatarDecoration {
@@ -714,268 +788,8 @@ code {
   left: -50px;
 }
 
-.bab7519355c8eed6-operations a {
-  color: var(--hsl-main-color);
-}
-
-._235ca3770d90ab7c-content a {
-  color: var(--text-link);
-}
-
-.hljs {
-  background: var(--hsl-card-shading);
-  border: 1px solid var(--border-normal);
-}
-
-._752971923a1e6683-markup code {
-  background: var(--hsl-card-shading);
-}
-._752971923a1e6683-markup code.inline {
-  border: none;
-  background: hsl(from var(--hsl-card-shading) h s calc(100 - l)/calc(alpha * 0.5));
-  padding: 2px 6px;
-}
-
-.c19a557985eb7793-repliedMessageClickableSpine {
-  border-color: var(--hsl-main-color);
-}
-.c19a557985eb7793-repliedMessageClickableSpine:hover, .c19a557985eb7793-repliedMessageClickableSpine.c19a557985eb7793-repliedMessageContentHovered {
-  border-color: var(--hsl-hover-color);
-}
-
-.c19a557985eb7793-repliedTextPreview {
-  color: var(--text-default);
-  opacity: 0.7;
-}
-.c19a557985eb7793-repliedTextPreview .c19a557985eb7793-clickable:hover,
-.c19a557985eb7793-repliedTextPreview .c19a557985eb7793-repliedMessageClickableSpineHovered {
-  opacity: 1;
-}
-
-.c19a557985eb7793-messageSpine::before {
-  border-color: var(--hsl-main-color);
-}
-
-.c19a557985eb7793-executedCommand .c19a557985eb7793-appLauncherOnboardingCommandName {
-  color: var(--hsl-main-color);
-  background: transparent;
-}
-.c19a557985eb7793-executedCommand .c19a557985eb7793-appLauncherOnboardingCommandName:hover {
-  color: var(--hsl-hover-color);
-  background: transparent;
-}
-
-._5126c0cd07f243a0-replying {
-  --background-mentioned: hsl(from var(--hsl-main-color) h s l/.1);
-  --background-mentioned-hover: hsl(from var(--hsl-hover-color) h s l/.1);
-  background: var(--background-mentioned);
-}
-._5126c0cd07f243a0-replying:hover,
-._5126c0cd07f243a0-replying ._5126c0cd07f243a0-selected {
-  background: var(--background-mentioned-hover) !important;
-}
-._5126c0cd07f243a0-replying::before {
-  background: var(--hsl-hover-color);
-}
-
-.f61d60ed65f9a128-wrapper {
-  background-color: var(--hsl-main-color);
-  color: var(--text-default);
-  border-radius: 5px;
-  padding: 0 4px;
-}
-.f61d60ed65f9a128-wrapper:hover {
-  background-color: var(--hsl-hover-color);
-}
-
-._5126c0cd07f243a0-mentioned {
-  --background-mentioned: hsl(from var(--hsl-main-color) h s l/.1);
-  --background-mentioned-hover: hsl(from var(--hsl-hover-color) h s l/.1);
-  background: var(--background-mentioned);
-}
-._5126c0cd07f243a0-mentioned:before {
-  background-color: var(--hsl-main-color);
-}
-
-._752971923a1e6683-blockquoteContainer ._752971923a1e6683-blockquoteDivider {
-  border-radius: 0;
-}
-
-.cacd02fa13551840-bumpBox {
-  background: var(--hsl-card-shading);
-}
-
-._623de82e76ad7f82-embedFull {
-  background: var(--hsl-card-shading);
-  border-top: none;
-  border-right: none;
-  border-bottom: none;
-}
-
-._06ab41fd2ef7af3f-hoverButtonGroup {
-  background: var(--hsl-popout-shading);
-}
-
-._0ccaee68b77c7469-file {
-  background: var(--hsl-card-shading);
-  border: none;
-}
-
-._5a6abdc52a572b78-progressBar {
-  background: var(--hsl-main-color) !important;
-}
-
-.d5f3cd116f175f35-wrapper {
-  background: var(--hsl-card-shading);
-  border: none;
-}
-
-.d5f3cd116f175f35-statusOnline {
-  background: var(--hsl-online-color);
-}
-
-.d5f3cd116f175f35-statusOffline {
-  background: var(--hsl-offline-color);
-}
-
-._083ae98ea5145b08-guildInviteContainer {
-  background: var(--hsl-card-shading);
-}
-
-._083ae98ea5145b08-footerContent {
-  background: none;
-}
-
-._72090deda6ab7f6d-tile {
-  background: var(--hsl-card-shading);
-  border: none;
-}
-._72090deda6ab7f6d-tile:hover {
-  background: var(--hsl-card-shading);
-}
-
-.cf09d85aafe7e124-wrapperAudio {
-  background: var(--hsl-card-shading);
-  border: none;
-}
-
-.cf09d85aafe7e124-audioControls {
-  background: transparent;
-}
-
-.cf09d85aafe7e124-wrapper {
-  background: var(--hsl-card-shading);
-}
-
-._4d95d73152192cf9-textContainer,
-._4d95d73152192cf9-footer {
-  background: var(--hsl-card-shading);
-  border: none;
-}
-
-._4d95d73152192cf9-codeView {
-  background: transparent;
-}
-
-._4d95d73152192cf9-languageSelector {
-  background: var(--hsl-popout-shading);
-}
-
-._4d95d73152192cf9-modalTextContainer {
-  background: transparent;
-  border: none;
-}
-
-._4d95d73152192cf9-modalContent ._4d95d73152192cf9-codeView {
-  background: transparent;
-}
-
-.c19a557985eb7793-cozy.c19a557985eb7793-hasThread::after {
-  display: none;
-}
-
-._9271d23503a01b50-container {
-  border-color: var(--hsl-main-color);
-}
-
-._9271d23503a01b50-container {
-  background: var(--hsl-card-shading);
-  border: none;
-}
-
-._9271d23503a01b50-cta {
-  color: var(--hsl-main-color);
-}
-
-.a8e786485f0c32f8-container {
-  background: var(--hsl-card-shading);
-  border: none;
-}
-
-.a8e786485f0c32f8-ripple {
-  background: var(--hsl-main-color);
-}
-
-:is(.theme-light, .theme-dark) .a8e786485f0c32f8-container:not(.a8e786485f0c32f8-playing) .a8e786485f0c32f8-playButtonContainer {
-  background: var(--hsl-main-color);
-}
-:is(.theme-light, .theme-dark) .a8e786485f0c32f8-container:not(.a8e786485f0c32f8-playing) .a8e786485f0c32f8-playButtonContainer:is(:hover, :active) {
-  background: var(--hsl-hover-color);
-}
-
-.a8e786485f0c32f8-playing .a8e786485f0c32f8-playIcon {
-  color: var(--hsl-main-color);
-}
-
-._444920e965051ae6-embedCard,
-._444920e965051ae6-embedCard._444920e965051ae6-selected,
-._444920e965051ae6-footerContainer {
-  background: var(--hsl-card-shading);
-}
-
-._444920e965051ae6-dot {
-  background: transparent;
-}
-
-.f69538e19b6eaacd-container,
-._0be773cf1443f34f-container {
-  background: var(--hsl-card-shading);
-  border: none;
-}
-
-._4c5209741d147f1b-answer ._4c5209741d147f1b-answerInner._4c5209741d147f1b-currentlyVoting._4c5209741d147f1b-selected {
-  outline: 1px solid var(--hsl-main-color);
-}
-
-.secondaryButtonPresentation__0be77 {
-  background: var(--hsl-main-color);
-  border: transparent;
-}
-
-.f4f0eb773c27d83f-checkbox {
-  border-width: 1px;
-}
-
-.f4f0eb773c27d83f-radioForeground {
-  color: currentColor;
-}
-
-.f4f0eb773c27d83f-checkboxSelected {
-  border: 1px solid var(--hsl-main-color);
-  background: transparent;
-}
-
-.a1443c28bb4b5d23-votedStyles {
-  --custom-poll-style-vote-percentage: hsl(from var(--hsl-main-color) h s l/.2);
-  --custom-poll-style-border: var(--hsl-main-color);
-}
-
-._36d072eab2b2e737-scrollerSpacer {
-  height: var(--space-16);
-}
-
-._5126c0cd07f243a0-messageListItem + ._5126c0cd07f243a0-message,
-._908e20001ad67812-divider + ._5126c0cd07f243a0-message {
+._5126c0cd07f243a0-messageListItem + ._5126c0cd07f243a0-divider,
+._908e20001ad67812-divider + ._5126c0cd07f243a0-divider {
   margin-top: 2px;
 }
 
@@ -999,6 +813,13 @@ code {
   right: 0;
 }
 
+._908e20001ad67812-content {
+  width: 120px;
+  padding: 2px 0;
+  background-color: var(--message-color);
+  text-align: center;
+}
+
 ._908e20001ad67812-isUnread {
   border-color: hsla(var(--accent-hsl), var(--accent-opacity));
 }
@@ -1013,6 +834,20 @@ code {
 ._908e20001ad67812-isUnread ._908e20001ad67812-unreadPillCapStroke {
   color: hsla(var(--accent-hsl), var(--accent-opacity));
   fill: hsla(var(--accent-hsl), var(--accent-opacity));
+}
+
+.c19a557985eb7793-repliedMessage:before {
+  border-color: var(--message-color);
+  transform: translateX(-6px);
+}
+
+.c19a557985eb7793-repliedMessageClickableSpine {
+  margin-inline: calc(var(--spine-width) * -1 / 2) calc(var(--reply-spacing) * 2.3);
+  border-color: var(--message-color);
+  transition: 300ms ease border-color;
+}
+.c19a557985eb7793-repliedMessageClickableSpine.c19a557985eb7793-repliedMessageContentHovered {
+  border-color: var(--message-color-hover);
 }
 
 /*! ClearDark+ v2.3.1 by Lighty.Jr */
