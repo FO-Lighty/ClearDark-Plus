@@ -688,6 +688,11 @@ code {
 
 /*! ClearDark+ v2.3.1 by Lighty.Jr */
 .c19a557985eb7793-avatar {
+  width: 40px;
+  height: 40px;
+  top: 0;
+  left: -50px;
+  margin-top: 0;
   transition: all 0.3s ease-in-out, transform 0.1s ease-in-out;
 }
 .c19a557985eb7793-avatar.c19a557985eb7793-clickable:active {
@@ -697,6 +702,16 @@ code {
 ._82f0793afa59e5dc-botTagRegular {
   background: var(--hsl-main-color);
   color: var(--text-strong);
+}
+
+.c19a557985eb7793-avatarDecoration {
+  top: -2px;
+  left: -54px;
+}
+
+.a11y-font-scaled-down .c19a557985eb7793-avatar:not(.c19a557985eb7793-compact) {
+  top: 0;
+  left: -50px;
 }
 
 .bab7519355c8eed6-operations a {
@@ -876,7 +891,7 @@ code {
 }
 
 .c19a557985eb7793-cozy.c19a557985eb7793-hasThread::after {
-  border-color: var(--hsl-main-color);
+  display: none;
 }
 
 ._9271d23503a01b50-container {
@@ -953,6 +968,51 @@ code {
 .a1443c28bb4b5d23-votedStyles {
   --custom-poll-style-vote-percentage: hsl(from var(--hsl-main-color) h s l/.2);
   --custom-poll-style-border: var(--hsl-main-color);
+}
+
+._36d072eab2b2e737-scrollerSpacer {
+  height: var(--space-16);
+}
+
+._5126c0cd07f243a0-messageListItem + ._5126c0cd07f243a0-message,
+._908e20001ad67812-divider + ._5126c0cd07f243a0-message {
+  margin-top: 2px;
+}
+
+._908e20001ad67812-divider._908e20001ad67812-hasContent {
+  border-top: none;
+}
+._908e20001ad67812-divider._908e20001ad67812-hasContent:before, ._908e20001ad67812-divider._908e20001ad67812-hasContent:after {
+  position: absolute;
+  content: " ";
+  width: calc(50% - 60px);
+  height: 1px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  background-color: var(--background-modifier-accent);
+}
+._908e20001ad67812-divider._908e20001ad67812-hasContent:before {
+  left: 0;
+}
+._908e20001ad67812-divider._908e20001ad67812-hasContent:after {
+  right: 0;
+}
+
+._908e20001ad67812-isUnread {
+  border-color: hsla(var(--accent-hsl), var(--accent-opacity));
+}
+._908e20001ad67812-isUnread ._908e20001ad67812-unreadPill {
+  background-color: hsla(var(--accent-hsl), var(--accent-opacity));
+  color: var(--accent-text-color);
+  text-shadow: none;
+}
+._908e20001ad67812-isUnread ._908e20001ad67812-unreadPillCap {
+  filter: none;
+}
+._908e20001ad67812-isUnread ._908e20001ad67812-unreadPillCapStroke {
+  color: hsla(var(--accent-hsl), var(--accent-opacity));
+  fill: hsla(var(--accent-hsl), var(--accent-opacity));
 }
 
 /*! ClearDark+ v2.3.1 by Lighty.Jr */
@@ -4222,5 +4282,3 @@ code {
   --normal-text: #dcdcde;
   --muted-text: #86868e;
 }
-
-/*# sourceMappingURL=main.css.map */
