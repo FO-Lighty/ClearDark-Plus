@@ -64,8 +64,8 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   // other stuff that the theme sets
 
   // THESE VARIABLES ARE TO BE EDITED BY THE END USER
-  --main-color: #2780e6;
-  --hover-color: #1e63b3;
+  --main-color: #618098;
+  --hover-color: #8199ad;
   --success-color: #43b581;
   --warning-color: #fff;
   --danger-color: #982929;
@@ -76,12 +76,30 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   --streaming-color: #593695;
   --offline-color: #808080;
 
+  --mention-opacity: 1;
+  --message-color: hsl(0,0%,0%,0.4);
+  --message-color-hover: hsl(0,0%,0%,0.55);
+  --message-radius: 10px;
+  --message-padding-top: 8px;
+  --message-padding-side: 8px;
+  --accent-text-color: hsl(216,17%,94%);
+
+  --reply-accent: #738292;
+  --reply-hue: 211;
+  --reply-saturation: 12%;
+  --reply-lightness: 51%;
+  --reply-hsl: var(--reply-hue),calc(var(--reply-saturation) * var(--saturation-factor)),var(--reply-lightness);
+  --reply-opacity: 1;
+
   --background-shading-percent: 100%;
-  --background-image: url(https://clearvision.github.io/images/sapphire.jpg);
+  --background-image: url(https://fo-lighty.github.io/ClearDark-Plus/assets/images/Samurai.jpeg);
   --background-position: center;
   --background-size: cover;
   --background-attachment: fixed;
   --background-filter: saturate(calc(#{$sf} * 1));
+
+  --switch-slider-color: hsla(218,4.6%,46.9%,0.85);
+  --switch-knob-color: hsl(0,0%,13%);
 
   --user-popout-image: var(--background-image);
   --user-popout-position: var(--background-position);
@@ -95,7 +113,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   --user-modal-attachment: var(--background-attachment);
   --user-modal-filter: var(--background-filter);
 
-  --home-icon: url(https://clearvision.github.io/icons/discord.svg);
+  --home-icon: url(https://fo-lighty.github.io/ClearDark-Plus/assets/icons/discord.svg);
   --home-size: cover;
 
   --main-font: 'gg sans', Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
