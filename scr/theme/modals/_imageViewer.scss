@@ -1,5 +1,0 @@
-@use 'backend' as *;
-
-:is(#{c(modals imageViewer actionButtons)}, #{c(modals imageViewer closeButton)}) {
-  background: cv('shading.modal');
-}

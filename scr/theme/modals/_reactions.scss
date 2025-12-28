@@ -1,9 +1,0 @@
-@use 'backend' as *;
-
-#{c(modals reactions sidebar)},
-#{c(modals reactions reactors)} {
-  background: transparent;
-}
-#{c(modals reactions selected)} {
-  border: 1px solid cv('color.main');
-}

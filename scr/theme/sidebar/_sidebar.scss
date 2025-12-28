@@ -1,8 +1,0 @@
-@use 'backend' as *;
-
-#{c(sidebar sidebar)} {
-  background: transparent;
-  &:after {
-    display: none;
-  }
-}
