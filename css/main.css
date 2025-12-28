@@ -706,6 +706,7 @@ code {
   background-color: var(--message-color) !important;
   border-radius: var(--message-radius);
   transition: 300ms ease background-color;
+  backdrop-filter: blur(1px);
 }
 ._5126c0cd07f243a0-message:not(._5126c0cd07f243a0-groupStart), ._5126c0cd07f243a0-message.c19a557985eb7793-compact {
   margin-top: 2px;
@@ -816,7 +817,7 @@ code {
 ._908e20001ad67812-content {
   width: 120px;
   padding: 2px 0;
-  background-color: var(--message-color);
+  background-color: none;
   text-align: center;
 }
 
@@ -4033,8 +4034,8 @@ code {
   --font-display: var(--main-font);
   --font-code: var(--code-font);
   --focus-primary: var(--focus-color);
-  --main-color: #618098;
-  --hover-color: #8199ad;
+  --main-color: #2780e6;
+  --hover-color: #1e63b3;
   --success-color: #43b581;
   --warning-color: #fff;
   --danger-color: #982929;
@@ -4044,22 +4045,12 @@ code {
   --dnd-color: #982929;
   --streaming-color: #593695;
   --offline-color: #808080;
-  --mention-opacity: 1;
-  --message-color: hsl(0,0%,0%,0.4);
-  --message-color-hover: hsl(0,0%,0%,0.55);
-  --message-radius: 10px;
-  --message-padding-top: 8px;
-  --message-padding-side: 8px;
-  --accent-text-color: hsl(216,17%,94%);
-  --reply-accent: #738292;
   --background-shading-percent: 100%;
-  --background-image: url(https://fo-lighty.github.io/ClearDark-Plus/assets/images/Samurai.jpeg);
+  --background-image: url(https://clearvision.github.io/images/sapphire.jpg);
   --background-position: center;
   --background-size: cover;
   --background-attachment: fixed;
   --background-filter: saturate(calc(var(--saturation-factor, 1) * 1));
-  --switch-slider-color: hsla(218,4.6%,46.9%,0.85);
-  --switch-knob-color: hsl(0,0%,13%);
   --user-popout-image: var(--background-image);
   --user-popout-position: var(--background-position);
   --user-popout-size: var(--background-size);
@@ -4070,7 +4061,7 @@ code {
   --user-modal-size: var(--background-size);
   --user-modal-attachment: var(--background-attachment);
   --user-modal-filter: var(--background-filter);
-  --home-icon: url(https://fo-lighty.github.io/ClearDark-Plus/assets/icons/discord.svg);
+  --home-icon: url(https://clearvision.github.io/icons/discord.svg);
   --home-size: cover;
   --main-font: 'gg sans', Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --code-font: Consolas, 'gg mono', 'Liberation Mono', Menlo, Courier, monospace;
