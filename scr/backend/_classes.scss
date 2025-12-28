@@ -961,6 +961,7 @@ $classes: (
 
   'chat': (
     'cozy': 'c19a557985eb7793-cozy',
+    'avatarDecoration': 'c19a557985eb7793-avatarDecoration',
     'compact': 'c19a557985eb7793-compact',
     'chat': 'f75fb00fb7356cbe-chat',
     'chatSidebarOpen': 'chatSidebarOpen_d880dc',
@@ -989,7 +990,7 @@ $classes: (
 
     'chatHeaderBar': 'dc83f5490ab160ad-chatHeaderBar',
     // This channel is not on your channel list.
-   
+
     'messageDivider': '_5126c0cd07f243a0-divider',
     'backgroundFlash': '_5126c0cd07f243a0-backgroundFlash',
     'messageListItem': '_5126c0cd07f243a0-messageListItem',
@@ -1002,6 +1003,7 @@ $classes: (
     'codeInline': 'inline',
     'codeActions': '_752971923a1e6683-codeActions',
     'replying': '_5126c0cd07f243a0-replying',
+    'hasReply': 'c19a557985eb7793-hasReply',
     'hasThread': 'c19a557985eb7793-hasThread',
     'mentioned': '_5126c0cd07f243a0-mentioned',
     'mentionWrapper': 'f61d60ed65f9a128-wrapper',
@@ -1090,6 +1092,7 @@ $classes: (
     'zalgoBlocker': 'c19a557985eb7793-zalgo',
     'timestamp': 'c19a557985eb7793-timestamp',
     'timestampInline': 'c19a557985eb7793-timestampInline',
+    'timestampAlt': 'c19a557985eb7793-alt',
     'messageContent': 'c19a557985eb7793-messageContent',
 
     // in same line as chat_$suffix
