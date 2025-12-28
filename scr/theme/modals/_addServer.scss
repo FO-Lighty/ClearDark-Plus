@@ -1,0 +1,26 @@
+@use 'backend' as *;
+
+#{c(modals addServer optionContainer)} {
+  border: 2px solid transparent;
+  background: cv('shading.cardAlt');
+  &:hover {
+    border-color: cv('color.hover');
+  }
+}
+
+// PLUS ICON
+#{c(modals addServer customiseIconContainer)} {
+  circle {
+    fill: cv('color.main');
+  }
+}
+
+// Don’t have an invite?
+#{c(modals addServer joinServerRowContainer)} {
+  border: 2px solid transparent;
+  background: cv('shading.cardAlt');
+  &:hover {
+    border-color: cv('color.hover');
+    background: cv('shading.cardAlt');
+  }
+}

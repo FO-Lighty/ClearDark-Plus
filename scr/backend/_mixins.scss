@@ -1,0 +1,4 @@
+@mixin card {
+  border: 1px solid var(--hsl-main-color);
+  background-color: var(--hsl-card-shading);
+}

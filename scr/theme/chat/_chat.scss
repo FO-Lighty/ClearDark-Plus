@@ -1,0 +1,64 @@
+@use 'backend' as *;
+
+// BACKGROUND
+#{c(chat chat)} {
+  background: transparent;
+  &[data-has-border='true'] {
+    border: none;
+  }
+  &#{c(chat threadSidebarOpen)} {
+    border-bottom-right-radius: 0;
+  }
+}
+#{c(main themeMidnight)} {
+  #{c(chat chatContent)} {
+    border: none; // Only midnight theme has this??????
+  }
+}
+#{c(chat chatContentInner)},
+#{c(chat chatScrollerNSFW)} {
+  background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
+}
+
+#{c(chat chatGradientBase)} {
+  background: none;
+}
+#{c(chat scrollerSpacer)} {
+    height: 20px;
+}
+#{c(chat chatScroller)}::-webkit-scrollbar-track {
+  margin-bottom: 20px;
+}
+
+// CHAT LOADING
+#{c(chat chatLoadingWrapper)},
+#{c(chat messageLoadingWrapper)} {
+  background-color: transparent;
+}
+#{c(chat chatLoadingWrapper)} {
+  animation: cv-card-loading 1.5s infinite ease-in-out;
+}
+
+// TOOLBAR
+#{c(chat buttonsWrapper)} {
+  background-color: cv('shading.popout');
+  border-color: cv('shading.popout');
+  box-shadow: none;
+}
+
+// NO CHANNELS
+#{c(chat noChannel)} {
+  background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
+}
+
+// This channel is not on your channel list.
+#{c(chat chatHeaderBar)} {
+  background: transparent;
+}
+
+// allowed role list
+#{c(chat allowedRoleInner2)} {
+  background: hsl(from var(--custom-role-label-color) h s l/.2);
+}
+
+

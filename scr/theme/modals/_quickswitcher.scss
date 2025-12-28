@@ -1,0 +1,24 @@
+@use 'backend' as *;
+
+#{c(modals quickswitcher scroller)} {
+  background: transparent;  
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent !important;
+  }
+}
+#{c(modals quickswitcher search)} {
+  background: cv('shading.input.bg');
+  border: 2px solid cv('shading.input.border');
+  &:focus-within {
+    border-color: cv('color.main');
+    box-shadow: 0 0 2px 0 cv('color.main');
+  }
+}
+#{c(modals quickswitcher result)} {
+  &[aria-selected=true] {
+    background: cv('color.hover')
+  }
+}

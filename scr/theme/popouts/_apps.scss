@@ -1,0 +1,83 @@
+@use 'backend' as *;
+
+#{c(popouts apps popout)} {
+  background: cv('shading.popout');
+  box-shadow: none;
+}
+#{c(popouts apps sectionRowsContainer)} {
+  gap: 8px;
+}
+#{c(popouts apps itemContainer)} {
+  background: cv('shading.cardAlt');
+  &:hover {
+    background: cv('shading.card');
+    box-shadow: 0 0 0 2px cv('color.hover');
+  }
+}
+#{c(popouts apps rowContainer)} {
+  &,
+  &:first-child,
+  &:last-child {
+    border-radius: 8px;
+  }
+}
+#{c(popouts apps rowDivider)} {
+  background: transparent;
+}
+
+// DETAILS
+#{c(popouts apps details container)} {
+  background: transparent;
+}
+#{c(popouts apps details overviewNoVideo)},
+#{c(popouts apps details overviewWithVideo)} {
+  background: transparent;
+}
+#{c(popouts apps details commandContainer)} {
+  gap: 8px;
+  background: transparent;
+  #{c(popouts apps details command)} {
+    border: 2px solid transparent;
+    &:not(:last-child) {
+      border: 2px solid transparent;
+      &:hover {
+        border-color: cv('color.hover');
+      }
+    }
+  }
+  :is(#{c(popouts apps details command)}, #{c(popouts apps details command)}:first-child, #{c(popouts apps details command)}:last-child) {
+    border-radius: 8px;
+  }
+}
+#{c(popouts apps details command)} {
+  background: cv('shading.cardAlt');
+  border: 2px solid transparent;
+  &:hover {
+    background: cv('shading.card');
+    border-color: cv('color.hover');
+  }
+}
+
+// SEARCH
+#{c(popouts apps search sectionContainer)} {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  gap: 8px;
+}
+#{c(popouts apps search itemClickable)} {
+  background: cv('shading.cardAlt');
+  border: 2px solid transparent;
+  &:hover {
+    background: cv('shading.card');
+    border-color: cv('color.hover');
+  }
+  &,
+  &:first-child,
+  &:last-child {
+    border-radius: 8px;
+  }
+}
+#{c(popouts apps search itemDivider)} {
+  background: transparent;
+}

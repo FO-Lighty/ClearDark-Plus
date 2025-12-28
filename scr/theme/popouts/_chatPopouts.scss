@@ -1,0 +1,62 @@
+@use 'backend' as *;
+
+// EMOJI & STICKER INFO / NEW MEMBER POPOUT
+#{c(popouts emojiStickerPopout container)} {
+  background: cv('shading.popout');
+  box-shadow: none;
+  backdrop-filter: none;
+}
+#{c(popouts emojiStickerPopout guildSection)} {
+  background: transparent;
+}
+
+// STICKER SUGGESTION - right click in chat input and hover on suggestions
+#{c(popouts stickerSuggestion background)} {
+  background: cv('shading.popout');
+  border: none;
+  &::after {
+    border-top-color: cv('shading.popout');
+  }
+}
+
+// MENTION WARNING
+#{c(popouts mentionWarning popout)} {
+  background: cv('shading.popout');
+  box-shadow: none;
+}
+:is(#{c(main themeDark)}, #{c(main themeLight)}) {
+  #{c(popouts mentionWarning footer)} {
+    background: transparent;
+  }
+}
+
+// GUILD TAG
+#{c(popouts guildTag spinner)} {
+  background: cv('shading.popout');
+}
+
+// STREAM PREVIEW
+#{c(popouts streamPreview popout)} {
+  background: cv('shading.popout');
+}
+#{c(popouts streamPreview previewContainer)} {
+  background: transparent;
+}
+:is(#{c(main themeDark)}, #{c(main themeLight)}) {
+  #{c(popouts streamPreview watchButton)} {
+    border-color: cv('color.main');
+    &:not([disabled]) {
+      &:hover {
+        border-color: cv('color.hover');
+      }
+    }
+  }
+}
+
+// PRIVATE VC PREVIEW
+#{c(popouts vcPreview popout)} {
+  background: cv('shading.popout');
+}
+#{c(popouts vcPreview peopleContainer)} {
+  background: cv('shading.cardAlt');
+}

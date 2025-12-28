@@ -1,0 +1,108 @@
+@use 'backend' as *;
+
+#{c(popouts expressionPicker contentWrapper)} {
+  background: cv('shading.popout');
+  border: none;
+}
+#{c(popouts expressionPicker inspector)} {
+  background: transparent;
+  border: none;
+}
+#{c(popouts expressionPicker navButton)} {
+  border-radius: 5px;
+  &:hover {
+    background: cv('shading.hover');
+  }
+}
+#{c(popouts expressionPicker navButtonActive)} {
+  background: cv('color.main');
+  &:hover {
+    background: cv('color.main');
+  }
+}
+
+// EMOJI
+#{c(popouts expressionPicker emoji hasTabWrapper)} {
+  :is(#{c(popouts expressionPicker emoji picker)}, #{c(popouts expressionPicker emoji header)}) {
+    background: transparent;
+  }
+}
+#{c(popouts expressionPicker emoji categoryHeaderWrapper)} {
+  background: hsl(from cv('color.main') h s l/.8);
+  margin-bottom: 10px;
+  border-radius: 4px;
+  &::after {
+    height: 0;
+  }
+}
+#{c(popouts expressionPicker emoji searchBar)} {
+  margin-right: 12px;
+}
+
+// REACT ON MESSAGE EMOJIS
+:is(#{c(popouts expressionPicker emoji picker)}, #{c(popouts expressionPicker emoji header)}) {
+  background: cv('shading.popout');
+  border: none;
+}
+
+// STICKER
+#{c(popouts expressionPicker sticker header)} {
+  background: transparent;
+}
+#{c(popouts expressionPicker sticker packHeader)} {
+  margin-left: -8px;
+  margin-bottom: 10px;
+}
+
+// GIF
+#{c(popouts expressionPicker gif container)},
+#{c(popouts expressionPicker gif header)} {
+  background: transparent;
+  border: none;
+}
+
+// EMOJI ITEM
+#{c(popouts expressionPicker emoji item)} {
+  &#{c(popouts expressionPicker emoji itemSelected)} {
+    background: cv('shading.hover');
+  }
+}
+
+// STICKER ITEM
+#{c(popouts expressionPicker sticker inspected)} {
+  #{c(popouts expressionPicker sticker inspectedIndicator)} {
+    background: cv('shading.hover');
+  }
+}
+
+// GIF ITEM
+#{c(popouts expressionPicker gif favoritesFade)} {
+  background: hsl(from cv('color.main') h s l/.8);
+  &,
+  &:hover {
+    border: none;
+  }
+}
+#{c(popouts expressionPicker gif categoryFade)} {
+  border: none;
+  &:hover {
+    border: 2px solid cv('color.main');
+  }
+}
+
+// EMOJI CATEGORY
+#{c(popouts expressionPicker emoji defaultCategorySelected)} {
+  &,
+  &:hover {
+    background: cv('color.main');
+  }
+}
+
+// STICKER CATEGORY
+#{c(popouts expressionPicker sticker categoryGenericSelected)},
+#{c(popouts expressionPicker sticker firstPartyCategorySelected)} {
+  &,
+  &:hover {
+    background: cv('color.main');
+  }
+}

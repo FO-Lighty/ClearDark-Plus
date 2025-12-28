@@ -1,0 +1,18 @@
+@use 'backend' as *;
+
+#{c(membersPage page)} {
+  background: transparent !important; // discord styles has !important
+}
+#{c(membersPage tableContainer)} {
+  background: cv('shading.card');
+  border: none;
+}
+#{c(membersPage newMemberNotice)} {
+  background: cv('color.main');
+  &:hover {
+    background: cv('color.hover');
+  }
+}
+#{c(membersPage otherRoles)} {
+  background: cv('shading.cardAlt');
+}

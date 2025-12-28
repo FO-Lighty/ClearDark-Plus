@@ -1,0 +1,43 @@
+@use 'backend' as *;
+
+#{c(profile outer)}:not(#{c(profile customTheme)}) #{c(role role)} {
+  //to not hit custom themes
+  border-radius: 4px;
+  position: relative;
+  #{c(role removeButton)} {
+    position: static;
+  }
+  #{c(role removeIcon)} {
+    left: 14px;
+  }
+  #{c(role circle)} {
+    &::before {
+      content: '';
+      top: -1px;
+      right: -1px;
+      bottom: -1px;
+      left: -1px;
+      position: absolute;
+      background: inherit;
+      opacity: 0.2;
+      border-radius: 4px;
+    }
+  }
+}
+
+// dot next to name
+#{c(role background)} {
+  fill: none;
+}
+#{c(role dotBorderBase)} {
+  fill: none;
+}
+#{c(role dotBorderColor)} {
+  opacity: 1;
+}
+
+// ADD ROLES
+#{c(role add popout)} {
+  background: cv('shading.popout');
+  border: none;
+}
