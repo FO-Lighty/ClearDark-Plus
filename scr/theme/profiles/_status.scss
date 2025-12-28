@@ -1,0 +1,25 @@
+@use 'backend' as *;
+
+/*member list, profile*/
+#{c(avatar mask)} rect {
+  // OFFLINE
+  &[fill*='#82838b'] {
+    fill: cv('color.offline');
+  }
+  // ONLINE
+  &[fill*='#43a25a'] {
+    fill: cv('color.online');
+  }
+  // IDLE
+  &[fill*='#ca9654'] {
+    fill: cv('color.idle');
+  }
+  // DND
+  &[fill*='#d83a42'] {
+    fill: cv('color.dnd');
+  }
+  // STREAMING
+  &[fill*='#9147ff'] {
+    fill: cv('color.streaming');
+  }
+}

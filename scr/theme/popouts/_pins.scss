@@ -1,0 +1,23 @@
+@use 'backend' as *;
+
+#{c(popouts pins popout)} {
+  background: cv('shading.popout');
+  box-shadow: none;
+}
+#{c(popouts pins header)},
+#{c(popouts pins footer)} {
+  background: transparent;
+}
+#{c(popouts pins messageGroup)} {
+  background: cv('shading.cardAlt');
+  border: none;
+}
+#{c(popouts pins jumpButton)} {
+  background: cv('color.main');
+  border-color: transparent;
+  color: var(--interactive-text-active);
+  &:hover {
+    background: cv('color.hover');
+    color: var(--interactive-text-active);
+  }
+}

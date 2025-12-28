@@ -1,0 +1,15 @@
+@use 'backend' as *;
+
+#{c(modals poll container)} {
+  background: cv('shading.modal');
+  border: none;
+}
+
+// CREATE POLL
+
+
+// VIEW VOTES
+#{c(modals poll votes sidebarScroller)},
+#{c(modals poll votes voters)} {
+  background: transparent;
+}

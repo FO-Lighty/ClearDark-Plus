@@ -1,0 +1,151 @@
+@use 'backend' as *;
+
+#{c(button button)} {
+  border-radius: 4px;
+}
+
+// BUTTON FILLED
+#{c(button lookFilled)} {
+  &:is(#{c(button colorBrand)}, #{c(button colorPrimary)}) {
+    background-color: cv('color.main');
+    border: none;
+    &:hover {
+      background-color: cv('color.hover');
+    }
+    &:disabled {
+      background-color: cv('color.main');
+    }
+  }
+  &#{c(button colorGreen)} {
+    background-color: cv('color.success');
+    border: none;
+    &:hover {
+      background-color: hsl(from cv('color.success') h s l/.8);
+    }
+    &:disabled {
+      background-color: hsl(from cv('color.success') h s l/.8);
+    }
+  }
+  &#{c(button colorRed)} {
+    background-color: cv('color.danger');
+    border: none;
+    &:hover {
+      background-color: hsl(from cv('color.danger') h s l/.8);
+    }
+    &:disabled {
+      background-color: cv('color.danger');
+    }
+  }
+  &:is(#{c(button colorWhite)}, #{c(button colorBrandInverted)}) {
+    color: cv('color.main');
+    border: none;
+    &:hover {
+      color: cv('color.hover');
+    }
+  }
+}
+
+// BUTTON OUTLINE
+#{c(button lookOutlined)} {
+  &:is(#{c(button colorBrand)}, #{c(button colorPrimary)}) {
+    border-color: cv('color.main');
+    &:hover {
+      border-color: cv('color.hover');
+      background-color: cv('color.hover');
+    }
+  }
+  &#{c(button colorGreen)} {
+    border-color: cv('color.success');
+    &:hover {
+      border-color: hsl(from cv('color.success') h s l/.8);
+      background-color: hsl(from cv('color.success') h s l/.8);
+    }
+  }
+  &#{c(button colorRed)} {
+    background-color: transparent;
+    border-color: cv('color.danger');
+    color: var(--button-outline-brand-text);
+    &:hover {
+      border-color: hsl(from cv('color.danger') h s l/.8);
+      background-color: hsl(from cv('color.danger') h s l/.8);
+      color: var(--button-outline-brand-text);
+    }
+  }
+}
+
+// LINK
+#{c(button lookLink)} {
+  #{c(button contents)} {
+    background: none;
+  }
+  &:hover {
+    #{c(button contents)} {
+      text-decoration: underline;
+    }
+  }
+  :is(#{c(main themeLight)}, #{c(main themeDark)}) & {
+    &:is(#{c(button colorPrimary)}, #{c(button colorLink)}) {
+      color: cv('color.main');
+    }
+  }
+  &#{c(button colorBrand)} {
+    color: cv('color.main');
+  }
+  &#{c(button colorRed)} {
+    color: cv('color.danger');
+  }
+}
+
+
+
+// NEW BUTTON CLASSES
+#{c(button new button)} {
+  border-radius: 4px;
+}
+#{c(button new primary)} {
+  background: cv('color.main');
+  border-color: transparent;
+  &:hover,
+  &:active {
+    background: cv('color.hover');
+    border-color: transparent;
+  }
+}
+#{c(button new secondary)} {
+  background: transparent;
+  border-color: cv('color.main');
+  &:hover,
+  &:active  {
+    background: transparent;
+    border-color: cv('color.hover');
+  }
+}
+#{c(button new active)} {
+  background: cv('color.success');
+  border-color: transparent;
+  &:hover,
+  &:active  {
+    background: hsl(from cv('color.success') h s l/.8);
+    border-color: transparent;
+  }
+}
+#{c(button new criticalPrimary)} {
+  background: cv('color.danger');
+  border-color: transparent;
+  &:hover,
+  &:active  {
+    background: hsl(from cv('color.danger') h s l/.8);
+    border-color: transparent;
+  }
+}
+#{c(button new criticalSecondary)} {
+  background: transparent;
+  border-color: cv('color.danger');
+  color: var(--control-text-critical-primary-default);
+  &:hover,
+  &:active  {
+    background: transparent;
+    border-color: hsl(from cv('color.danger') h s l/.8);
+    color: var(--control-text-critical-primary-default);
+  }
+}

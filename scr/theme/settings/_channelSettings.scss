@@ -1,0 +1,49 @@
+@use 'backend' as *;
+
+// PERMISSIONS
+#{c(channelSettings permissions card)} {
+  &,
+  &#{c(channelSettings permissions cardActive)} {
+    background: cv('shading.card');
+  }  
+}
+#{c(channelSettings permissions cardFolder)} {
+  background: transparent;
+}
+// PERMISSIONS - ADVANCED
+#{c(channelSettings permissions sideScroller)} {
+  background: transparent;
+}
+#{c(channelSettings permissions roleDropdownContainer)} {
+  background: cv('shading.popout');
+}
+#{c(channelSettings permissions roleDropdownHeader)} {
+  background: cv('shading.input.bg');
+}
+#{c(channelSettings permissions permGroup)} {
+  border-color: cv('shading.cardAlt');
+}
+#{c(channelSettings permissions permItem)} {
+  background: cv('shading.card');
+  cursor: pointer;
+  &#{c(channelSettings permissions permSelected)} {
+    background-color: hsl(from cv('color.main') h s l/.4);
+  }
+}
+#{c(channelSettings permissions permDeny)} {
+  color: cv('color.danger');
+  border-right: 1px solid cv('shading.cardAlt');
+  &#{c(channelSettings permissions permSelected)} {
+    background-color: hsl(from cv('color.danger') h s l/.6);
+  }
+}
+#{c(channelSettings permissions permAllow)} {
+  color: cv('color.success');
+  border-left: 1px solid cv('shading.cardAlt');
+  &#{c(channelSettings permissions permSelected)} {
+    background-color: hsl(from cv('color.success') h s l/.6);
+  }
+}
+
+
+

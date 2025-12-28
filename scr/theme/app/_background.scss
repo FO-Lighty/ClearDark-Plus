@@ -1,0 +1,45 @@
+@use 'backend' as *;
+
+// TRANSPARENT BG
+:is(
+  html, // might be needed for injectors
+  body,
+  #{c(main appMount)}
+) {
+  background: none;
+}
+
+// BACKGROUND IMAGE
+// ";" appears on the top left of the app, in the app_a3002d (main appContainer) layer
+// not wrapped in any html tags so not possible to display none it
+#{c(main appContainer)} {
+  background: cv('shading.bg');
+  color: transparent;
+}
+#{c(main appInner)} {
+  background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.1));
+}
+#{c(main bg)} {
+  background: cv('bg.app.img') cv('bg.app.pos')/cv('bg.app.size') no-repeat;
+  background-attachment: cv('bg.app.attach');
+  filter: cv('bg.app.filter');
+  z-index: -1;
+}
+
+// LOADING
+#{c(loading container)} {
+    background: cv('shading.bg');
+}
+
+// LOADING ICONS
+#{c(main wanderingCubes)} #{c(main wanderingCubesItem)} {
+  background: cv('color.main');
+}
+#{c(main spinnerCirclePath)} {
+  stroke: cv('color.main');
+}
+
+// FOCUS
+#{c(main focusRing)} {
+  box-shadow: 0 0 0 4px var(--focus-color);
+}

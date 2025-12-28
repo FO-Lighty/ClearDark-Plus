@@ -1,0 +1,36 @@
+@use 'backend' as *;
+
+#{c(chat divider divider)} {
+  --divider-color: var(--hsl-main-color);
+
+  // ALLOWS NO BACKGROUND WITH DATE
+  &#{c(chat divider hasContent)} {
+    border-color: transparent;
+  }
+}
+#{c(chat divider content)} {
+  display: flex;
+  flex: 1;
+  background: transparent;
+  align-items: center;
+  font-weight: 700;
+  &::before,
+  &::after {
+    content: '';
+    height: 1px;
+    flex-grow: 1;
+    background: cv('shading.hover');
+  }
+  &::before {
+    margin-right: 10px;
+  }
+  &::after {
+    margin-left: 10px;
+  }
+  #{c(chat divider isUnread)} & {
+    &::before,
+    &::after {
+      background: var(--divider-color);
+    }
+  }
+}

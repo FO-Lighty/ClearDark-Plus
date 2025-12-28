@@ -1,0 +1,43 @@
+@use 'backend' as *;
+
+/* HEADER */
+:is(#{c(main themeDark)}, #{c(main themeLight)}) {
+  #{c(header themed)} {
+    background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.5));
+  }
+  #{c(header dot)} {
+    display: none;
+  }
+}
+#{c(header children)} {
+  &::after {
+    display: none;
+  }
+}
+
+// NICKNAME
+#{c(header akaBadge)} {
+  background: cv('color.main');
+}
+
+// SEARCH
+#{c(header searchBar)} {
+  background-color: cv('shading.input.bg');
+  border-color: cv('shading.input.border');
+  &:focus-within {
+    border-color: cv('color.main');
+    box-shadow: 0 0 2px 0 cv('color.main');
+  }
+}
+#{c(header searchFilter)},
+#{c(header searchAnswer)} {
+  background: cv('color.main');
+}
+#{c(header searchFilter)} {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+#{c(header searchAnswer)} {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}

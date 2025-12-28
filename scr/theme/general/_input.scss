@@ -1,0 +1,26 @@
+@use 'backend' as *;
+
+#{c(input wrapper)} {
+  background: cv('shading.input.bg');
+  border-color: cv('shading.input.border');
+  &:not([data-read-only=true]):has(input:focus,textarea:focus) {
+    border-color: cv('color.main');
+    box-shadow: 0 0 2px 0 cv('color.main');
+  }
+}
+
+#{c(input input)} {
+  &::placeholder {
+    color: cv('text.muted');
+  }
+}
+
+#{c(experiments manaTextInputs)} {
+  #{c(input wrapper)} {
+    background: cv('shading.input.bg');
+    border-color: cv('shading.input.border');
+    &:not([data-read-only=true]):has(input:focus,textarea:focus) {
+      outline: none;
+    }
+  }
+}

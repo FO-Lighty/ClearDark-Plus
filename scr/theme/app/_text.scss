@@ -1,0 +1,22 @@
+@use 'backend' as *;
+
+// FONT
+body,
+button,
+input,
+select,
+textarea,
+::placeholder {
+  font-family: cv('font.main');
+}
+
+// CODE
+code {
+  font-family: cv('font.code');
+}
+
+// SELECTION
+::selection {
+  background: cv('color.main');
+  color: cv('text.normal');
+}

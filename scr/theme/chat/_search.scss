@@ -1,0 +1,21 @@
+@use 'backend' as *;
+
+#{c(search wrap)} {
+  background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.3));
+  border: none;
+}
+#{c(search header)} {
+  background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
+}
+#{c(search result)} {
+  background: cv('shading.card');
+  border: none;
+}
+#{c(search jumpButton)} {
+  background: cv('color.main');
+  &:hover {
+    background: cv('color.hover');
+    color: var(--interactive-text-active);
+  }
+}
+

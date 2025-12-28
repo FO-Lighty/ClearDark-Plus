@@ -1,0 +1,11 @@
+@use 'backend' as *;
+
+// CATEGORY LIST
+#{c(popouts categoryList wrapper)} {
+  background: transparent;
+}
+
+// PROFILE LOADING
+#{c(popouts loading popout)} {
+  background: cv('shading.popout');
+}

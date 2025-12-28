@@ -1,0 +1,6 @@
+@use 'backend' as *;
+
+#{c(other cv libraryScroller)},
+#{c(other cv librarySettingsScroller)} {
+    background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.4));
+}
