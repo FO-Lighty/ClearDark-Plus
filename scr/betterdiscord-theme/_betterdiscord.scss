@@ -43,7 +43,7 @@
       box-shadow: cv('shadow.bottom');
     }
   }
-    // Switches from BetterDiscord settings
+    // Switches from BetterDiscord settings.
   #{c(bd switch)} {
     #{c(bd switchBody)} {
       --switch-color: var(--switch-slider-color);
