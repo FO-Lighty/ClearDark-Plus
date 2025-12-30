@@ -2,6 +2,34 @@
 
 ## Changelog
 
+### Version 2.3.1 (30/12/2025)
+
+* **Backend:**
+
+    - **Code and File Restructuring:* Reorganized the project structure for better optimization and a clearer understanding of the modified containers.
+
+    - **Version Control:** Moved the legacy version to a dedicated project branch to maintain a clean workspace.
+
+    - **Class Clarity:** Improved class transparency by creating a dedicated folder for Discord variables and class tweaks.
+
+    - **Structural Optimization:** Better file restructuring for more efficient handling of Discord’s internal structures.
+
+    - **Documentation:** Added comprehensive comments to identify code targets, including guidelines on what can be customized or should remain untouched.
+
+* **Faster loading of the theme:** Optimized the SCSS compilation and file delivery for a snappier user experience.
+
+* **Some features are missing:** Note that some features are currently absent; these will be integrated into the backend code in future updates.
+
+* **Fixed issues with class names:** Resolved conflicts and naming errors within the backend mapping.
+
+* **Fixed theme unloading issue:** Addressed a bug where the theme would remain partially active after being disabled.
+
+* **Multi-Output Deployment:** The compiler now generates both `main.css` and `betterdiscord.css` simultaneously for better modularity.
+
+* **Easier Customization:** The new architecture makes it significantly easier to modify and adapt the theme to your preferences.
+
+* **Fixed** various bugs.
+
 ### Version 2.0.2 (10/31/2025)
 
 * **New Color Shade**: Added a darker shade of the `main color`, named `darker-main-color`, for enhanced design versatility.
