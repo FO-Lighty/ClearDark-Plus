@@ -643,6 +643,10 @@ code {
   background: var(--hsl-danger-color);
 }
 
+.f1ceaca61b18918e-disconnect.f1ceaca61b18918e-fullRegionDropdownButton {
+  background-color: var(--hsl-danger-color);
+}
+
 ._2f4f7eb58b61c328-border._2f4f7eb58b61c328-speaking {
   box-shadow: inset 0 0 0 2px var(--hsl-main-color);
 }
