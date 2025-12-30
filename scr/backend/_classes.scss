@@ -795,6 +795,7 @@ $classes: (
     'red': 'f1ceaca61b18918e-red',
     'green': 'f1ceaca61b18918e-green',
     'disconnect': 'f1ceaca61b18918e-disconnect',
+    'dropdownButton': 'f1ceaca61b18918e-fullRegionDropdownButton',
 
     // Grid view only
     'gridRow': 'd6271c8ee3948714-row',
@@ -6676,7 +6677,7 @@ $classes: (
   // Shit definitely needs sorting.
   'other': (
       'developerPortalCtaWrapper': 'developerPortalCtaWrapper_bf485f',
-      // Random stuff found while attempting to convert ClearVision 6 to this class format. Comments show where the selector is used.
+      // Random stuff found while attempting to convert ClearDark+ v2 to this class format. Comments show where the selector is used.
       // This category **WILL** be removed over time and without warning.
       'cv': (
           'bdSettingsSidebar': '#bd-settings-sidebar',
