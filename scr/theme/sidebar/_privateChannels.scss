@@ -43,6 +43,9 @@
     color: cv('color.hover');
   }
 }
+#{c(sidebar private searchBar)} {
+  box-shadow: cv('shadow.bottom');
+}
 
 // LOADING
 #{c(sidebar private loadingEmpty)} {
