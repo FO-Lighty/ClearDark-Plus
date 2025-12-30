@@ -6,7 +6,7 @@
 
 * **Backend:**
 
-    - **Code and File Restructuring:* Reorganized the project structure for better optimization and a clearer understanding of the modified containers.
+    - **Code and File Restructuring:** Reorganized the project structure for better optimization and a clearer understanding of the modified containers.
 
     - **Version Control:** Moved the legacy version to a dedicated project branch to maintain a clean workspace.
 
