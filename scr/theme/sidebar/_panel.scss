@@ -2,13 +2,16 @@
 
 // ACCOUNT PANEL
 #{c(sidebar panel panels)} {
-  background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.5));
+  background: hsl(from var(--hsl-background-shading) h s l / calc(var(--background-shading-percent)* 0.5));
   border-radius: 0;
   border: none;
   width: 100%;
   left: 0;
   bottom: 0;
   padding: 8px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  backdrop-filter: blur(2px);
 }
 
 // ACTIVITY
