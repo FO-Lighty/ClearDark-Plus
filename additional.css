@@ -1,0 +1,54 @@
+/*! ClearDark+ - BetterDiscord Addon v2.3.1 by Lighty.Jr */
+@keyframes cv-channel-select {
+  from {
+    right: 100%;
+  }
+  to {
+    right: 0;
+  }
+}
+@keyframes cv-card-loading {
+  0% {
+    opacity: 0.66;
+  }
+  50% {
+    opacity: 0.33;
+  }
+  100% {
+    opacity: 0.66;
+  }
+}
+/*! ClearDark+ - BetterDiscord Addon v2.3.1 by Lighty.Jr */
+.visual-refresh .bd-store-card {
+  background: var(--hsl-card-shading);
+  border: 1px solid transparent;
+}
+.visual-refresh .bd-store-card:hover {
+  background: var(--hsl-card-shading);
+  box-shadow: none;
+  border-color: var(--hsl-main-color);
+}
+.visual-refresh .bd-addon-store-card {
+  background: var(--hsl-card-shading);
+  border: 1px solid transparent;
+}
+.visual-refresh .bd-addon-store-card:hover {
+  background: var(--hsl-card-shading);
+  box-shadow: none;
+  border-color: var(--hsl-main-color);
+}
+.visual-refresh .bd-addon-store-card .bd-addon-store-card-tag {
+  background: transparent;
+  border: 1px solid var(--hsl-main-color);
+}
+.visual-refresh .bd-addon-card {
+  background: var(--hsl-card-shading);
+  border: 2px solid transparent;
+}
+.visual-refresh .bd-addon-card:hover {
+  background: var(--hsl-card-shading);
+  border-color: var(--hsl-main-color);
+}
+.visual-refresh .bd-addon-header {
+  background: var(--hsl-card-shading);
+}
