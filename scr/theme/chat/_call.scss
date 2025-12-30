@@ -38,7 +38,7 @@
 }
 #{c(call disconnect)} {
   &#{c(call dropdownButton)} {
-    background-color: cv('color.danger'),
+    background-color: cv('color.danger');
   }
 }
 
