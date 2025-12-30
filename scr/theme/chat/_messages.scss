@@ -1,14 +1,15 @@
+
 @use 'backend' as *;
 
 // BACKGROUND FLASH
 #{c(chat backgroundFlash)} {
 	&:not([style$="0);"]) {
-		background-color: hsla(var(--accent-hsl), 0.3) !important;
+		background-color: hsla(cv('color.main'), 0.3) !important;
 		transition: 200ms ease-out background-color;
 	}
 
 	&[style="background-color: rgba(148, 156, 247, 0);"] {
-		background-color: hsla(var(--accent-hsl), 0.0) !important;
+		background-color: hsla(cv('color.main'), 0.0) !important;
 		transition: 400ms background-color;
 	}
 }
@@ -127,7 +128,7 @@
 	}
 }
 
-// HEADER (Avatars)
+// HEADER
 #{c(chat chatAvatar)} {
 	width: 40px;
 	height: 40px;
@@ -148,6 +149,9 @@
 			left: -50px;
 		}
 	}
+}
+#{c(chat subtitleContainer)} {
+	box-shadow: cv('shadow.bottom');
 }
 
 // DIVIDERS
@@ -185,10 +189,10 @@
 }
 
 #{c(chat divider isUnread)} {
-	border-color: hsla(var(--accent-hsl),var(--accent-opacity));
+	border-color: hsla(cv('color.main'),var(--accent-opacity));
 
 	#{c(chat divider unreadPill)} {
-		background-color: hsla(var(--accent-hsl),var(--accent-opacity));
+		background-color: hsla(cv('color.main'),var(--accent-opacity));
 		color: var(--accent-text-color);
 		text-shadow: none;
 	}
@@ -198,8 +202,8 @@
     }
 
 	#{c(chat divider unreadPillCapStroke)} {
-		color: hsla(var(--accent-hsl),var(--accent-opacity));
-		fill: hsla(var(--accent-hsl),var(--accent-opacity));
+		color: hsla(cv('color.main'),var(--accent-opacity));
+		fill: hsla(cv('color.main'),var(--accent-opacity));
 	}
 }
 
