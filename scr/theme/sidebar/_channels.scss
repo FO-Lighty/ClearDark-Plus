@@ -1,3 +1,4 @@
+
 @use 'backend' as *;
 
 // NEW CHANNEL BADGE
@@ -20,6 +21,9 @@
 #{c(sidebar server header bannerContainer)} {
   background-color: transparent;
   border: none;
+}
+#{c(sidebar server header container)} {
+  box-shadow: cv('shadow.bottom');
 }
 
 // UNREAD PILL
