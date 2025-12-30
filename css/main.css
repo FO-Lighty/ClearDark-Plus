@@ -3646,6 +3646,10 @@ code {
   padding-top: 10px;
 }
 
+._5e434347c823b592-guilds.ef3116c2da186559-wrapper {
+  backdrop-filter: blur(2px);
+}
+
 ._581051df43c5ebb6-item {
   box-shadow: 0 0 3px 1px var(--hsl-main-color);
 }
