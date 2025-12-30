@@ -38,4 +38,33 @@
   #{c(bd addonHeader)} {
     background: cv('shading.card');
   }
+  #{c(bd addonList)} {
+    &#{c(bd addonHeader)} {
+      box-shadow: cv('shadow.bottom');
+    }
+  }
+    // Switches from BetterDiscord settings
+  #{c(bd switch)} {
+    #{c(bd switchBody)} {
+      --switch-color: var(--switch-slider-color);
+  
+      #{c(bd switchHandle)} {
+        fill: var(--switch-knob-color);
+      }
+    }
+    input:active + #{c(bd switchBody)} {
+      --switch-color: var(--switch-slider-color);
+    } 
+    input:checked + #{c(bd switchBody)} {
+      --switch-color: var(--main-color);
+      --switch-knob-color: var(--accent-text-color);
+    } 
+    input:checked:active + #{c(bd switchBody)} {
+      --switch-color: var(--main-color);
+    }
+  }
+  #{c(bd switchDisabled)} {
+    opacity: 0.3;
+    filter: none;
+  }
 }
