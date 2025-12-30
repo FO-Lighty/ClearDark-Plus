@@ -31,8 +31,8 @@ jobs:
       - name: Builder CSS
         # The destination is at the root, which is ideal for Discord
         run: |
-          sass scr/main.scss main.css --load-path=scr --no-source-map
-          sass scr/betterdiscord.scss additional.css --load-path=scr --no-source-map
+          sass scr/main.scss css/main.css --load-path=scr --no-source-map
+          sass scr/betterdiscord.scss css/additional.css --load-path=scr --no-source-map
 
       # 5. Update the main.css file on GitHub
       - name: Deploy
