@@ -692,11 +692,11 @@ code {
 
 /*! ClearDark+ v2.3.1 by Lighty.Jr */
 ._5126c0cd07f243a0-backgroundFlash:not([style$="0);"]) {
-  background-color: hsla(var(--accent-hsl), 0.3) !important;
+  background-color: hsla(var(--hsl-main-color), 0.3) !important;
   transition: 200ms ease-out background-color;
 }
 ._5126c0cd07f243a0-backgroundFlash[style="background-color: rgba(148, 156, 247, 0);"] {
-  background-color: hsla(var(--accent-hsl), 0) !important;
+  background-color: hsla(var(--hsl-main-color), 0) !important;
   transition: 400ms background-color;
 }
 
@@ -793,6 +793,10 @@ code {
   left: -50px;
 }
 
+.f75fb00fb7356cbe-subtitleContainer {
+  box-shadow: var(--card-header-shadow);
+}
+
 ._5126c0cd07f243a0-messageListItem + ._5126c0cd07f243a0-divider,
 ._908e20001ad67812-divider + ._5126c0cd07f243a0-divider {
   margin-top: 2px;
@@ -826,10 +830,10 @@ code {
 }
 
 ._908e20001ad67812-isUnread {
-  border-color: hsla(var(--accent-hsl), var(--accent-opacity));
+  border-color: hsla(var(--hsl-main-color), var(--accent-opacity));
 }
 ._908e20001ad67812-isUnread ._908e20001ad67812-unreadPill {
-  background-color: hsla(var(--accent-hsl), var(--accent-opacity));
+  background-color: hsla(var(--hsl-main-color), var(--accent-opacity));
   color: var(--accent-text-color);
   text-shadow: none;
 }
@@ -837,8 +841,8 @@ code {
   filter: none;
 }
 ._908e20001ad67812-isUnread ._908e20001ad67812-unreadPillCapStroke {
-  color: hsla(var(--accent-hsl), var(--accent-opacity));
-  fill: hsla(var(--accent-hsl), var(--accent-opacity));
+  color: hsla(var(--hsl-main-color), var(--accent-opacity));
+  fill: hsla(var(--hsl-main-color), var(--accent-opacity));
 }
 
 .c19a557985eb7793-repliedMessage:before {
@@ -3790,6 +3794,10 @@ code {
   border: none;
 }
 
+.f37cb1984c371ee5-container {
+  box-shadow: var(--card-header-shadow);
+}
+
 ._2ea32c412048f708-unread {
   box-shadow: 0 0 6px 1px var(--hsl-main-color);
 }
@@ -3957,6 +3965,10 @@ code {
 .plusIcon__675e5:hover,
 ._99e7cad8d4c55236-privateChannelRecipientsInviteButtonIcon:hover {
   color: var(--hsl-hover-color);
+}
+
+.e6b7699ce8339e1c-searchBar {
+  box-shadow: var(--card-header-shadow);
 }
 
 ._99e7cad8d4c55236-empty {
