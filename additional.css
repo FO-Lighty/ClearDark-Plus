@@ -52,3 +52,26 @@
 .visual-refresh .bd-addon-header {
   background: var(--hsl-card-shading);
 }
+.visual-refresh .bd-addon-list.bd-addon-header {
+  box-shadow: var(--card-header-shadow);
+}
+.visual-refresh .bd-switch .bd-switch-body {
+  --switch-color: var(--switch-slider-color);
+}
+.visual-refresh .bd-switch .bd-switch-body .bd-switch-handle {
+  fill: var(--switch-knob-color);
+}
+.visual-refresh .bd-switch input:active + .bd-switch-body {
+  --switch-color: var(--switch-slider-color);
+}
+.visual-refresh .bd-switch input:checked + .bd-switch-body {
+  --switch-color: var(--main-color);
+  --switch-knob-color: var(--accent-text-color);
+}
+.visual-refresh .bd-switch input:checked:active + .bd-switch-body {
+  --switch-color: var(--main-color);
+}
+.visual-refresh .bd-switch-disabled {
+  opacity: 0.3;
+  filter: none;
+}
