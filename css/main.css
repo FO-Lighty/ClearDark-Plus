@@ -3576,6 +3576,9 @@ code {
   left: 0;
   bottom: 0;
   padding: 8px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  backdrop-filter: blur(2px);
 }
 
 :is(.theme-light, .theme-dark) ._5dec784a68542d60-panel {
