@@ -43,3 +43,14 @@
 #{c(main focusRing)} {
   box-shadow: 0 0 0 4px var(--focus-color);
 }
+
+//CONTENT SHADOW
+#{c(main appMount)} {
+  * {
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  svg {
+    filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.5));
+  }
+}
