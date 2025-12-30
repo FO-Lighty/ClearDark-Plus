@@ -3790,6 +3790,10 @@ code {
   border: none;
 }
 
+.f37cb1984c371ee5-container {
+  box-shadow: var(--card-header-shadow);
+}
+
 ._2ea32c412048f708-unread {
   box-shadow: 0 0 6px 1px var(--hsl-main-color);
 }
