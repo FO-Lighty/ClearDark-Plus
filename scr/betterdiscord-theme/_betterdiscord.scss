@@ -67,4 +67,10 @@
     opacity: 0.3;
     filter: none;
   }
+  //buttons
+  #{c(bd controls)} {
+    #{c(bd button)}#{c(other cv bdSettingsSidebarItemSelected)} {
+      background-color: cv('color.main');
+    }
+  }
 }
