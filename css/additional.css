@@ -75,3 +75,6 @@
   opacity: 0.3;
   filter: none;
 }
+.visual-refresh .bd-addon-controls .bd-button.selected {
+  background-color: var(--hsl-main-color);
+}
