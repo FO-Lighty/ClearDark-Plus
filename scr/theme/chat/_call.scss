@@ -36,6 +36,11 @@
     background: cv('color.danger');
   }
 }
+#{c(call disconnect)} {
+  &#{c(call dropdownButton)} {
+    background-color: cv('color.danger'),
+  }
+}
 
 // USERS
 #{c(call tileBorder)} {
