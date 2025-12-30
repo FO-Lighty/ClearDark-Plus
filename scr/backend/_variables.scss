@@ -20,18 +20,18 @@
   // }
   $r: map.get($cv, $p);
   @if not $r {
-    @error "#{$p} is not a valid ClearDark+ set";
+    @error "#{$p} is not a valid ClearVision set";
   }
   @while string.index($s, '.') {
     $r: map.get($r, string.slice($s, 0, string.index($s, '.') - 1));
     @if not $r {
-      @error "Property #{$id} not found in ClearDark+ #{$p} set";
+      @error "Property #{$id} not found in ClearVision #{$p} set";
     }
     $s: string.slice($s, string.index($s, '.') + 1);
   }
   $r: map.get($r, $s);
   @if not $r {
-    @error "Property #{$id} not found in ClearDark+ #{$p} set";
+    @error "Property #{$id} not found in ClearVision #{$p} set";
   }
   @return $r;
 }
@@ -95,6 +95,11 @@ $cv: (
   font: (
       main: var(--main-font),
       code: var(--code-font),
+    ),
+
+  // BOX-SHADOW - SHADOW TO THE CONTENT TO MAKE IT MORE ALIVE
+  shadow: (
+      bottom: var(--card-header-shadow),
     ),
 
   // These only have the image, attachment and filter variables.
