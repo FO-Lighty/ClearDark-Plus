@@ -29,13 +29,17 @@ jobs:
 
       # 4. Execute compilation: src/main.scss -> main.css
       - name: Builder CSS
-        # The 'main.css' destination is at the root, which is ideal for Discord
-        run: sass scr/main.scss css/main.css --load-path=scr --no-source-map
+        # The destination is at the root, which is ideal for Discord
+        run: |
+          sass scr/main.scss main.css --load-path=scr --no-source-map
+          sass scr/betterdiscord.scss additional.css --load-path=scr --no-source-map
 
       # 5. Update the main.css file on GitHub
       - name: Deploy
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: 'CSS Version updated'
-          files: 'main.css'
+          files: |
+            main.css
+            additional.css
           commit_user_name: "Lighty's Compiler Bot"
