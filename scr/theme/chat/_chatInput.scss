@@ -10,7 +10,7 @@
   border-color: transparent;
   &:focus-within {
     border-color: transparent;
-    box-shadow: 0 0 2px 2px var(--hsl-main-color);
+    box-shadow: 0 0 2px 2px cv('color.main');
   }
 }
 #{c(chatForm stackedBars)},
