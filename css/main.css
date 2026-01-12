@@ -766,6 +766,9 @@ code {
   --message-color: hsl(var(--mention-hsl));
   --message-color-hover: hsl(var(--mention-hsl));
 }
+._5126c0cd07f243a0-message .f61d60ed65f9a128-wrapper {
+  background: var(--mention-color);
+}
 ._5126c0cd07f243a0-message._5126c0cd07f243a0-replying {
   border-color: hsla(var(--reply-hsl), var(--reply-opacity));
   box-shadow: 0px 0px 13px 4px hsla(var(--reply-hsl), var(--reply-opacity));
