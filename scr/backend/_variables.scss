@@ -64,6 +64,8 @@ $cv: (
       // status: streaming
       offline: var(--hsl-offline-color),
       // status: invisible, offline
+      mention: var(--mention-color),
+      // status: main accent applied on the mention messages
     ),
   // SHADINGS - TO BE USED IN .theme-light AND .theme-dark
   shading: (
