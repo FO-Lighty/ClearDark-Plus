@@ -104,7 +104,8 @@
 	    }
     }
 	#{c(chat mentionWrapper)} {
-		background: cv('color.mention')
+		background: cv('color.mention');
+		color: cv('text.normal');
 	}
 
 	// REPLY HIGHLIGHT
