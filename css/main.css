@@ -768,6 +768,7 @@ code {
 }
 ._5126c0cd07f243a0-message .f61d60ed65f9a128-wrapper {
   background: var(--mention-color);
+  color: var(--text-default);
 }
 ._5126c0cd07f243a0-message._5126c0cd07f243a0-replying {
   border-color: hsla(var(--reply-hsl), var(--reply-opacity));
