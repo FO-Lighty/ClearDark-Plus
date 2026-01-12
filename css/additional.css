@@ -1,4 +1,4 @@
-/*! ClearDark+ - BetterDiscord Addon v2.3.1 by Lighty.Jr */
+/*! ClearDark+ - BetterDiscord Addon v2.3.2 by Lighty.Jr */
 @keyframes cv-channel-select {
   from {
     right: 100%;
@@ -18,7 +18,7 @@
     opacity: 0.66;
   }
 }
-/*! ClearDark+ - BetterDiscord Addon v2.3.1 by Lighty.Jr */
+/*! ClearDark+ - BetterDiscord Addon v2.3.2 by Lighty.Jr */
 .visual-refresh .bd-store-card {
   background: var(--hsl-card-shading);
   border: 1px solid transparent;
