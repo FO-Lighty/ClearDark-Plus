@@ -103,6 +103,9 @@
 	        --message-color-hover: hsl(var(--mention-hsl));
 	    }
     }
+	#{c(chat mentionWrapper)} {
+		background: cv('color.mention')
+	}
 
 	// REPLY HIGHLIGHT
     &#{c(chat replying)} {
