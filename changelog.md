@@ -2,7 +2,9 @@
 
 ## Changelog
 
-### Version 2.3.1 (30/12/2025)
+### Version 2.3.2 (12/01/2026)
+
+### **Legacy Support Notice:** Versions of the theme lower than **version 2.3.2** are no longer supported. Please ensure you are using the latest version for continued compatibility.
 
 * **Backend:**
 
