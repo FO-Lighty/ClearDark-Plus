@@ -1,9 +1,11 @@
 @use 'backend' as *;
 
-#{c(checkbox checkbox)} {
-  border-radius: 4px;
-  &#{c(checkbox checked)} {
-    border-color: cv('color.main');
-    background-color: transparent;
+#{c(checkbox option)}[data-selected] {
+  &,
+  &:hover:not([data-disabled]) {
+    #{c(checkbox indicator)} {
+      border-color: cv('color.main');
+      background-color: transparent;
+    }
   }
 }
