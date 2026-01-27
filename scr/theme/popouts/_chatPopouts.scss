@@ -30,27 +30,12 @@
   }
 }
 
-// GUILD TAG
-#{c(popouts guildTag spinner)} {
-  background: cv('shading.popout');
-}
-
 // STREAM PREVIEW
 #{c(popouts streamPreview popout)} {
   background: cv('shading.popout');
 }
 #{c(popouts streamPreview previewContainer)} {
   background: transparent;
-}
-:is(#{c(main themeDark)}, #{c(main themeLight)}) {
-  #{c(popouts streamPreview watchButton)} {
-    border-color: cv('color.main');
-    &:not([disabled]) {
-      &:hover {
-        border-color: cv('color.hover');
-      }
-    }
-  }
 }
 
 // PRIVATE VC PREVIEW
