@@ -17,12 +17,6 @@
 #{c(popouts inbox guildIcon)} {
   background-color: cv('shading.card');
 }
-#{c(popouts inbox button)} {
-  background: cv('shading.card');
-  &:hover:not(#{c(popouts inbox buttonDisabled)}) {
-    background: cv('shading.card');
-  }
-}
 #{c(popouts inbox emptyIcon)} {
   background: cv('color.main');
   color: var(--interactive-icon-active);
@@ -49,7 +43,7 @@
 }
 #{c(popouts inbox unread tutorialIcon)} {
   background: cv('color.main');
-  color: var(--interactive-text-active);
+  color: cv('icon.strong');
 }
 #{c(popouts inbox unread messages)} {
   background: cv('shading.card');
