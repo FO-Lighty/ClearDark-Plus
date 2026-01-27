@@ -626,7 +626,6 @@ $classes: (
       // <rect>
       'pointerEvents': 'pointerEvents__44b0c',
       // on <rect> usually relates to status
-      'avatarDecoration': 'avatarDecoration_c19a55',
       'decoration': 'avatarDecoration__44b0c',
       // appears under wrapper for people with avatar decorations
       // unsure where both of these classes are
@@ -961,7 +960,8 @@ $classes: (
 
     'chatHeaderBar': 'chatHeaderBar_dc83f5',
     // This channel is not on your channel list.
-   
+
+    'avatarDecoration': 'avatarDecoration_c19a55',
     'messageDivider': 'divider__5126c',
     'backgroundFlash': 'backgroundFlash__5126c',
     'messageListItem': 'messageListItem__5126c',
