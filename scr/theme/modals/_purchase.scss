@@ -60,11 +60,6 @@
 #{c(modals purchase boost upsellFooter)} {
   background: transparent;
 }
-:is(#{c(main themeLight)}, #{c(main themeDark)}) {
-  #{c(modals purchase boost quantityIconWrapper)} {
-    background: cv('shading.cardAlt');
-  }
-}
 #{c(modals purchase boost quantityValue)} {
   &,
   &:focus {
