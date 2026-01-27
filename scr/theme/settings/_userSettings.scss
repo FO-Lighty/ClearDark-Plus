@@ -55,12 +55,6 @@
 }
 
 // PROFILES
-#{c(userSettings profiles uploadImageOption)} {
-  background: cv('shading.cardAlt');
-  &:hover {
-    border: 2px solid cv('color.main');
-  }
-}
 #{c(userSettings profiles lockIcon)} {
   background: cv('color.main') !important;
 }
@@ -107,7 +101,7 @@
 
 // CONTENT & SOCIAL
 #{c(userSettings contentSocial blockedCard)} {
-  background: cv('shading.card');
+  background: cv('shading.cardAlt');
 }
 #{c(userSettings contentSocial blockedHeader)} {
   background: transparent;
@@ -118,7 +112,7 @@
 
 // FAMILY CENTER
 #{c(userSettings family box)} {
-  background: cv('shading.card');
+  background: cv('shading.cardAlt');
   border: none;
 }
 #{c(userSettings family row)} {
@@ -128,7 +122,7 @@
 
 // AUTHORISED APPS
 #{c(userSettings authedApps app)} {
-  background: cv('shading.card');
+  background: cv('shading.cardAlt');
 }
 #{c(userSettings authedApps header)} {
   background: transparent;
@@ -161,10 +155,6 @@
 }
 
 // CONNECTIONS
-#{c(userSettings connections connectContainer)},
-#{c(userSettings connections connection)} {
-  background: cv('shading.card');
-}
 #{c(userSettings connections accountButtonInner)},
 #{c(userSettings connections modal accountButtonInner)} {
   background-color: cv('shading.cardAlt');
@@ -184,18 +174,13 @@
 
 // NITRO - NO NITRO
 #{c(userSettings nitro perkCard)} {
-  background: cv('shading.card');
+  background: cv('shading.cardAlt');
 }
 #{c(userSettings nitro footerWrapperBase)} {
   background: cv('shading.popout');
 }
 #{c(userSettings nitro footerSubButton)} {
   color: cv('color.main') !important; // discord styles
-}
-#{c(userSettings nitro footerGiftButton)} {
-  &:hover {
-    background: transparent;
-  }
 }
 // NITRO - WITH NITRO
 #{c(userSettings nitro shareNitroContainer)} {
@@ -224,26 +209,15 @@
 #{c(userSettings billing paymentPane)} {
   background: cv('shading.card');
 }
-#{c(userSettings billing paginator)},
 #{c(userSettings billing payment)} {
   background: transparent;
 }
 #{c(userSettings billing expandedInfo)} {
   background: cv('shading.cardAlt');
 }
-:is(#{c(main themeLight)}, #{c(main themeDark)}) {
-  #{c(userSettings billing hoverablePayment)} {
-    &:hover {
-      background: transparent;
-    }
-  }
-  #{c(userSettings billing bottomDivider)} {
-    border-bottom-color: cv('shading.hover');
-  }
-  #{c(userSettings billing codeRedemptionRedirect)} {
-    background: cv('shading.card');
-    border: none;
-  }
+#{c(userSettings billing codeRedemptionRedirect)} {
+  background: transparent;
+  border: none;
 }
 
 // APPEARANCE
@@ -274,10 +248,10 @@
   }
 }
 #{c(userSettings voice soundButton)} {
-  background: cv('shading.card');
+  background: cv('shading.cardAlt');
 }
 #{c(userSettings voice cameraWrapper)} {
-  background: cv('shading.card');
+  background: cv('shading.cardAlt');
   border: none;
 }
 #{c(userSettings voice backgroundOptionRing)} {
@@ -286,7 +260,7 @@
 
 // KEYBINDS
 #{c(userSettings keybinds defaultgroup)} {
-  background: cv('shading.card');
+  background: cv('shading.cardAlt');
   border: none;
 }
 
