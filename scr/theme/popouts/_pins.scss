@@ -12,12 +12,3 @@
   background: cv('shading.cardAlt');
   border: none;
 }
-#{c(popouts pins jumpButton)} {
-  background: cv('color.main');
-  border-color: transparent;
-  color: var(--interactive-text-active);
-  &:hover {
-    background: cv('color.hover');
-    color: var(--interactive-text-active);
-  }
-}
