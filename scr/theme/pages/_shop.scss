@@ -28,14 +28,17 @@
 // LOADING
 #{c(shop loadingCardSkeleton)},
 #{c(shop loadingFeaturedSkeleton)} {
-  background: cv('shading.cardAlt');
+  background: cv('shading.card');
 }
-#{c(shop loadingCardBody)},
-#{c(shop loadingFeaturedBody)} {
-  background: cv('shading.cardAlt');
+#{c(main options fullMotion)} {
+  #{c(shop loadingCardSkeletonAnimation)},
+  #{c(shop loadingFeaturedSkeleton)} {
+    animation: cv-card-loading 1.5s infinite ease-in-out;
+  }
 }
-#{c(shop loadingCardContent)} {
-  background: transparent;
+#{c(shop loadingCardText)},
+#{c(shop loadingFeaturedLogo)} {
+  background: cv('shading.cardAlt');
 }
 
 // FILTER
@@ -59,4 +62,9 @@
 #{c(shop orbCard)} {
   background: cv('shading.card');
   border: 2px solid cv('color.main');
+}
+
+// hover on tabs
+#{c(shop tab)}:hover {
+  border-bottom: 2px solid cv('color.main');
 }
