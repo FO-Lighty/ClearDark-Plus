@@ -83,6 +83,10 @@
         margin: 2px 0;
     }
 
+	#{c(embeds embedBotContainer)} {
+ 		background: cv('shading.card');
+	}
+
 	// MENTIONED BG
 	&#{c(chat mentioned)} {
         border-color: hsla(var(--mention-hsl),var(--mention-opacity));
