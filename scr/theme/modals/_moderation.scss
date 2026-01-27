@@ -12,10 +12,3 @@
 #{c(modals timeout selectorButtonSelected)}{
   background: cv('color.main');
 }
-// BAN
-#{c(modals ban radioItem)} {
-  background: transparent;
-}
-#{c(modals ban otherReasonClickable)}{
-  background: cv('shading.cardAlt');
-}
