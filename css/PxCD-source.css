@@ -2059,18 +2059,16 @@ code {
   fill: var(--hsl-main-color);
 }
 
-.multiSelectCheckbox_a16aea.checked_a16aea {
-  background: var(--interactive-text-active);
-}
-.multiSelectCheckbox_a16aea.checked_a16aea path {
-  fill: var(--hsl-main-color);
+.selectField__0edde:not(.isInert__0edde):is(.isFocused__0edde, :focus-within) {
+  outline-color: var(--hsl-main-color);
 }
 
-.optionPillItem_a16aea .optionPillBtn_a16aea {
-  background: transparent;
-  border: none;
+.selectDropdown__0edde {
+  background-color: var(--hsl-popout-shading);
 }
-.optionPillItem_a16aea .optionPillBtn_a16aea .optionPillBtn_a16aea {
+
+.listBox__2e223:not(:focus-within) .listBoxItem__2e223[data-focus-visible=true], .keyboard-mode .listBoxItem__2e223:focus {
+  outline: none;
   background: var(--hsl-main-color);
 }
 
@@ -2343,10 +2341,6 @@ code {
 .container__16eb0 {
   background: var(--hsl-popout-shading);
   border: none;
-}
-
-.selectDropdown__5fa2f {
-  background: var(--hsl-popout-shading);
 }
 
 .calendarPicker_d27f17 .react-datepicker {
