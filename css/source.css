@@ -720,18 +720,18 @@ code {
 }
 
 .wrapper_c19a55.mentioned__5126c {
-  border-color: hsla(var(--mention-color), var(--mention-opacity));
-  box-shadow: 0px 0px 13px 4px hsla(var(--mention-color), var(--mention-opacity));
+  border-color: hsla(var(--hsl-mentioned-color), var(--mention-opacity));
+  box-shadow: 0px 0px 13px 4px hsla(var(--hsl-mentioned-color), var(--mention-opacity));
 }
 .wrapper_c19a55.mentioned__5126c:before {
   display: none;
 }
 .wrapper_c19a55 .repliedMessage_c19a55:before {
-  border-color: hsl(var(--mention-color));
+  border-color: hsl(var(--hsl-mentioned-color));
 }
 .wrapper_c19a55 .repliedMessageClickableSpine_c19a55 {
-  --message-color: hsl(var(--mention-color));
-  --message-color-hover: hsl(var(--mention-color));
+  --message-color: hsl(var(--hsl-mentioned-color));
+  --message-color-hover: hsl(var(--hsl-mentioned-color));
 }
 
 .wrapper_f61d60 {
