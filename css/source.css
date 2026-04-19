@@ -3805,6 +3805,7 @@ code {
 
 :root {
   --hsl-main-color: hsl(from var(--main-color) h calc(var(--saturation-factor, 1) * s) l/alpha);
+  --hsl-main-darker-color: hsl(from var(--darker-main-color) h calc(var(--saturation-factor, 1) * s) l/alpha);
   --hsl-hover-color: hsl(from var(--hover-color) h calc(var(--saturation-factor, 1) * s) l/alpha);
   --hsl-success-color: hsl(from var(--success-color) h calc(var(--saturation-factor, 1) * s) l/alpha);
   --hsl-warning-color: hsl(from var(--warning-color) h calc(var(--saturation-factor, 1) * s) l/alpha);
@@ -3827,6 +3828,7 @@ code {
   --font-code: var(--code-font);
   --focus-primary: var(--focus-color);
   --main-color: #618098;
+  --darker-main-color: #060809;
   --hover-color: #8199ad;
   --success-color: #43b581;
   --warning-color: #fff;
