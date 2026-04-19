@@ -617,10 +617,6 @@ code {
   border-radius: 4px;
 }
 
-.colorable_f1ceac.disconnect_f1ceac {
-  background: var(--hsl-danger-color);
-}
-
 .border__2f4f7.speaking__2f4f7 {
   box-shadow: inset 0 0 0 2px var(--hsl-main-color);
 }
