@@ -721,8 +721,8 @@ code {
 }
 
 .wrapper_c19a55.mentioned__5126c {
-  border-color: var(--hsl-mentioned-color);
-  box-shadow: 0px 0px 13px 4px var(--hsl-mentioned-color);
+  border-color: hsl(from var(--mention-color) h s l/var(--mention-opacity));
+  box-shadow: 0px 0px 13px 4px hsl(from var(--mention-color) h s l/var(--mention-opacity));
 }
 .wrapper_c19a55.mentioned__5126c:before {
   display: none;
@@ -741,8 +741,8 @@ code {
 }
 
 .replying__5126c {
-  border-color: hsl(from var(--mention-color) h s l/var(--mention-opacity)) !important;
-  box-shadow: 0px 0px 13px 4px hsl(from var(--mention-color) h s l/var(--mention-opacity));
+  border-color: hsla(var(--reply-hsl), var(--reply-opacity));
+  box-shadow: 0px 0px 13px 4px hsla(var(--reply-hsl), var(--reply-opacity));
 }
 .replying__5126c:before {
   display: none;
