@@ -36,6 +36,7 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
   // generic colors
   --hsl-main-color: hsl(from var(--main-color) #{$calc});
   --hsl-main-darker-color: hsl(from var(--darker-main-color) #{$calc});
+  --hsl-mentioned-color: hsl(from var(--mention-color) #{$calc});
   --hsl-hover-color: hsl(from var(--hover-color) #{$calc});
   --hsl-success-color: hsl(from var(--success-color) #{$calc});
   --hsl-warning-color: hsl(from var(--warning-color) #{$calc});
