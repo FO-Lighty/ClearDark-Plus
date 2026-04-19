@@ -90,8 +90,8 @@
 // MENTIONED BG
 #{c(chat messageWrapper)} {
 	&#{c(chat mentioned)} {
-		border-color: hsla(var(--hsl-mentioned-color),var(--mention-opacity));
-		box-shadow: 0px 0px 13px 4px hsla(var(--hsl-mentioned-color),var(--mention-opacity));
+		border-color: var(--hsl-mentioned-color);
+		box-shadow: 0px 0px 13px 4px var(--hsl-mentioned-color);
 
 		&:before {
 			display: none;
@@ -116,7 +116,7 @@
 
 // REPLY HIGHLIGHT
 #{c(chat replying)} {
-	border-color: hsla(var(--reply-hsl),var(--reply-opacity));
+	border-color: hsla(var(--reply-hsl),var(--reply-opacity)) !important;
 	box-shadow: 0px 0px 13px 4px hsla(var(--reply-hsl),var(--reply-opacity));
 
 	&:before {
