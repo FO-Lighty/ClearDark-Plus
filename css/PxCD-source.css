@@ -723,11 +723,11 @@ code {
 .message__5126c .container__60fa3 {
   background: var(--hsl-card-shading);
 }
-.message__5126c.wrapper_c19a55 {
+.message__5126c.wrapper_c19a55 .mentioned__5126c {
   border-color: hsla(var(--mention-color), var(--mention-opacity));
   box-shadow: 0px 0px 13px 4px hsla(var(--mention-color), var(--mention-opacity));
 }
-.message__5126c.wrapper_c19a55:before {
+.message__5126c.wrapper_c19a55 .mentioned__5126c:before {
   display: none;
 }
 .message__5126c.wrapper_c19a55 .repliedMessage_c19a55:before {
