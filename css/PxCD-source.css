@@ -2570,6 +2570,7 @@ code {
   background-attachment: var(--user-popout-attachment);
   filter: var(--user-popout-filter);
   z-index: -1;
+  border-radius: 8px;
 }
 
 :is(.user-profile-modal, .user-profile-modal-v2):not(.custom-user-profile-theme)::before {
@@ -2581,6 +2582,7 @@ code {
   background-attachment: var(--user-modal-attachment);
   filter: var(--user-modal-filter);
   z-index: -1;
+  border-radius: 16px;
 }
 
 .outer_c0bea0 {
