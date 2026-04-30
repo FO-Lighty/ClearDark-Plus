@@ -5,10 +5,6 @@
   transform: unset !important;
 }
 
-// :is(.user-profile-modal, .user-profile-modal-v2):not(.custom-user-profile-theme)::before){
-  
-}
-
 // NO NITRO PROFILE
 #{c(profile userPopout)} {
   &:not(#{c(profile customTheme)}) {
