@@ -5,6 +5,10 @@
   transform: unset !important;
 }
 
+// :is(.user-profile-modal, .user-profile-modal-v2):not(.custom-user-profile-theme)::before){
+  
+}
+
 // NO NITRO PROFILE
 #{c(profile userPopout)} {
   &:not(#{c(profile customTheme)}) {
@@ -17,6 +21,7 @@
       background-attachment: cv('bg.popout.attach');
       filter: cv('bg.popout.filter');
       z-index: -1;
+      border-radius: 8px;
     }
   }
 }
@@ -31,6 +36,7 @@
       background-attachment: cv('bg.modal.attach');
       filter: cv('bg.modal.filter');
       z-index: -1;
+      border-radius: 16px;
     }
   }
 }
