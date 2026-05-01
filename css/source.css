@@ -2672,6 +2672,14 @@ code {
   background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.3));
 }
 
+.banner__68edb {
+  border-radius: 8px !important;
+}
+
+.profile__9c3be {
+  border-radius: 15px !important;
+}
+
 /*! ClearDark+ v2.3.2 by Lighty.Jr */
 .outer_c0bea0:not(.custom-user-profile-theme) .role_dfa8b6 {
   border-radius: 4px;
