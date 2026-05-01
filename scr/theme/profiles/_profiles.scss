@@ -149,3 +149,13 @@
     background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.3));
   }
 }
+
+// BANNER PROFILE
+#{c(profile banner banner)} {
+  border-radius: 8px !important;
+}
+#{c(profile modal profile)} {
+  border-radius: 15px !important;
+}
+
+// WIDGETS
