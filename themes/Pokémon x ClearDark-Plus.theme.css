@@ -2,7 +2,7 @@
  * @name Pokémon x ClearDark+v2
  * @author Lighty.Jr
  * @authorId 975102868564639835
- * @version 2.3.2-S
+ * @version 2.3.3-S
  * @description Version 2 of that Translucent Clear Dark Glass Discord theme with a special acolyte
  * @website https://fo-lighty.github.io/ClearDark-Plus
  * @source https://github.com/FO-Lighty/ClearDark-Plus
@@ -19,7 +19,7 @@
   --success-color: #9d9a71; /* positive accent color (hex, rgb or hsl) [default: #9d9a71] */
   --danger-color: #703f56; /* danger accent color (hex, rgb or hsl) [default: #703f56] */
   --accent-text-color: hsl(0,0%,98%); /* The accent text color [default: hsl(0,0%,98%)]. */
-  --darker-main-color: hsl(45,18%,13%);
+  --darker-main-color: hsl(45,18%,13%); /* darker main color (hex, rgb or hsl) [default: hsl(45,18%,13%)] */
   /* STATUS COLORS */
   --online-color: #43b581; /* online status color (hex, rgb or hsl) [default: #43b581] */
   --idle-color: #faa61a; /* idle status color (hex, rgb or hsl) [default: #faa61a] */
@@ -72,11 +72,11 @@
   /* FONTS */
   --main-font: "gg sans", "Helvetica Neue", Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [default: gg sans, Helvetica Neue, Helvetica, Arial, sans-serif] */
   --code-font: Consolas, "gg mono", "Liberation Mono", Menlo, Courier, monospace; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
-  /* CHANNEL COLORS */
-  --channel-normal: var(--interactive-normal); /* channel text color [default: var(--interactive-normal)] */
+ /* CHANNEL COLORS */
+  --channel-normal: var(--interactive-text-default); /* channel text color [default: var(--interactive-text-default)] */
   --channel-muted: var(--interactive-muted); /* muted channel text color [default: var(--interactive-muted)] */
-  --channel-hover: var(--interactive-hover); /* hovered channel text color [default: var(--interactive-hover)] */
-  --channel-selected: var(--interactive-active); /* selected channel text color [default: var(--interactive-active)] */
+  --channel-hover: var(--interactive-text-hover); /* hovered channel text color [default: var(--interactive-text-hover)] */
+  --channel-selected: var(--interactive-text-active); /* selected channel text color [default: var(--interactive-text-active)] */
   --channel-selected-bg: var(--main-color); /* selected channel background [default: var(--main-color)] */
   --channel-unread: var(--main-color); /* unread channel text color [default: var(--main-color)] */
   --channel-unread-hover: var(--hover-color); /* unread channel hover color [default: var(--hover-color)] */
@@ -87,7 +87,7 @@
 /* THEME SPECIFIC SHADING */
 /* LIGHT THEME */
 :is(.theme-light, .theme-dark .theme-light) {
-  --background-shading: rgba(252, 252, 252, 0.2); /* app background shading color [default: rgba(252, 252, 252, 0.3)] */
+  --background-shading: rgba(252, 252, 252, 0.2); /* app background shading color [default: rgba(252, 252, 252, 0.2)] */
   --card-shading: rgba(252, 252, 252, 0.3); /* cards background shading color [default: rgba(252, 252, 252, 0.3)] */
   --popout-shading: rgba(252, 252, 252, 0.7); /* popouts background shading color [default: rgba(252, 252, 252, 0.7)] */
   --modal-shading: rgba(252, 252, 252, 0.5); /* modals background shading color [default: rgba(0, 0, 0, 0.6)] */
@@ -98,7 +98,7 @@
 
 /* ASH THEME */
 :is(.theme-dark, .theme-light .theme-dark) {
-  --background-shading: rgba(0, 0, 0, 0.3); /* app background shading color [default: rgba(0, 0, 0, 0.4)] */
+  --background-shading: rgba(0, 0, 0, 0.3); /* app background shading color [default: rgba(0, 0, 0, 0.3)] */
   --card-shading: rgba(0, 0, 0, 0.2); /* cards background shading color [default: rgba(0, 0, 0, 0.2)] */
   --popout-shading: rgba(0, 0, 0, 0.6); /* popouts background shading color [default: rgba(0, 0, 0, 0.6)] */
   --modal-shading: rgba(0, 0, 0, 0.4); /* modals background shading color [default: rgba(0, 0, 0, 0.4)] */
@@ -109,7 +109,7 @@
 
 /* DARK THEME */
 :is(.theme-darker, .theme-light .theme-darker) {
-  --background-shading: rgba(0, 0, 0, 0.5); /* app background shading color [default: rgba(0, 0, 0, 0.6)] */
+  --background-shading: rgba(0, 0, 0, 0.5); /* app background shading color [default: rgba(0, 0, 0, 0.5)] */
   --card-shading: rgba(0, 0, 0, 0.3); /* cards background shading color [default: rgba(0, 0, 0, 0.3)] */
   --popout-shading: rgba(0, 0, 0, 0.7); /* popouts background shading color [default: rgba(0, 0, 0, 0.7)] */
   --modal-shading: rgba(0, 0, 0, 0.5); /* modals background shading color [default: rgba(0, 0, 0, 0.6)] */
@@ -120,7 +120,7 @@
 
 /* ONYX THEME */
 :is(.theme-midnight, .theme-light .theme-midnight) {
-  --background-shading: rgba(0, 0, 0, 0.6); /* app background shading color [default: rgba(0, 0, 0, 0.8)] */
+  --background-shading: rgba(0, 0, 0, 0.6); /* app background shading color [default: rgba(0, 0, 0, 0.6)] */
   --card-shading: rgba(0, 0, 0, 0.4); /* cards background shading color [default: rgba(0, 0, 0, 0.4)] */
   --popout-shading: rgba(0, 0, 0, 0.8); /* popouts background shading color [default: rgba(0, 0, 0, 0.8)] */
   --modal-shading: rgba(0, 0, 0, 0.6); /* modals background shading color [default: rgba(0, 0, 0, 0.6)] */
