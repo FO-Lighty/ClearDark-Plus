@@ -512,8 +512,8 @@ code {
 }
 
 .wrapper_f7ecac {
-  background-color: var(--hsl-popout-shading);
-  border-color: var(--hsl-popout-shading);
+  background-color: var(--hsl-popout-shading) !important;
+  border-color: var(--hsl-popout-shading) !important;
   box-shadow: none;
 }
 
