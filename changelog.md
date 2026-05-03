@@ -2,9 +2,33 @@
 
 ## Changelog
 
+### Version 2.4.0 (05/03/2026)
+
+#### **Legacy Support Notice:** Versions of the theme lower than **version 2.4.0** are no longer supported. A warning banner will now appear if your theme is out of date. Please ensure you are using the latest version for continued compatibility.
+
+* **Backend:**
+
+    - **GitHub Actions Automation:** Enhanced the `builder.yml` workflow to automatically generate a unified `:root` inside the `_version.scss file`, ensuring seamless version tracking.
+
+    - **SCSS Logic Optimization:** Transitioned from manual version strings to Sass interpolation `(#{$theme-version})` for more reliable and error-free builds.
+ 
+    - **Multi-Version Tracking:** Implemented dual-variable tracking (`--latest-stable-version` and `--latest-stable-version-s`) to support both the Base ClearDark+ and Pokémon Collab versions of the theme simultaneously.
+
+ * **Automated Alert Banner:** Added a top-bar notification that triggers automatically if a theme update is available, displaying both current and new version numbers. *(Updates to the `.theme.css` file will be rare, so you won't see this banner often.)*
+
+ * **HSL Color Migration:** Converted some key UI colors to HSL format for better control over saturation and brightness.
+
+ * **Variable Standardization:** Standardized all CSS variable comments to include descriptions, formats *(hex, rgb, hsl)*, and default values for easier user customization.
+
+ * **Improved Maintenance:** The new centralized versioning system allows for instant theme-wide updates just by pushing a new version tag to GitHub.
+
+ * **Fixed** various bugs related to color transparency and class naming.
+
+-----------------------------------------------------------------------------------------------------------
+
 ### Version 2.3.2 (12/01/2026)
 
-### **Legacy Support Notice:** Versions of the theme lower than **version 2.3.2** are no longer supported. Please ensure you are using the latest version for continued compatibility.
+#### **Legacy Support Notice:** Versions of the theme lower than **version 2.3.2** are no longer supported. Please ensure you are using the latest version for continued compatibility.
 
 * **Backend:**
 
@@ -32,6 +56,8 @@
 
 * **Fixed** various bugs.
 
+-----------------------------------------------------------------------------------------------------------
+
 ### Version 2.0.2 (10/31/2025)
 
 * **New Color Shade**: Added a darker shade of the `main color`, named `darker-main-color`, for enhanced design versatility.
@@ -40,11 +66,15 @@
 
 * Continued updating the back-end code.
 
+-----------------------------------------------------------------------------------------------------------
+
 ### Version 2.0.1 (10/24/2025)
 
 * **Bug Fixes:** Addressed various outstanding issues.
 
 * **Discord-related fixes:** Fixed several problems caused by recent Discord updates that affected the theme's overall stability.
+
+-----------------------------------------------------------------------------------------------------------
 
 ### v2.0.0 (10/03/2025)
 
@@ -64,15 +94,21 @@
 
 * **Discord-related fixes:** Fixed several problems caused by recent Discord updates that affected the theme's overall stability.
 
+-----------------------------------------------------------------------------------------------------------
+
 ### v1.4.2 (08/03/2025)
 
 * **Adjusted** the theme description for coherence.
 
 * **Updated** the guide on the [GitHub project's](https://fo-lighty.github.io/ClearDark-Plus) main page.
 
+-----------------------------------------------------------------------------------------------------------
+
 ### v1.4.1 (08/01/2025)
 
 * **Fixed** an issue where the background wasn't displaying.
+
+-----------------------------------------------------------------------------------------------------------
 
 ### v1.4.0 (08/01/2025)
 
@@ -86,6 +122,8 @@
 
 * **Enhanced** animation performance for transitions and rendering containers.
 
+-----------------------------------------------------------------------------------------------------------
+
 ### v1.3.1 (05/05/2025)
 
 * Fix a probleme with the reply halo using a wrong color.
@@ -94,9 +132,13 @@
 
 * The code has been **improved to load faster**.
 
+-----------------------------------------------------------------------------------------------------------
+
 ### v1.3.0 (04/30/2025)
 
 * Old assets have been moved to a dedicated directory to facilitate the introduction of modern design, and potentially a theme refresh.
+
+-----------------------------------------------------------------------------------------------------------
 
 ### v1.2.1 (04/14/2025)
 
@@ -104,11 +146,17 @@
 
 * The code has been **improved to load faster** on startup.
 
+-----------------------------------------------------------------------------------------------------------
+
 ### v1.1.0 (03/15/2025)
 * **Lots of work** in the background refining the `source.css` file behind the scenes. You might not notice all the changes, but they're real for a smoother experience.
 
+-----------------------------------------------------------------------------------------------------------
+
 ### v1.0.1 (01/31/2025)
 * Fix the background that's no longer displaying correctly after 1 week.
+
+-----------------------------------------------------------------------------------------------------------
 
 ### v1.0.0 (01/18/2025)
 * Initial release.
