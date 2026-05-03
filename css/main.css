@@ -803,6 +803,11 @@ code {
   right: 0;
 }
 
+.gifFavoriteButton__43deb {
+  background: var(--hsl-popout-shading);
+  transform: translateY(-40px);
+}
+
 .content__908e2 {
   width: 120px;
   padding: 2px 0;
