@@ -9,8 +9,8 @@
  */
 
   /* IMPORT CSS */
-  @import url("https://fo-lighty.github.io/ClearDark-Plus/css/PxCD-source.css");
-  @import url("https://fo-lighty.github.io/ClearDark-Plus/css/additional.css");
+  @import url("https://fo-lighty.github.io/ClearDark-Plus/css/PxCD-main.css");
+  @import url("https://fo-lighty.github.io/ClearDark-Plus/css/additionals.css");
   /* SETTINGS */
 :root {
   /* ACCENT COLORS */
@@ -19,7 +19,8 @@
   --success-color: #9d9a71; /* positive accent color (hex, rgb or hsl) [default: #9d9a71] */
   --danger-color: #703f56; /* danger accent color (hex, rgb or hsl) [default: #703f56] */
   --accent-text-color: hsl(0,0%,98%); /* The accent text color [default: hsl(0,0%,98%)]. */
-  --darker-main-color: hsl(45,18%,13%); /* darker main color (hex, rgb or hsl) [default: hsl(45,18%,13%)] */
+  --hsl-danger-color-hover: hsl(331, 28%, 35%); /* danger accent color hovered (hex, rgb or hsl) [default: hsl(331, 28%, 35%)] */
+  --darker-main-color: #27231c; /* darker main color (hex, rgb or hsl) [default: #27231c] */
   /* STATUS COLORS */
   --online-color: #43b581; /* online status color (hex, rgb or hsl) [default: #43b581] */
   --idle-color: #faa61a; /* idle status color (hex, rgb or hsl) [default: #faa61a] */
@@ -45,6 +46,8 @@
   --user-popout-filter: var(--background-filter); /* user popout background adjustments (ex: blur, saturation, brightness) (more info: https://developer.mozilla.org/en-US/docs/Web/CSS/filter) [default: var(--background-filter);] */
   /* REPLY COLOR SETTINGS */
   --reply-accent: #d4d2ae; /* reply accent color (hex, rgb or hsl) [default: #d4d2ae] */
+  /* VERSION LOCAL THEME*/
+  --user-local-version: "2.3.3-S"; /* your current installed version [DO NOT EDIT] */
   /* CARD SETTINGS */
   --card-color: hsl(0,0%,0%,0.4); /* the background color of the cards [default: hsl(0,0%,0%,0.4)] */
   --card-color-hover: hsl(0,0%,0%,0.5); /* the background color of the cards when hovered [default: hsl(0,0%,0%,0.5)] */
@@ -90,8 +93,8 @@
   --background-shading: rgba(252, 252, 252, 0.2); /* app background shading color [default: rgba(252, 252, 252, 0.2)] */
   --card-shading: rgba(252, 252, 252, 0.3); /* cards background shading color [default: rgba(252, 252, 252, 0.3)] */
   --popout-shading: rgba(252, 252, 252, 0.7); /* popouts background shading color [default: rgba(252, 252, 252, 0.7)] */
-  --modal-shading: rgba(252, 252, 252, 0.5); /* modals background shading color [default: rgba(0, 0, 0, 0.6)] */
-  --input-shading: rgba(0, 0, 0, 0.3); /* inputs background shading color [default: rgba(0, 0, 0, 0.6)] */
+  --modal-shading: rgba(252, 252, 252, 0.5); /* modals background shading color [default: rgba(0, 0, 0, 0.5)] */
+  --input-shading: rgba(0, 0, 0, 0.3); /* inputs background shading color [default: rgba(0, 0, 0, 0.3)] */
   --normal-text: #36363c; /* text color [default: #36363c] */
   --muted-text: #75757e; /* muted text color [default: #75757e] */
 }
@@ -112,7 +115,7 @@
   --background-shading: rgba(0, 0, 0, 0.5); /* app background shading color [default: rgba(0, 0, 0, 0.5)] */
   --card-shading: rgba(0, 0, 0, 0.3); /* cards background shading color [default: rgba(0, 0, 0, 0.3)] */
   --popout-shading: rgba(0, 0, 0, 0.7); /* popouts background shading color [default: rgba(0, 0, 0, 0.7)] */
-  --modal-shading: rgba(0, 0, 0, 0.5); /* modals background shading color [default: rgba(0, 0, 0, 0.6)] */
+  --modal-shading: rgba(0, 0, 0, 0.5); /* modals background shading color [default: rgba(0, 0, 0, 0.5)] */
   --input-shading: rgba(255, 255, 255, 0.05); /* inputs background shading color [default: rgba(255, 255, 255, 0.05)] */
   --normal-text: #fbfbfb; /* text color [default: #fbfbfb] */
   --muted-text: #94949c; /* muted text color [default: #94949c] */
