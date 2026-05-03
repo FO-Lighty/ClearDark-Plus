@@ -55,6 +55,34 @@
 .visual-refresh .bd-addon-list.bd-addon-header {
   box-shadow: var(--card-header-shadow);
 }
+.visual-refresh .bd-notification {
+  background: var(--hsl-card-shading);
+}
+.visual-refresh .bd-notification-footer {
+  background: transparent;
+}
+.visual-refresh .bd-modal-root {
+  background: var(--hsl-card-shading);
+  border: 2px solid var(--hsl-main-color);
+}
+.visual-refresh .bd-modal-footer {
+  background: transparent;
+}
+.visual-refresh .bd-button-filled.bd-button-color-primary {
+  border-radius: 4px;
+  background: var(--hsl-main-color);
+  border-color: transparent;
+}
+.visual-refresh .bd-button-filled.bd-button-color-primary:hover, .visual-refresh .bd-button-filled.bd-button-color-primary:active {
+  background: var(--hsl-hover-color);
+  border-color: transparent;
+}
+.visual-refresh .bd-addon-error-icon {
+  background: var(--hsl-main-color);
+}
+.visual-refresh .bd-addon-error {
+  border: 1px solid var(--hsl-main-color);
+}
 .visual-refresh .bd-switch .bd-switch-body {
   --switch-color: var(--switch-slider-color);
 }
