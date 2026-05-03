@@ -2,7 +2,7 @@
  * @name ClearDark+
  * @author Lighty.Jr
  * @authorId 975102868564639835
- * @version 2.3.3
+ * @version 2.4.0
  * @description Version 2 of that Translucent Clear Dark Glass Discord theme
  * @website https://fo-lighty.github.io/ClearDark-Plus
  * @source https://github.com/FO-Lighty/ClearDark-Plus
@@ -47,7 +47,7 @@
   /* REPLY COLOR SETTINGS */
   --reply-accent: #738292; /* reply accent color (hex, rgb or hsl) [default: #738292] */
   /* VERSION LOCAL THEME*/
-  --user-local-version: "2.3.3"; /* your current installed version [DO NOT EDIT] */
+  --user-local-version: "2.4.0"; /* your current installed version [DO NOT EDIT] */
   /* CARD SETTINGS */
   --card-color: hsl(0,0%,0%,0.4); /* the background color of the cards [default: hsl(0,0%,0%,0.4)] */
   --card-color-hover: hsl(0,0%,0%,0.5); /* the background color of the cards when hovered [default: hsl(0,0%,0%,0.5)] */
