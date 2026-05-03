@@ -1,11 +1,14 @@
 @use 'start' as *;
-/*! Pokémon x ClearDark+ v#{$version} by #{$author} */
+/*! Pokémon x ClearDark+ v#{$version}-s by #{$author} */
 
 // Import Functions, Variables, Mixins and Class list functionality.
 @use 'backend' as *;
 
 // Contains the theme proper.
 @use 'theme';
+
+// Import bot-generated version file
+@import 'version';
 
 /* Default Variables */
 $sf: var(--saturation-factor, 1);
@@ -62,6 +65,36 @@ $calc: h calc(#{$sf} * s) l / alpha; // avoid repetition
 
   --focus-primary: var(--focus-color);
 
+  // DO NOT EDIT THESE -- VARIABLES ARE NOT TO BE DISTRIBUTED TO END USER.
+  // If the version doesn't match the latest one
+  @container not style(--user-local-version: var(--latest-stable-version-s)) {
+    .app-mount {
+      border-top: 30px solid var(--danger-color) !important;
+    }
+    body::before {
+      content: "⚠️ Outdated version (" var(--user-local-version) "). v" var(--latest-stable-version-s) " is available on GitHub! ⚠️";
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0px;
+      height: 32px;
+      background: var(--danger-color);
+      color: var(--normal-text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+      font-family: var(--main-font);
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+      pointer-events: none;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+  }
+  
   // other stuff that the theme sets
 
   // THESE VARIABLES ARE TO BE EDITED BY THE END USER
