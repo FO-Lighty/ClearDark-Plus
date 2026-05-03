@@ -31,8 +31,8 @@ jobs:
       - name: Builder CSS
         # The destination is at the root, which is ideal for Discord
         run: |
-          THEME_VERSION_BASE=$(grep "@version" "ClearDark-Plus.theme.css" | awk '{print $3}')
-          THEME_VERSION_SPEC=$(grep "@version" "Pokémon x ClearDark-Plus.theme.css" | awk '{print $3}')
+          THEME_VERSION_BASE=$(grep "@version" "themes/ClearDark-Plus.theme.css" | awk '{print $3}')
+          THEME_VERSION_SPEC=$(grep "@version" "themes/Pokémon x ClearDark-Plus.theme.css" | awk '{print $3}')
 
           echo ":root {
             --latest-stable-version: \"$THEME_VERSION_BASE\";
