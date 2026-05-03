@@ -4,7 +4,7 @@
 // Watermark
 #{c(settings sidebarInfo)} {
   &::after {
-    content: $themeName ' ' $version;
+    content: $themeName ' v' var(--user-local-version);
     color: cv('text.muted');
     font-size: 12px;
     line-height: calc(4 / 3);
@@ -25,7 +25,7 @@
       filter: drop-shadow(0 0 5px cv('color.main'));
     }
     &::after {
-      content: $version;
+      content: var(--user-local-version);
       position: static;
       margin-top: -5px;
       margin-left: 5px;
