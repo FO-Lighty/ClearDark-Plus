@@ -2,15 +2,15 @@
  * @name ClearDark+
  * @author Lighty.Jr
  * @authorId 975102868564639835
- * @version 2.3.2
+ * @version 2.3.3
  * @description Version 2 of that Translucent Clear Dark Glass Discord theme
  * @website https://fo-lighty.github.io/ClearDark-Plus
  * @source https://github.com/FO-Lighty/ClearDark-Plus
  */
 
   /* IMPORT CSS */
-  @import url("https://fo-lighty.github.io/ClearDark-Plus/css/source.css");
-  @import url("https://fo-lighty.github.io/ClearDark-Plus/css/additional.css");
+  @import url("https://fo-lighty.github.io/ClearDark-Plus/css/main.css");
+  @import url("https://fo-lighty.github.io/ClearDark-Plus/css/additionals.css");
   /* SETTINGS */
 :root {
   /* ACCENT COLORS */
@@ -19,7 +19,7 @@
   --success-color: #43b581; /* positive accent color (hex, rgb or hsl) [default: #43b581] */
   --danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */
   --accent-text-color: hsl(216,17%,94%); /* The accent text color [default: hsl(216,17%,94%)]. */
-  --hsl-danger-color-hover: hsl(0, 71%, 39%); /* The accent hover color [default: hsl(0,71%,39%)]. */
+  --hsl-danger-color-hover: hsl(0, 71%, 39%); /* danger accent color hovered (hex, rgb or hsl) [default: hsl(0, 71%, 39%)] */
   --darker-main-color: #060809; /* darker main accent color (hex, rgb or hsl) [default: #060809] */
   /* STATUS COLORS */
   --online-color: #43b581; /* online status color (hex, rgb or hsl) [default: #43b581] */
@@ -46,6 +46,8 @@
   --user-popout-filter: var(--background-filter); /* user popout background adjustments (ex: blur, saturation, brightness) (more info: https://developer.mozilla.org/en-US/docs/Web/CSS/filter) [default: var(--background-filter);] */
   /* REPLY COLOR SETTINGS */
   --reply-accent: #738292; /* reply accent color (hex, rgb or hsl) [default: #738292] */
+  /* VERSION LOCAL THEME*/
+  --user-local-version: "2.3.3"; /* your current installed version [DO NOT EDIT] */
   /* CARD SETTINGS */
   --card-color: hsl(0,0%,0%,0.4); /* the background color of the cards [default: hsl(0,0%,0%,0.4)] */
   --card-color-hover: hsl(0,0%,0%,0.5); /* the background color of the cards when hovered [default: hsl(0,0%,0%,0.5)] */
@@ -91,7 +93,7 @@
   --background-shading: rgba(252, 252, 252, 0.3); /* app background shading color [default: rgba(252, 252, 252, 0.3)] */
   --card-shading: rgba(252, 252, 252, 0.3); /* cards background shading color [default: rgba(252, 252, 252, 0.3)] */
   --popout-shading: rgba(252, 252, 252, 0.7); /* popouts background shading color [default: rgba(252, 252, 252, 0.7)] */
-  --modal-shading: rgba(252, 252, 252, 0.5); /* modals background shading color [default: rgba(0, 0, 0, 0.6)] */
+  --modal-shading: rgba(252, 252, 252, 0.5); /* modals background shading color [default: rgba(0, 0, 0, 0.5)] */
   --input-shading: rgba(0, 0, 0, 0.3); /* inputs background shading color [default: rgba(0, 0, 0, 0.6)] */
   --normal-text: #36363c; /* text color [default: #36363c] */
   --muted-text: #75757e; /* muted text color [default: #75757e] */
@@ -113,7 +115,7 @@
   --background-shading: rgba(0, 0, 0, 0.6); /* app background shading color [default: rgba(0, 0, 0, 0.6)] */
   --card-shading: rgba(0, 0, 0, 0.3); /* cards background shading color [default: rgba(0, 0, 0, 0.3)] */
   --popout-shading: rgba(0, 0, 0, 0.7); /* popouts background shading color [default: rgba(0, 0, 0, 0.7)] */
-  --modal-shading: rgba(0, 0, 0, 0.5); /* modals background shading color [default: rgba(0, 0, 0, 0.6)] */
+  --modal-shading: rgba(0, 0, 0, 0.5); /* modals background shading color [default: rgba(0, 0, 0, 0.5)] */
   --input-shading: rgba(255, 255, 255, 0.05); /* inputs background shading color [default: rgba(255, 255, 255, 0.05)] */
   --normal-text: #fbfbfb; /* text color [default: #fbfbfb] */
   --muted-text: #94949c; /* muted text color [default: #94949c] */
