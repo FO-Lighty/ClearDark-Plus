@@ -1,12 +1,17 @@
 # ClearDark+ v2
-#### **V2 has Arrived! The Translucent Dark Glass Theme You've Been Waiting For!**
+### **V2 has Arrived! The Translucent Dark Glass Theme You've Been Waiting For!**
 
-<br/>
+-------------------------------------------------------------------------
 
-## New version : ClearDark+ v2.3.2
+> [!IMPORTANT]
+> ### Legacy Support Notice: Versions of the theme lower than version 2.4.0 are no longer supported. A warning banner will now appear if your theme is out of date. Please ensure you are using the latest version for continued compatibility.
+
+-------------------------------------------------------------------------
+
+## New version : ClearDark+ v2.4.0
 Discord gets a sleek, luminous upgrade with the Translucent Dark Glass V2! It's clear, dark, and full of life, creating a modern and cheerful space for all your chats.
 
-* Check out the changelog : [Changelog v2.3.2](https://fo-lighty.github.io/ClearDark-Plus/changelog)
+* Check out the changelog : [Changelog v2.4.0](https://fo-lighty.github.io/ClearDark-Plus/changelog)
 
 #### **CSS link**
 
