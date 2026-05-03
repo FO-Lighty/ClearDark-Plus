@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 @keyframes cv-channel-select {
   from {
     right: 100%;
@@ -19,9 +19,9 @@
     opacity: 0.66;
   }
 }
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .info__2debe::after {
-  content: "ClearDark+" " " "2.3.3";
+  content: "ClearDark+" " " "2.4.0";
   color: var(--text-muted);
   font-size: 12px;
   line-height: 1.3333333333;
@@ -40,7 +40,7 @@
   filter: drop-shadow(0 0 5px var(--hsl-main-color));
 }
 :is(.theme-dark, .theme-light):not(.platform-osx) .leading_c38106::after {
-  content: "2.3.3";
+  content: "2.4.0";
   position: static;
   margin-top: -5px;
   margin-left: 5px;
@@ -51,7 +51,7 @@
   order: 3;
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .button__201d5 {
   border-radius: 4px;
 }
@@ -186,13 +186,13 @@
   color: var(--control-text-critical-primary-default);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .checkboxOption__714a9[data-selected] .checkboxIndicator__714a9, .checkboxOption__714a9[data-selected]:hover:not([data-disabled]) .checkboxIndicator__714a9 {
   border-color: var(--hsl-main-color);
   background-color: transparent;
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .wrapper__72c38 {
   background: var(--hsl-input-shading);
   border-color: var(--hsl-input-border-shading);
@@ -214,7 +214,7 @@
   outline: none;
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .outerRadioBase__64e61 {
   stroke: var(--icon-strong);
   stroke-width: 4;
@@ -229,7 +229,7 @@
   stroke: var(--icon-strong);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .slider_a562c8 .bar_a562c8,
 .slider_a562c8 .markDash_a562c8 {
   background: var(--hsl-card-shading);
@@ -241,12 +241,12 @@
   filter: drop-shadow(0 0 3px var(--hsl-main-color));
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .switchIndicator_a28278:not([style*="background-color: rgba(0, 0, 0, 0.12)"]) {
   background: var(--hsl-main-color) !important;
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 /* TAB */
 .top_aa8da2 .item_aa8da2 {
   --selected-tab-item-color: var(--hsl-hover-color);
@@ -287,7 +287,7 @@
   margin-left: 5px;
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .container_a45028 {
   background: var(--hsl-input-shading);
   border-color: var(--hsl-input-border-shading);
@@ -306,7 +306,7 @@
   box-shadow: 0 0 2px 0 var(--hsl-main-color);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .pageButton_c15210:hover {
   background: var(--background-mod-subtle);
 }
@@ -315,7 +315,7 @@
   background: var(--hsl-main-color);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 :is(html,
 body,
 .appMount__51fd7) {
@@ -361,7 +361,7 @@ body,
   filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.5));
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 body,
 button,
 input,
@@ -380,7 +380,7 @@ code {
   color: var(--text-default);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .bar_c38106 {
   background-color: transparent;
   padding-left: 0;
@@ -391,7 +391,7 @@ code {
   margin: 0 6px;
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 /* NOTICE */
 .notice__6e2b9 {
   border-radius: 4px;
@@ -417,7 +417,7 @@ code {
   background: transparent;
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 :is(.auto__99f8c, .auto_d125d2)::-webkit-scrollbar {
   width: 14px;
 }
@@ -444,7 +444,7 @@ code {
   background-color: var(--hsl-hover-color);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .mediaBarProgress_b26b79, .mediaBarProgress_b26b79::before, .mediaBarProgress_b26b79::after {
   background: var(--hsl-main-color);
 }
@@ -453,7 +453,7 @@ code {
   background: var(--hsl-main-color);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .authBox__921c5 {
   background-color: var(--hsl-modal-shading);
 }
@@ -462,15 +462,15 @@ code {
   background-color: var(--background-mod-subtle);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .numberBadge__2b1f5,
 .textBadge__2b1f5 {
   background: var(--hsl-main-color) !important;
   color: var(--text-strong);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .chat_f75fb0 {
   background: transparent;
 }
@@ -529,7 +529,7 @@ code {
   background: hsl(from var(--custom-role-label-color) h s l/0.2);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .form_f75fb0 {
   margin-top: 4px;
 }
@@ -585,7 +585,7 @@ code {
   border-top-color: var(--hsl-popout-shading);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .wrapper_cb9592,
 .channelChatWrapper_cb9592 {
   background: transparent;
@@ -630,7 +630,7 @@ code {
   background: var(--hsl-popout-shading);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .divider__908e2 {
   --divider-color: var(--hsl-main-color);
 }
@@ -661,7 +661,7 @@ code {
   background: var(--divider-color);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .backgroundFlash__5126c:not([style$="0);"]) {
   background-color: hsla(var(--hsl-main-color), 0.3) !important;
   transition: 200ms ease-out background-color;
@@ -840,7 +840,7 @@ code {
   border-color: var(--message-color-hover);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .container_f369db {
   background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.3));
 }
@@ -952,7 +952,7 @@ code {
   animation: cv-card-loading 1.5s infinite ease-in-out;
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .resizeHandle__01ae2 {
   background: transparent;
 }
@@ -982,7 +982,7 @@ code {
   background-color: var(--hsl-popout-shading);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .newMessagesBar__0f481 {
   top: 4px;
   right: 8px;
@@ -1012,7 +1012,7 @@ code {
   border: none;
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .reactions__23977 {
   border-radius: 4px;
 }
@@ -1043,7 +1043,7 @@ code {
   border-radius: 4px;
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .searchResultsWrap_a98f3b {
   background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.3));
   border: none;
@@ -1066,7 +1066,7 @@ code {
   color: var(--interactive-text-active);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 /* HEADER */
 :is(.theme-dark, .theme-light) .themed__9293f {
   background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.5));
@@ -1107,7 +1107,7 @@ code {
   border-bottom-left-radius: 0;
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .container_c8ffbb {
   background: none;
   border: none;
@@ -1266,7 +1266,7 @@ code {
   filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.7));
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 :is(.root__49fc1, .container__8a031) {
   background: var(--hsl-modal-shading);
   border: none;
@@ -1279,7 +1279,7 @@ code {
   background: transparent;
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .container_eb2cd2 {
   border: 2px solid transparent;
   background: var(--background-mod-subtle);
@@ -1301,7 +1301,7 @@ code {
   background: var(--background-mod-subtle);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .keyboardShortcutsModal_f061f6,
 .keybindGroup_f061f6 {
   background: var(--hsl-modal-shading);
@@ -1316,7 +1316,7 @@ code {
   box-shadow: inset 0 -2px var(--hsl-main-color);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .scroller_ac6cb0 {
   background: transparent;
 }
@@ -1340,7 +1340,7 @@ code {
   background: var(--hsl-hover-color);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .footer__7f727 {
   background: transparent;
 }
@@ -1353,7 +1353,7 @@ code {
   background: var(--hsl-main-color);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .premiumBrandRefreshBackground_e5f3a9 {
   background: var(--hsl-modal-shading) !important;
 }
@@ -1422,7 +1422,7 @@ code {
   box-shadow: none;
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .uploadDropModal_b78547 .bgScale_b78547 {
   background: var(--hsl-main-color);
 }
@@ -1430,7 +1430,7 @@ code {
   border-color: var(--text-strong);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .selectorButton__0907c {
   background: var(--background-mod-subtle);
 }
@@ -1443,23 +1443,23 @@ code {
   background: var(--hsl-main-color);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .pillIconOnline__921c5 {
   background: var(--hsl-online-color);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 :is(.actionButtons_cc1819, .closeButton__6088c) {
   background: var(--hsl-modal-shading);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .scroller__01c8c,
 .voters__01c8c {
   background: transparent;
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .scroller__6fd0e {
   background: transparent;
 }
@@ -1483,7 +1483,7 @@ code {
   background: var(--hsl-popout-shading);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 :is(.theme-dark, .theme-light) .header__0b563 {
   background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.5)) !important;
   border-top: none;
@@ -1562,7 +1562,7 @@ code {
   background-color: transparent;
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .container__551b0 {
   background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.2));
 }
@@ -1656,7 +1656,7 @@ code {
   background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.4));
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .tabBody__133bf {
   background: none;
 }
@@ -1757,7 +1757,7 @@ code {
   background-color: var(--hsl-card-shading);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .page_c791b2 {
   background: transparent !important;
 }
@@ -1778,12 +1778,12 @@ code {
   background: var(--background-mod-subtle);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .list_f391e3 {
   background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.4));
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .applicationStore_f07d62 {
   background: transparent;
 }
@@ -1857,7 +1857,7 @@ code {
   background: var(--hsl-popout-shading);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .background__7449f :is(.scrollerBase__99f8c, .scrollerBase_d125d2) {
   background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.4));
 }
@@ -1881,7 +1881,7 @@ code {
   background: var(--hsl-card-shading);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .container__89463 {
   background: transparent;
 }
@@ -1915,7 +1915,7 @@ code {
   border: none;
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .shopScroll__1feb0,
 .shopScroll__08415,
 .page__1feb0 {
@@ -1983,13 +1983,13 @@ code {
   border-bottom: 2px solid var(--hsl-main-color);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .scroller__4a84a,
 .scroller_fb04e1 {
   background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.4));
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .wrapper__4e6ce {
   background: transparent;
 }
@@ -1998,7 +1998,7 @@ code {
   background: var(--hsl-popout-shading);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .autocomplete__13533 {
   background: var(--hsl-popout-shading);
   box-shadow: none;
@@ -2024,7 +2024,7 @@ code {
   background: var(--hsl-main-color);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .lookFilled_a16aea.select_a16aea {
   box-shadow: none;
 }
@@ -2071,7 +2071,7 @@ code {
   background: var(--hsl-main-color);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .recentMentionsPopout__95796 {
   background: var(--hsl-popout-shading);
   box-shadow: none;
@@ -2141,7 +2141,7 @@ code {
   margin: 0;
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .menu_c1e9c4 {
   background: var(--hsl-popout-shading);
   border: none;
@@ -2206,7 +2206,7 @@ code {
   fill: var(--hsl-main-color);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .tooltipPrimary_c36707 {
   background-color: var(--hsl-popout-shading);
   border: none;
@@ -2226,7 +2226,7 @@ code {
   border-top-color: var(--hsl-main-color);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .contentWrapper__08434 {
   background: var(--hsl-popout-shading);
   border: none;
@@ -2320,7 +2320,7 @@ code {
   background: var(--hsl-main-color);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .messagesPopoutWrap_e8b59c {
   background: var(--hsl-popout-shading);
   box-shadow: none;
@@ -2336,7 +2336,7 @@ code {
   border: none;
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .container__16eb0 {
   background: var(--hsl-popout-shading);
   border: none;
@@ -2369,7 +2369,7 @@ code {
   background: transparent;
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .browser_d98031 {
   background-color: var(--hsl-popout-shading);
   box-shadow: none;
@@ -2402,7 +2402,7 @@ code {
   box-shadow: none;
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .contentWrapper__9c62c {
   background: var(--hsl-popout-shading);
   box-shadow: none;
@@ -2486,7 +2486,7 @@ code {
   background: transparent;
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 :is(.picker__09f65, .picker__09f65.refresh__09f65) {
   background: var(--hsl-popout-shading);
   box-shadow: none;
@@ -2512,7 +2512,7 @@ code {
   background: var(--hsl-card-shading);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .popoutContainer__0f481 {
   background: var(--hsl-popout-shading);
   box-shadow: none;
@@ -2556,7 +2556,7 @@ code {
   background: var(--background-mod-subtle);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .full-motion .translate_faf9c0 {
   transform: unset !important;
 }
@@ -2681,7 +2681,7 @@ code {
   border-radius: 15px !important;
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .outer_c0bea0:not(.custom-user-profile-theme) .role_dfa8b6 {
   border-radius: 4px;
   position: relative;
@@ -2721,7 +2721,7 @@ code {
   border: none;
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 /*member list, profile*/
 .mask__44b0c rect[fill*="#82838b"] {
   fill: var(--hsl-offline-color);
@@ -2739,7 +2739,7 @@ code {
   fill: var(--hsl-streaming-color);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .layer__960e4 {
   background-color: transparent;
 }
@@ -2817,7 +2817,7 @@ code {
   background: var(--hsl-popout-shading);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .standardSidebarView__23e6b {
   background: transparent;
 }
@@ -2827,7 +2827,7 @@ code {
   padding: 20px 8px 60px 20px;
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .fixedContent__409aa::after {
   display: none;
 }
@@ -3133,7 +3133,7 @@ code {
   background: transparent;
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .settingCard__1a4ef, .settingCard__1a4ef.active__1a4ef {
   background: var(--hsl-card-shading);
 }
@@ -3178,7 +3178,7 @@ code {
   background-color: hsl(from var(--hsl-success-color) h s l/0.6);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .itemSelected_ec9088 {
   border: 2px solid var(--hsl-main-color);
 }
@@ -3351,12 +3351,12 @@ code {
   background: var(--hsl-card-shading);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .content_e9e3ed .flowerStar__3e3b0 path {
   fill: var(--hsl-main-color);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .panels__5e434 {
   background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.5));
   border-radius: 0;
@@ -3423,7 +3423,7 @@ code {
   color: var(--interactive-text-default);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .keyboard-mode .focusStroke_cc5dd2 {
   stroke: var(--focus-color);
   stroke-width: 4px;
@@ -3495,7 +3495,7 @@ code {
   background: var(--hsl-main-color);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 /* CATEGORY */
 .wrapperCommon__29444 .mainContent__29444 .name__29444 {
   flex: 1;
@@ -3558,7 +3558,7 @@ code {
   display: none;
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .newChannel__599fa {
   background: var(--hsl-main-color) !important;
   color: var(--text-strong);
@@ -3707,7 +3707,7 @@ code {
   border-radius: 999px 0 0 999px;
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .privateChannels_e6b769 {
   background: hsl(from var(--hsl-background-shading) h s l/calc(var(--background-shading-percent) * 0.2));
 }
@@ -3789,7 +3789,7 @@ code {
   color: var(--interactive-text-active);
 }
 
-/*! Pokémon x ClearDark+ v2.3.3-s by Lighty.Jr */
+/*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .sidebar__5e434 {
   background: transparent;
 }
@@ -3798,8 +3798,8 @@ code {
 }
 
 :root {
-  --latest-stable-version: "";
-  --latest-stable-version-s: "";
+  --latest-stable-version: "2.4.0";
+  --latest-stable-version-s: "2.4.0-S";
 }
 
 /* Default Variables */
