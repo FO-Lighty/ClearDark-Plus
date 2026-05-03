@@ -157,5 +157,8 @@
 #{c(profile modal profile)} {
   border-radius: 15px !important;
 }
+#{c(profile sidebar footerButton)}::after {
+  background: transparent;
+}
 
 // WIDGETS
