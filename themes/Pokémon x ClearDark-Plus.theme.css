@@ -2,7 +2,7 @@
  * @name Pokémon x ClearDark+v2
  * @author Lighty.Jr
  * @authorId 975102868564639835
- * @version 2.3.3-S
+ * @version 2.4.0-S
  * @description Version 2 of that Translucent Clear Dark Glass Discord theme with a special acolyte
  * @website https://fo-lighty.github.io/ClearDark-Plus
  * @source https://github.com/FO-Lighty/ClearDark-Plus
@@ -47,7 +47,7 @@
   /* REPLY COLOR SETTINGS */
   --reply-accent: #d4d2ae; /* reply accent color (hex, rgb or hsl) [default: #d4d2ae] */
   /* VERSION LOCAL THEME*/
-  --user-local-version: "2.3.3-S"; /* your current installed version [DO NOT EDIT] */
+  --user-local-version: "2.4.0-S"; /* your current installed version [DO NOT EDIT] */
   /* CARD SETTINGS */
   --card-color: hsl(0,0%,0%,0.4); /* the background color of the cards [default: hsl(0,0%,0%,0.4)] */
   --card-color-hover: hsl(0,0%,0%,0.5); /* the background color of the cards when hovered [default: hsl(0,0%,0%,0.5)] */
