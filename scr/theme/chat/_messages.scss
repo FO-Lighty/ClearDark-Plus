@@ -190,6 +190,11 @@
 	&:after { right: 0; }
 }
 
+#{c(chat gifFavoriteButton)} {
+  background: cv('shading.popout');
+  transform: translateY(-40px);
+}
+
 #{c(chat divider content)} {
 	width: 120px;
 	padding: 2px 0;
