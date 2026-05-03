@@ -45,3 +45,8 @@
 #{c(popouts vcPreview peopleContainer)} {
   background: cv('shading.cardAlt');
 }
+
+// ROLE POPOUT
+#{c(popouts rolePopout popout)} {
+  background: cv('shading.popout');
+}
