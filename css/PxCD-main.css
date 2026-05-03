@@ -21,7 +21,7 @@
 }
 /*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .info__2debe::after {
-  content: "ClearDark+" " " var(--user-local-version);
+  content: "ClearDark+" " " "2.4.0";
   color: var(--text-muted);
   font-size: 12px;
   line-height: 1.3333333333;
@@ -40,7 +40,7 @@
   filter: drop-shadow(0 0 5px var(--hsl-main-color));
 }
 :is(.theme-dark, .theme-light):not(.platform-osx) .leading_c38106::after {
-  content: var(--user-local-version);
+  content: "2.4.0";
   position: static;
   margin-top: -5px;
   margin-left: 5px;
