@@ -40,7 +40,7 @@
   filter: drop-shadow(0 0 5px var(--hsl-main-color));
 }
 :is(.theme-dark, .theme-light):not(.platform-osx) .leading_c38106::after {
-  content: var(--user-local-version);
+  content: "v" var(--user-local-version);
   position: static;
   margin-top: -5px;
   margin-left: 5px;
