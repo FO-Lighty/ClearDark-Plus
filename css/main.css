@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! ClearDark+ v2.3.3 by Lighty.Jr */
 @keyframes cv-channel-select {
   from {
@@ -3796,6 +3797,11 @@ code {
   display: none;
 }
 
+:root {
+  --latest-stable-version: "";
+  --latest-stable-version-s: "";
+}
+
 /* Default Variables */
 :is(.theme-light, .theme-dark, .theme-darker, .theme-midnight), :is(.theme-light, .theme-dark, .theme-darker, .theme-midnight):is(.theme-light, .theme-dark) {
   --text-default: hsl(from var(--normal-text) h calc(var(--saturation-factor, 1) * s) l/alpha);
@@ -3836,6 +3842,35 @@ code {
   --font-display: var(--main-font);
   --font-code: var(--code-font);
   --focus-primary: var(--focus-color);
+}
+@container not style(--user-local-version: var(--latest-stable-version)) {
+  :root .app-mount {
+    border-top: 30px solid var(--danger-color) !important;
+  }
+  :root body::before {
+    content: "⚠️ Outdated version (" var(--user-local-version) "). v" var(--latest-stable-version) " is available on GitHub! ⚠️";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0px;
+    height: 32px;
+    background: var(--danger-color);
+    color: var(--normal-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  }
+}
+:root {
   --main-color: #618098;
   --darker-main-color: #060809;
   --hover-color: #8199ad;
