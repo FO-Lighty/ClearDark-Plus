@@ -692,7 +692,7 @@ code {
   border: 2px solid transparent;
 }
 .message__5126c.cozy_c19a55 .timestamp_c19a55.alt_c19a55 {
-  left: -62px;
+  left: -75px;
 }
 .message__5126c.compact_c19a55 {
   padding: 4px;
@@ -708,10 +708,10 @@ code {
   top: 26px;
 }
 .message__5126c .timestamp_c19a55 {
-  color: var(--text-normal);
+  color: var(--text-default);
 }
 .message__5126c .timestamp_c19a55.alt_c19a55 {
-  color: var(--text-normal);
+  color: var(--text-default);
 }
 .message__5126c .channelTextArea_d9be46 {
   margin: 2px 0;
