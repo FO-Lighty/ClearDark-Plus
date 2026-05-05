@@ -87,8 +87,8 @@ $cv: (
     ),
   // TEXT COLORS - ALSO TO BE USED IN .theme-light AND .theme-dark
   text: (
-      normal: var(--text-default),
-      muted: var(--text-muted),
+      normal: var(--interactive-text-default),
+      muted: var(--interactive-muted),
       strong: var(--text-strong),
       interactive: var(--interactive-text-normal),
     ),
