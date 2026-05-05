@@ -22,7 +22,7 @@
 /*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
 .info__2debe::after {
   content: "ClearDark+" " v" var(--user-local-version);
-  color: var(--interactive-muted);
+  color: var(--text-muted);
   font-size: 12px;
   line-height: 1.3333333333;
   font-weight: 400;
@@ -35,7 +35,7 @@
   margin-left: 10px;
   font-size: 16px;
   font-weight: 600;
-  color: var(--interactive-text-default);
+  color: var(--text-default);
   order: 2;
   filter: drop-shadow(0 0 5px var(--hsl-main-color));
 }
@@ -47,7 +47,7 @@
   font-family: var(--code-font);
   font-size: 11px;
   font-weight: 600;
-  color: var(--interactive-muted);
+  color: var(--text-muted);
   order: 3;
 }
 
@@ -203,7 +203,7 @@
 }
 
 .input__0f084::placeholder {
-  color: var(--interactive-muted);
+  color: var(--text-muted);
 }
 
 .mana-text-inputs .wrapper__72c38 {
@@ -377,7 +377,7 @@ code {
 
 ::selection {
   background: var(--hsl-main-color);
-  color: var(--interactive-text-default);
+  color: var(--text-default);
 }
 
 /*! Pokémon x ClearDark+ v2.4.0-s by Lighty.Jr */
@@ -708,10 +708,10 @@ code {
   top: 26px;
 }
 .message__5126c .timestamp_c19a55 {
-  color: var(--interactive-text-default);
+  color: var(--text-default);
 }
 .message__5126c .timestamp_c19a55.alt_c19a55 {
-  color: var(--interactive-text-default);
+  color: var(--text-default);
 }
 .message__5126c .channelTextArea_d9be46 {
   margin: 2px 0;
@@ -737,7 +737,7 @@ code {
 
 .wrapper_f61d60 {
   background: var(--mention-color);
-  color: var(--interactive-text-default);
+  color: var(--text-default);
 }
 
 .replying__5126c {
@@ -1233,7 +1233,7 @@ code {
 }
 
 .truncated_c9d15c {
-  color: var(--interactive-muted);
+  color: var(--text-muted);
   transition: all 0.15s ease-in-out;
 }
 .truncated_c9d15c strong {
@@ -3430,7 +3430,7 @@ code {
   background-color: var(--hsl-popout-shading);
 }
 .contentInteractable__24e2c .headerText__1ba69 {
-  color: var(--interactive-text-default);
+  color: var(--text-default);
 }
 .contentInteractable__24e2c .submenuIcon__1ba69 {
   color: var(--interactive-text-default);
@@ -3764,7 +3764,7 @@ code {
 }
 
 .empty__99e7c {
-  fill: var(--interactive-text-default);
+  fill: var(--text-default);
   opacity: 0.15;
 }
 
