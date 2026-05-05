@@ -47,7 +47,7 @@
 	&#{c(chat cozy)} {
 		#{c(chat timestamp)} {
 			&#{c(chat timestampAlt)} {
-				left: -62px;
+				left: -75px;
 			}
 		}
 	}
@@ -72,10 +72,10 @@
     }
 
 	#{c(chat timestamp)} {
-		color: var(--text-normal);
+		color: cv('text.normal');
 
 		&#{c(chat timestampAlt)}  {
-			color: var(--text-normal);
+			color: cv('text.normal');
 		}
 	}
 
