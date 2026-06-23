@@ -24,7 +24,7 @@
 
 	/* SIDEBARS AND CHAT AREA COLOR SETTINGS */
 	--sidebar-color: hsl(0,0%,0%,0.8);
-	--main-content-color: hsl(0,0%,0%,0.515
+	--main-content-color: hsl(0,0%,0%,0.515;
 	--user-local-version: "1.3.2-S";
 
 	/* MESSAGE SETTINGS */
