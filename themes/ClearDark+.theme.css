@@ -96,6 +96,7 @@
   /* SWITCH SETTINGS */
   --switch-slider-color: hsla(218,4.6%,46.9%,0.85);
   --switch-knob-color: hsl(0,0%,13%);
+  --user-local-version: "1.4.2";
 	
   /* POPOUT SETTINGS */
   --popout-color: hsl(0,0%,0%,0.55);
