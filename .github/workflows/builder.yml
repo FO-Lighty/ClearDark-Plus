@@ -7,7 +7,7 @@ on:
     paths:
       # Se lance quand le SCSS ou les fichiers .theme.css (versions) changent
       - 'scr/**/*.scss'
-      - '*.theme.css'
+      - 'themes/*.theme.css'
   # Permet aussi de le lancer à la main (onglet Actions > Builder > Run workflow)
   workflow_dispatch:
 
@@ -46,17 +46,17 @@ jobs:
         run: |
           mkdir -p css
 
-          THEME_VERSION_BASE=$(grep "@version" "ClearDark-Plus-T&B.theme.css" | awk '{print $3}')
-          THEME_VERSION_SPEC=$(grep "@version" "Pokémon x ClearDark-Plus.theme.css" | awk '{print $3}')
+          THEME_VERSION_BASE=$(grep "@version" "themes/ClearDark-Plus.theme.css" | awk '{print $3}')
+          THEME_VERSION_SPEC=$(grep "@version" "themes/Pokémon x ClearDark-Plus.theme.css" | awk '{print $3}')
 
           echo ":root {
             --latest-stable-version: \"$THEME_VERSION_BASE\";
             --latest-stable-version-s: \"$THEME_VERSION_SPEC\";
             }" > scr/_version.scss
 
-          sass scr/main.scss css/source.css --load-path=scr --no-source-map
-          sass scr/PxCD.scss css/PxCD-source.css --load-path=scr --no-source-map
-          sass scr/betterdiscord.scss css/additional.css --load-path=scr --no-source-map
+          sass scr/main.scss css/main.css --load-path=scr --no-source-map
+          sass scr/PxCD.scss css/PxCD-main.css --load-path=scr --no-source-map
+          sass scr/betterdiscord.scss css/additionals.css --load-path=scr --no-source-map
 
       # 5. Préparer le site (le CSS fraîchement compilé est dans le dossier de travail)
       - name: Setup Pages
