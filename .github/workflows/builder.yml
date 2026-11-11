@@ -5,50 +5,85 @@ on:
     branches:
       - main
     paths:
-      # The workflow only triggers if SCSS files in the src folder are modified
-      - 'scr/**/*.scss' 
+      # Se lance quand le SCSS ou les fichiers .theme.css (versions) changent
+      - 'scr/**/*.scss'
+      - '*.theme.css'
+  # Permet aussi de le lancer à la main (onglet Actions > Builder > Run workflow)
+  workflow_dispatch:
+
+# Droits nécessaires : commit du CSS (contents) + déploiement de Pages
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# Une seule publication à la fois, sans annuler celle en cours
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
-      # 1. Download code
+      # 1. Télécharger le code
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # 2. Prepare the environment to install SASS
+      # 2. Préparer Node.js pour installer Sass
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
-          
-      # 3. Install the SASS compiler
+          node-version: '20'
+
+      # 3. Installer le compilateur Sass
       - name: Install Sass
         run: npm install -g sass
 
-      # 4. Execute compilation: src/main.scss -> main.css
+      # 4. Compiler : scr/*.scss -> css/*.css
       - name: Builder CSS
-        # The destination is at the root, which is ideal for Discord
         run: |
-          THEME_VERSION_BASE=$(grep "@version" "themes/ClearDark-Plus.theme.css" | awk '{print $3}')
-          THEME_VERSION_SPEC=$(grep "@version" "themes/Pokémon x ClearDark-Plus.theme.css" | awk '{print $3}')
+          mkdir -p css
+
+          THEME_VERSION_BASE=$(grep "@version" "ClearDark-Plus-T&B.theme.css" | awk '{print $3}')
+          THEME_VERSION_SPEC=$(grep "@version" "Pokémon x ClearDark-Plus.theme.css" | awk '{print $3}')
 
           echo ":root {
             --latest-stable-version: \"$THEME_VERSION_BASE\";
             --latest-stable-version-s: \"$THEME_VERSION_SPEC\";
             }" > scr/_version.scss
-          
-          sass scr/main.scss css/main.css --load-path=scr --no-source-map
-          sass scr/PxCD.scss css/PxCD-main.css --load-path=scr --no-source-map
-          sass scr/betterdiscord.scss css/additionals.css --load-path=scr --no-source-map
 
-      # 5. Update the main.css file on GitHub
-      - name: Deploy
+          sass scr/main.scss css/source.css --load-path=scr --no-source-map
+          sass scr/PxCD.scss css/PxCD-source.css --load-path=scr --no-source-map
+          sass scr/betterdiscord.scss css/additional.css --load-path=scr --no-source-map
+
+      # 5. Préparer le site (le CSS fraîchement compilé est dans le dossier de travail)
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      # 6. Garder une copie du CSS compilé dans le dépôt (utile pour l'historique / jsDelivr).
+      #    Le déploiement ne dépend plus de ce commit.
+      - name: Commit compiled CSS
+        continue-on-error: true
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: 'CSS Version updated'
-          files: |
-            main.css
-            additional.css
+          file_pattern: 'css/*.css scr/_version.scss'
           commit_user_name: "Lighty's Compiler Bot"
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
