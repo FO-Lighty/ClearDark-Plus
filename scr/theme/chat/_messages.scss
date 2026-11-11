@@ -1,15 +1,14 @@
-
 @use 'backend' as *;
 
 // BACKGROUND FLASH
 #{c(chat backgroundFlash)} {
 	&:not([style$="0);"]) {
-		background-color: hsla(cv('color.main'), 0.3) !important;
+		background-color: hsl(from cv('color.main') h s l / 0.3) !important;
 		transition: 200ms ease-out background-color;
 	}
 
 	&[style="background-color: rgba(148, 156, 247, 0);"] {
-		background-color: hsla(cv('color.main'), 0.0) !important;
+		background-color: hsl(from cv('color.main') h s l / 0.0) !important;
 		transition: 400ms background-color;
 	}
 }
@@ -44,14 +43,6 @@
 		border: 2px solid transparent;
 	}
 
-	&#{c(chat cozy)} {
-		#{c(chat timestamp)} {
-			&#{c(chat timestampAlt)} {
-				left: -75px;
-			}
-		}
-	}
-
 	&#{c(chat compact)} {
 		padding: 4px;
 		padding-left: 6px;
@@ -61,20 +52,25 @@
 		}
 	}
 
-	&#{c(chat hasReply)} {
-        #{c(chat chatAvatar)} {
-            top: 28px;
-        }
+	// MESSAGE WITH A REPLY
+	// `hasReply` peut ne plus être sur le même élément que le message : on détecte aussi
+	// la présence du bloc de réponse avec :has() pour ne pas dépendre de cette classe.
+	&#{c(chat hasReply)},
+	&:has(#{c(chat replied message)}) {
+		#{c(chat chatAvatar)} {
+			top: 28px;
+		}
 
-        #{c(chat avatarDecoration)} {
-            top: 26px;
-        }
-    }
+		#{c(chat avatarDecoration)} {
+			inset-block-start: 26px !important;
+			inset-inline-start: -54px !important;
+		}
+	}
 
 	#{c(chat timestamp)} {
 		color: cv('text.normal');
 
-		&#{c(chat timestampAlt)}  {
+		&#{c(chat timestampAlt)} {
 			color: cv('text.normal');
 		}
 	}
@@ -87,6 +83,14 @@
  		background: cv('shading.card');
 	}
 }
+
+// TIMESTAMP SHIFT
+#{c(chat cozy)} {
+	#{c(chat timestampVisibleOnHover)} {
+		inset-inline-start: -75px !important;
+	}
+}
+
 // MENTIONED BG
 #{c(chat messageWrapper)} {
 	&#{c(chat mentioned)} {
@@ -139,55 +143,187 @@
 
 // HEADER
 #{c(chat chatAvatar)} {
-	width: 40px;
-	height: 40px;
-	top: 27px;
-	left: -50px;
-	margin-top: 0;
-}
-
-#{c(chat avatarDecoration)} {
-	top: -2px;
-	left: -54px;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  left: -50px;
+  margin-top: 0;
+  transition:
+    all 0.3s ease-in-out,
+    transform 0.1s ease-in-out;
+  &#{c(chat chatHeaderClickable)}:active {
+    transform: scale(0.9);
+  }
 }
 
 .a11y-font-scaled-down {
-	#{c(chat chatAvatar)} {
-		&:not(#{c(chat compact)}) {
-			top: 0;
-			left: -50px;
-		}
-	}
+  #{c(chat chatAvatar)} {
+    &:not(#{c(chat compact)}) {
+      top: 0;
+      left: -50px;
+    }
+  }
+
+  #{c(chat avatarDecoration)} {
+    &:not(#{c(chat compact)}) {
+      inset-block-start: 0;
+      inset-inline-start: -54px;
+    }
+  }
+
+  #{c(chat hasReply)},
+  #{c(chat message)}:has(#{c(chat replied message)}) {
+    #{c(chat chatAvatar)} {
+      &:not(#{c(chat compact)}) {
+        top: 28px;
+      }
+    }
+    #{c(chat avatarDecoration)} {
+      &:not(#{c(chat compact)}) {
+        inset-block-start: 28px !important;
+        inset-inline-start: -54px !important;
+      }
+    }
+  }
 }
+
+// AVATAR DECORATION
+#{c(chat avatarDecoration)} {
+  inset-block-start: -2px;
+  inset-inline-start: -54px;
+}
+
 #{c(chat subtitleContainer)} {
-	box-shadow: cv('shadow.bottom');
+  box-shadow: cv('shadow.bottom');
+}
+#{c(chat botTag)} {
+  background: cv('color.main');
+  color: cv('text.strong');
 }
 
-// DIVIDERS
-#{c(chat messageListItem)},
-#{c(chat divider divider)} {
-	+ #{c(chat messageDivider)} {
-		margin-top: 2px;
-	}
+// EDITING
+#{c(chat operations)} {
+  a {
+    color: cv('color.main');
+  }
 }
 
-#{c(chat divider divider)}#{c(chat divider hasContent)} {
-	border-top: none;
+// SYSTEM MESSAGE
+#{c(chat systemMessageContent)} {
+  a {
+    color: var(--text-link);
+  }
+}
 
-	&:before,
-	&:after {
-		position: absolute;
-		content: " ";
-		width: calc(50% - 60px);
-		height: 1px;
-		top: 0;
-		bottom: 0;
-		margin: auto 0;
-		background-color: var(--background-modifier-accent);
-	}
+// CODEBLOCK
+#{c(hljs hljs)} {
+  background: cv('shading.card');
+  border: 1px solid var(--border-normal);
+}
+#{c(chat markup)} {
+  code {
+    background: cv('shading.card');
+    // INLINE
+    &#{c(chat codeInline)} {
+      border:none;
+      background: hsl(from cv('shading.card') h s calc(100 - l) / calc(alpha * 0.5));
+      padding: 2px 6px
+    }
+  }
+}
 
-	&:before { left: 0; }
-	&:after { right: 0; }
+#{c(chat replied textPreview)} {
+  color: cv('text.normal');
+  opacity: 0.7;
+  #{c(chat chatHeaderClickable)}:hover,
+  #{c(chat replied spineHovered)} {
+    opacity: 1;
+  }
+}
+
+// EXECUTE COMMAND
+#{c(chat replied app spine)} {
+  &::before {
+    border-color: cv('color.main');
+  }
+}
+#{c(chat replied app executedCommand)} {
+  #{c(chat replied app launcherCommandName)} {
+    color: cv('color.main');
+    background: transparent;
+    &:hover {
+      color: cv('color.hover');
+      background: transparent;
+    }
+  }
+}
+
+// QUOTES
+#{c(chat quoteContainer)} {
+  #{c(chat quoteDivider)} {
+    border-radius: 0;
+  }
+}
+
+// PUBLISH TO FOLLOWERS
+#{c(chat publish container)} {
+  background: cv('shading.card');
+}
+
+// EMBEDS
+#{c(embeds embedFull)} {
+  background: cv('shading.card');
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+// BOT EMBED CONTAINER
+#{c(embeds embedBotContainer)} {
+  background: cv('shading.card');
+}
+
+// EMBED DOWNLOAD BUTTON
+#{c(embeds hoverButton group)} {
+  background: cv('shading.popout');
+}
+
+// ATTACHMENTS
+#{c(embeds attachment file)} {
+  background: cv('shading.card');
+  border: none;
+}
+#{c(embeds attachment upload trackFill)} {
+  background: cv('color.main');
+}
+
+// INVITE
+#{c(embeds invite wrapper)} {
+  background: cv('shading.card');
+  border: none;
+}
+#{c(embeds invite statusOnline)} {
+  background: cv('color.online');
+}
+#{c(embeds invite statusOffline)} {
+  background: cv('color.offline');
+}
+
+#{c(embeds invite guildInviteContainer)} {
+  background: cv('shading.card');
+}
+
+#{c(embeds invite guildInviteFooter)} {
+  background: none;
+}
+
+// GIFTS
+#{c(embeds gift tile)} {
+  background: cv('shading.card');
+  border: none;
+  &:hover {
+    background: cv('shading.card');
+  }
 }
 
 #{c(chat gifFavoriteButton)} {
@@ -195,46 +331,184 @@
   transform: translateY(-40px);
 }
 
+// MEDIA
+#{c(embeds media audioWrapper)} {
+  background: cv('shading.card');
+  border: none;
+}
+#{c(embeds media audioControls)} {
+  background: transparent;
+}
+#{c(embeds media videoWrapper)} {
+  background: cv('shading.card');
+}
+
+// TEXT CONTAINER
+#{c(embeds textContainer textContainer)},
+#{c(embeds textContainer footer)} {
+  background: cv('shading.card');
+  border: none;
+}
+#{c(embeds textContainer codeView)} {
+  background: transparent;
+}
+#{c(embeds textContainer languageSelectorPopout)} {
+  background: cv('shading.popout');
+}
+// TEXT CONTAINER MODAL 
+#{c(embeds textContainer modal textContainer)} {
+  background: transparent;
+  border: none;
+}
+#{c(embeds textContainer modal content)} #{c(embeds textContainer codeView)} {
+  background: transparent;
+}
+
+#{c(embeds threadContainer)} {
+  // compact view
+  border-color: cv('color.main');
+}
+#{c(embeds threadContainer)} {
+  background: cv('shading.card');
+  border: none;
+}
+#{c(embeds threadCTA)} {
+  color: cv('color.main');
+}
+
+// VOICE MESSAGE
+#{c(embeds voiceMessage container)} {
+  background: cv('shading.card');
+  border: none;
+}
+#{c(embeds voiceMessage ripple)} {
+  background: cv('color.main');
+}
+:is(#{c(main themeLight)}, #{c(main themeDark)}) {
+  #{c(embeds voiceMessage container)} {
+    &:not(#{c(embeds voiceMessage playing)}) {
+      #{c(embeds voiceMessage playButtonContainer)} {
+        background: cv('color.main');
+        &:is(:hover, :active) {
+          background: cv('color.hover');
+        }
+      }
+    }
+  }
+}
+#{c(embeds voiceMessage playing)} {
+  #{c(embeds voiceMessage playIcon)} {
+    color: cv('color.main');
+  }
+}
+
+// AUTOMOD
+#{c(embeds automod card)},
+#{c(embeds automod card)}#{c(embeds automod selected)},
+#{c(embeds automod footerContainer)} {
+  background: cv('shading.card');
+}
+#{c(embeds automod dot)} {
+  background: transparent;
+}
+
+// POLL
+#{c(embeds poll finished container)},
+#{c(embeds poll container)} {
+  background: cv('shading.card');
+  border: none;
+}
+
+#{c(embeds poll answer)} {
+  #{c(embeds poll answerInner)}#{c(embeds poll currentlyVoting)}#{c(embeds poll selected)} {
+    outline: 1px solid cv('color.main');
+  }
+}
+#{c(embeds poll checkbox)} {
+  border-width: 1px;
+}
+#{c(embeds poll radioForeground)} {
+  color: currentColor;
+}
+#{c(embeds poll checkboxSelected)} {
+  border: 1px solid cv('color.main');
+  background: transparent;
+}
+#{c(embeds poll votedStyles)} {
+  --custom-poll-style-vote-percentage: hsl(from var(--hsl-main-color) h s l/.2);
+  --custom-poll-style-border: var(--hsl-main-color);
+}
+#{c(embeds poll answerSelectionIcon)} path {
+  fill: cv('color.main');
+}
+
+// DIVIDERS
+#{c(chat messageListItem)},
+#{c(chat divider divider)} {
+  + #{c(chat messageDivider)} {
+    margin-top: 2px;
+  }
+}
+
+#{c(chat divider divider)}#{c(chat divider hasContent)} {
+  border-top: none;
+
+  &:before,
+  &:after {
+    position: absolute;
+    content: " ";
+    width: calc(50% - 60px);
+    height: 1px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background-color: var(--background-modifier-accent);
+  }
+
+  &:before { left: 0; }
+  &:after { right: 0; }
+}
+
 #{c(chat divider content)} {
-	width: 120px;
-	padding: 2px 0;
-	background-color: none;
-	text-align: center;
+  width: 120px;
+  padding: 2px 0;
+  background-color: none;
+  text-align: center;
 }
 
 #{c(chat divider isUnread)} {
-	border-color: hsla(cv('color.main'),var(--accent-opacity));
+  border-color: hsl(from cv('color.main') h s l / var(--accent-opacity, 1));
 
-	#{c(chat divider unreadPill)} {
-		background-color: hsla(cv('color.main'),var(--accent-opacity));
-		color: var(--accent-text-color);
-		text-shadow: none;
-	}
+  #{c(chat divider unreadPill)} {
+    background-color: hsl(from cv('color.main') h s l / var(--accent-opacity, 1));
+    color: var(--accent-text-color);
+    text-shadow: none;
+  }
 
-	#{c(chat divider unreadPillCap)} {
-        filter: none;
-    }
+  #{c(chat divider unreadPillCap)} {
+    filter: none;
+  }
 
-	#{c(chat divider unreadPillCapStroke)} {
-		color: hsla(cv('color.main'),var(--accent-opacity));
-		fill: hsla(cv('color.main'),var(--accent-opacity));
-	}
+  #{c(chat divider unreadPillCapStroke)} {
+    color: hsl(from cv('color.main') h s l / var(--accent-opacity, 1));
+    fill: hsl(from cv('color.main') h s l / var(--accent-opacity, 1));
+  }
 }
 
 // REPLIES LOGIC
 #{c(chat replied message)} {
-	&:before {
-		border-color: var(--mention-color);
-		transform: translateX(-6px);
-    }
+  &:before {
+    border-color: var(--mention-color);
+    transform: translateX(-6px);
+  }
 }
 
 #{c(chat replied spine)} {
-    margin-inline: calc(var(--spine-width)*-1/2) calc(var(--reply-spacing) * 2.3);
-    border-color: var(--mention-color);
-	transition: 300ms ease border-color;
+  margin-inline: calc(var(--spine-width)*-1/2) calc(var(--reply-spacing) * 2.3);
+  border-color: var(--mention-color);
+  transition: 300ms ease border-color;
 
-	&#{c(chat replied contentHovered)} {
-        border-color: var(--message-color-hover);
-    }
+  &#{c(chat replied contentHovered)} {
+    border-color: var(--message-color-hover);
+  }
 }

@@ -16,8 +16,8 @@
       background: cv('bg.popout.img') cv('bg.popout.pos')/cv('bg.popout.size') no-repeat;
       background-attachment: cv('bg.popout.attach');
       filter: cv('bg.popout.filter');
-      z-index: -1;
       border-radius: 8px;
+      z-index: -1;
     }
   }
 }
@@ -31,8 +31,8 @@
       background: cv('bg.modal.img') cv('bg.modal.pos')/cv('bg.modal.size') no-repeat;
       background-attachment: cv('bg.modal.attach');
       filter: cv('bg.modal.filter');
-      z-index: -1;
       border-radius: 16px;
+      z-index: -1;
     }
   }
 }
@@ -119,12 +119,12 @@
 
   // BUTTONS
   #{c(button new primary)} {
-    background-color: var(--control-background-primary-default);
-    border-color: var(--control-border-primary-default);
+    background-color: var(--control-primary-background-default);
+    border-color: var(--control-primary-border-default);
   }
   #{c(button new secondary)} {
-    background-color: var(--control-background-secondary-default);
-    border-color: var(--control-border-secondary-default);
+    background-color: var(--control-secondary-background-default);
+    border-color: var(--control-secondary-border-default);
   }
 
   // SCROLLBAR
@@ -143,12 +143,30 @@
   }
 }
 
+// POPOUT LOADING
+#{c(profile popout loading profile)} {
+  background: cv('shading.popout');
+}
+#{c(profile popout loading avatar)} {
+  border: none;
+}
+
 // DM SIDE PROFILE
-#{c(profile userSidebar)} {
+#{c(profile outer)}#{c(profile userSidebar)} {
   &:not(#{c(profile customTheme)}) {
     background: hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.3));
   }
 }
+#{c(profile sidebar footerButton)} {
+  background: transparent;
+}
+#{c(profile sidebar aside)} {
+  background: transparent;
+}
+#{c(profile panel)} {
+  background: cv('shading.popout');
+}
+
 
 // BANNER PROFILE
 #{c(profile banner banner)} {
@@ -157,8 +175,3 @@
 #{c(profile modal profile)} {
   border-radius: 15px !important;
 }
-#{c(profile sidebar footerButton)}::after {
-  background: transparent;
-}
-
-// WIDGETS

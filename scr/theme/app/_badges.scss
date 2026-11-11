@@ -1,7 +1,12 @@
 @use 'backend' as *;
 
-#{c(badges number)},
-#{c(badges text)} {
+#{c(badges number)} {
   background: cv('color.main') !important;
   color: cv('text.strong');
+}
+
+:is(#{c(main themeLight)}, #{c(main themeDark)}, #{c(main themeDarker)}, #{c(main themeMidnight)}) {
+  --badge-primary-background: #{cv('color.main')};
+  --badge-primary-border: #{cv('color.main')};
+  --badge-primary-text: #{cv('text.strong')};
 }

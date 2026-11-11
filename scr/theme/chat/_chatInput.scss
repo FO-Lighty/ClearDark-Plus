@@ -10,7 +10,7 @@
   border-color: transparent;
   &:focus-within {
     border-color: transparent;
-    box-shadow: 0 0 2px 2px cv('color.main');
+    box-shadow: 0 0 2px 2px var(--hsl-main-color);
   }
 }
 #{c(chatForm stackedBars)},
@@ -44,13 +44,13 @@
 
 // SEND BUTTON
 #{c(chatForm sendButtonActiveChild)} {
-  color: var(--interactive-text-default);
+  color: cv('icon.strong');
 }
 :is(#{c(main themeLight)}, #{c(main themeDark)}) {
   #{c(chatForm sendButton)} {
     &:is(:focus, :focus-within, :hover) {
       #{c(chatForm sendButtonActiveChild)} {
-        color: var(--interactive-text-active);
+        color: cv('icon.strong');
       }
     }
   }
@@ -63,4 +63,9 @@
   &::before {
     border-top-color: cv('shading.popout');
   }
+}
+
+// REMOVE THE WEIRD SHADING OF CHAT INPUT
+#{c(chatForm formWithLoadedChatInput)}:before {
+  content: none;
 }

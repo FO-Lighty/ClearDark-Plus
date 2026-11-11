@@ -1,5 +1,6 @@
 @use 'backend' as *;
 
+// above channels list
 // HEADER
 :is(#{c(main themeDark)}, #{c(main themeLight)}) {
   #{c(channelsPage header header)} {

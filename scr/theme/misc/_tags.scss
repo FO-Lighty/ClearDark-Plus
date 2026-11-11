@@ -1,0 +1,116 @@
+@use "start" as *;
+@use "backend" as *;
+@use "sass:list";
+@use "sass:meta";
+@use "sass:string";
+/* USER TAGS */
+$tagged: (
+	// Creator
+	"CV Creator": (
+		"144881947557101568",	// Zerthox
+	),
+	// Admins
+	"CV Admin": (
+		"194151269399527425",	// untuned
+		"393900343135830016",	// Nyx
+	),
+	// Team
+	"CV Team": (
+		"332394843743584256",	// cruxie
+		"240437190339854337",	// Leozard
+		"126652966265421824",	// Scars
+	),
+	// Contributors
+	"CV Contributor": (
+		"195270435015884800",	// Daemonicdeveloper
+		"236579127090610176",	// Danielle
+		"97797564866236416",	// Heebeejeebees
+		"150750980097441792",	// Orangutan
+		"213067580531933196",	// KitKat
+		"858800346884997142",	// ShadowDevilsAvenged
+		"310468127534350347",	// Miyu
+		"384167892012498944",	// Randymations
+		"1141445806386319370",	// J-Emil-P
+		"427114049487241227",	// NeoNyaa
+	),
+	// Legacy Donators
+	"CV Donator": (
+		"262989909411758080",	// coldarchie
+		"168551219135119361",	// Auroatic
+		"241500427105992704",	// Ghost_Recon131
+		"151995147150819328",	// It
+		"157699533134888961",	// Jayzer
+		"157492606752784384",	// Kazumi
+		"174525242939670528",	// lts
+		"78890013378486272",	// Macpot
+		"213263668312408066",	// Nikolas
+		"152431535914614785",	// Paco
+		"112619227466182656",	// PieterVMB
+		"297873043265552384",	// PureFallen
+		"258031697646321666",	// Rich246™
+		"109933711142719488",	// Samboy Chips
+		"251260900252712962",	// viwalon
+		"199184208319610880",	// xImGaming
+		"122731339890950145",	// Lilith
+		"436228721033216009",	// Hattyot
+		"66214870705516544",	// Lordmau5
+		"172426681800196096",	// Luan San
+		"158311402677731328",	// theLMGN
+		"284122164582416385",	// Aetheryx
+		"107965218868457472",	// Mudock Yatho
+		"183795147236966412",	// blamecoopa
+		"245133485688225793",	// Shadowcloud
+	),
+	// Translators / Guide Makers
+	"CV Translator": (
+		"538745942493495298",	// Kuroikitten
+	),
+	"CV Guide Maker": (
+		"265627010733178892",	// Big Steve
+	),
+	// Former CV Team Members
+	"Former CV Team": (
+		"335677038830682112",	// Snow
+		"309976820109803520",	// Leafy
+	),
+);
+
+// OUTPUT
+#{c(chat messageContents)} #{c(chat chatAvatar)} {
+	~ #{c(chat chatHeaderUsername)} #{c(chat chatUsername)}::after {
+		content: var(--tag, none);
+		font-size: clamp(10px, 0.7rem, 1rem);
+		font-style: italic;
+		margin-left: round(0.4rem, 1px);
+		vertical-align: super;
+		display: inline-block;
+		text-shadow: 0 0 3px currentColor;
+	}
+}
+
+// group = what tag will be used, will be used for content: #{$group}
+// user = string list for what user(s) will have that tag
+// itm = an item in alias when it's a list
+// output --lang is the name, as above
+@each $group, $user in $tagged {
+	// for lists
+	$k: "";
+	@if meta.type-of($user) == list {
+		@if list.length($user) > 1 {
+			$k: ":is("; // start :is(
+			@for $i from 1 through list.length($user) {
+				$k: string.insert($k,"[src*=\"" + list.nth($user,$i) + "\"],",-1);
+			}
+			// remove extra comma, add closing )
+			$k: string.slice($k,0,-2) + ")";
+		} @else {
+			$k: "[src*=\"" + list.nth($user,1) + "\"]";
+		}
+	} @else {
+	// and for single strings
+		$k: "[src*=\"#{$user}\"]";
+	}
+	#{c(chat chatAvatar)}#{$k} ~ #{c(chat chatHeaderUsername)} {
+		--tag: "#{$group}";
+	}
+}

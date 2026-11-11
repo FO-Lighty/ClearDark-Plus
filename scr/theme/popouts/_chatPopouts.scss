@@ -30,20 +30,12 @@
   }
 }
 
-// STREAM PREVIEW
-#{c(popouts streamPreview popout)} {
-  background: cv('shading.popout');
-}
-#{c(popouts streamPreview previewContainer)} {
-  background: transparent;
-}
-
-// PRIVATE VC PREVIEW
+// VC PREVIEW
 #{c(popouts vcPreview popout)} {
   background: cv('shading.popout');
 }
-#{c(popouts vcPreview peopleContainer)} {
-  background: cv('shading.cardAlt');
+#{c(popouts vcPreview streamPreview)} {
+  background: transparent;
 }
 
 // ROLE POPOUT
