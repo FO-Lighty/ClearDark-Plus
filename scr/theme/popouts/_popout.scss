@@ -7,5 +7,5 @@
 
 // PROFILE LOADING
 #{c(popouts loading popout)} {
-  background: cv('shading.popout');
+  @include glass;
 }

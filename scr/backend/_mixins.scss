@@ -2,3 +2,64 @@
   border: 1px solid var(--hsl-main-color);
   background-color: var(--hsl-card-shading);
 }
+
+// LIQUID GLASS
+// Turns a surface into tinted glass: blur + saturation behind it, light reflections
+// on its edges and a soft drop shadow. Every setting is a CSS variable (see theme/general/_glass.scss)
+// so users can tune it from the .theme.css file.
+//
+// $bg        glass tint (defaults to the theme's popout shading, so the glass stays in the theme colors)
+// $radius    border-radius of the surface
+// $pseudo    'before' or 'after': draws the glass on a pseudo-element instead of the element itself.
+//            Use it when the element holds other blurred surfaces (menus with submenus, chat input
+//            with its autocomplete...), otherwise their blur only sees the inside of this element.
+// $shadow    adds the drop shadow under the glass
+// $important adds !important (to beat Discord inline/high-specificity styles)
+@mixin glass($bg: var(--hsl-popout-shading), $radius: var(--glass-radius), $pseudo: null, $shadow: true, $important: false) {
+  $imp: '';
+  @if $important {
+    $imp: ' !important';
+  }
+  $shadows: 'var(--glass-edge)';
+  @if $shadow {
+    $shadows: 'var(--glass-edge), var(--glass-drop-shadow)';
+  }
+  $tinted: 'color-mix(in srgb, #{$bg}, var(--hsl-main-color) var(--glass-tint))';
+
+  border: #{'none' + $imp};
+  border-radius: #{$radius}#{$imp};
+
+  @if $pseudo {
+    position: relative;
+    isolation: isolate;
+    background: #{'transparent' + $imp};
+    box-shadow: #{'none' + $imp};
+
+    &::#{$pseudo} {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      border-radius: inherit;
+      pointer-events: none;
+      background: #{$tinted};
+      box-shadow: #{$shadows};
+      backdrop-filter: var(--glass-filter);
+    }
+  } @else {
+    background: #{$tinted + $imp};
+    box-shadow: #{$shadows + $imp};
+    backdrop-filter: #{'var(--glass-filter)' + $imp};
+  }
+}
+
+// Only the reflections (no blur, no background): for surfaces that already draw
+// their own background (profile popouts with an image, etc.)
+@mixin glass-edge($radius: var(--glass-radius), $shadow: true) {
+  border-radius: $radius;
+  @if $shadow {
+    box-shadow: var(--glass-edge), var(--glass-drop-shadow);
+  } @else {
+    box-shadow: var(--glass-edge);
+  }
+}

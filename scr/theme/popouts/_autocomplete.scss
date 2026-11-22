@@ -1,8 +1,7 @@
 @use 'backend' as *;
 
 #{c(popouts autocomplete popout)} {
-  background: cv('shading.popout');
-  box-shadow: none;
+  @include glass;
 }
 #{c(popouts autocomplete clickable)} {
   &[aria-disabled=false] {

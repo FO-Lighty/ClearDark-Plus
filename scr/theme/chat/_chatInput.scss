@@ -5,12 +5,13 @@
   margin-top: 4px;
 }
 #{c(chatForm channelTextArea)} {
-  background-color: cv('shading.input.bg');
-  box-shadow: 0 0 0 2px cv('shading.input.border');
-  border-color: transparent;
-  &:focus-within {
-    border-color: transparent;
-    box-shadow: 0 0 2px 2px var(--hsl-main-color);
+  @include glass(cv('shading.input.bg'), var(--glass-radius), $pseudo: before, $shadow: false);
+  &::before {
+    box-shadow: var(--glass-edge), 0 0 0 2px cv('shading.input.border');
+    transition: box-shadow 200ms ease;
+  }
+  &:focus-within::before {
+    box-shadow: var(--glass-edge), 0 0 2px 2px var(--hsl-main-color);
   }
 }
 #{c(chatForm stackedBars)},

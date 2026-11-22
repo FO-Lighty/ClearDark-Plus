@@ -1,8 +1,7 @@
 @use 'backend' as *;
 
 #{c(popouts search container)} {
-  background: cv('shading.popout');
-  border: none;
+  @include glass;
 }
 
 // DATEPICKER

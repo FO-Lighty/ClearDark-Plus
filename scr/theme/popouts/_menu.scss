@@ -1,9 +1,7 @@
 @use 'backend' as *;
 
 #{c(popouts menus menu)} {
-  background: cv('shading.popout');
-  border: none;
-  border-radius: 5px;
+  @include glass($pseudo: before);
 }
 #{c(popouts menus colorDefault)} {
   &#{c(popouts menus itemFocused)} {

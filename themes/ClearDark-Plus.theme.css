@@ -54,6 +54,17 @@
   --card-color-select: hsl(0,0%,0%,0.625); /* the background color of the cards when selected [default: hsl(0,0%,0%,0.625)] */
   --card-radius: 10px; /* the border radius of the cards [default: 10px] */
   --card-header-shadow: 0px 3px 9px 0px hsl(0,0%,0%,0.25); /* The box-shadow for the card header [default: 0px 3px 9px 0px hsl(0,0%,0%,0.25)] */
+  /* LIQUID GLASS */
+  --glass-blur: 12px; /* blur behind popouts, menus and modals (0px to turn the blur off) [default: 12px] */
+  --glass-saturation: 140%; /* colours seen through the glass (100% = unchanged) [default: 140%] */
+  --glass-brightness: 1; /* brightness seen through the glass (below 1 = darker) [default: 1] */
+  --glass-tint: 0%; /* how much of the main color tints the glass (0% = theme shading only) [default: 0%] */
+  --glass-reflex: 0.6; /* strength of the light reflections on the glass edges (0 to turn them off) [default: 0.6] */
+  --glass-light-color: hsl(0, 0%, 100%); /* color of the reflections (hex, rgb or hsl) [default: hsl(0, 0%, 100%)] */
+  --glass-light-angle: 225deg; /* where the light comes from: 225deg top-left, 270deg top, 315deg top-right [default: 225deg] */
+  --glass-radius: 12px; /* corners of popouts, menus and chat input [default: 12px] */
+  --glass-radius-large: 16px; /* corners of modals and settings [default: 16px] */
+  --glass-backdrop-blur: 4px; /* blur of the app behind an open modal (0px to turn it off) [default: 4px] */
   /* MENTION HSL COLOR SETTINGS */
   --mention-color: var(--main-color); /* The mention color [default: var(--main-color)]. */
   --mention-opacity: 1; /* The opacity of the mention color [default: 1]. */

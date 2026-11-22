@@ -1,0 +1,32 @@
+@use 'backend' as *;
+
+// LIQUID GLASS SYSTEM
+// Default values. Users override the first block from their .theme.css file.
+:root {
+  // THESE VARIABLES ARE TO BE EDITED BY THE END USER
+  --glass-blur: 12px;              // blur behind the glass (0px = no blur)
+  --glass-saturation: 140%;        // colours seen through the glass (100% = unchanged)
+  --glass-brightness: 1;           // brightness seen through the glass (< 1 = darker)
+  --glass-tint: 0%;                // how much of --main-color tints the glass (0% = theme shading only)
+  --glass-reflex: 0.6;             // strength of the light reflections on the edges (0 = none)
+  --glass-light-color: hsl(0, 0%, 100%); // colour of the reflections
+  --glass-light-angle: 225deg;     // where the light comes from: 225deg top-left, 270deg top, 315deg top-right
+  --glass-radius: 12px;            // corners of popouts and menus
+  --glass-radius-large: 16px;      // corners of modals and settings
+  --glass-backdrop-blur: 4px;      // blur of the app behind an open modal (0px = none)
+
+  // DO NOT EDIT THESE -- VARIABLES ARE NOT TO BE DISTRIBUTED TO END USER.
+  --glass-filter: blur(var(--glass-blur)) saturate(var(--glass-saturation)) brightness(var(--glass-brightness));
+  --glass-lx: cos(var(--glass-light-angle));
+  --glass-ly: sin(var(--glass-light-angle));
+  // Edge reflections, in order: thin outline, bright rim on the lit side,
+  // faint refraction on the opposite side, inner shade that gives the glass its thickness.
+  // (no comments inside the value: Sass copies custom property values as-is)
+  --glass-edge: inset 0 0 0 1px hsl(from var(--glass-light-color) h s l / calc(var(--glass-reflex) * 0.12)), inset calc(var(--glass-lx) * -1.5px) calc(var(--glass-ly) * -1.5px) 1px -0.5px hsl(from var(--glass-light-color) h s l / calc(var(--glass-reflex) * 0.5)), inset calc(var(--glass-lx) * 1.5px) calc(var(--glass-ly) * 1.5px) 1px -0.5px hsl(from var(--glass-light-color) h s l / calc(var(--glass-reflex) * 0.18)), inset calc(var(--glass-lx) * 4px) calc(var(--glass-ly) * 6px) 10px -4px hsl(0 0% 0% / calc(var(--glass-reflex) * 0.45));
+  --glass-drop-shadow: 0 10px 30px hsl(0 0% 0% / 0.35);
+}
+
+// BLUR BEHIND OPEN MODALS
+#{c(main backdrop)} {
+  backdrop-filter: blur(var(--glass-backdrop-blur));
+}

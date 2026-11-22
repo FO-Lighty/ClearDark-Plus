@@ -1,8 +1,7 @@
 @use 'backend' as *;
 
 #{c(popouts threads popoutBrowser)} {
-  background-color: cv('shading.popout');
-  box-shadow: none;
+  @include glass;
 }
 #{c(popouts threads header)} {
   background: transparent;

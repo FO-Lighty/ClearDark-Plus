@@ -5109,6 +5109,9 @@ $classes: (
     // best way to get this class is to change banner/avi and click gifs
     'focusLock': 'focusLock__KoJTP',
     'root': 'root__KoJTP' 'container_dvN-MP' /* quickswitcher, external links, server notifs */,
+    // modals without their own background (liquid glass must stay off)
+    'rootNoBg': 'container_a1DYes',
+    'rootTransparent': 'forcedTransparency__8a837',
     'header': 'header__KoJTP',
     // header text doesn't have its own class per se but can be targeted with header>h2
     'close': 'close__KoJTP',
