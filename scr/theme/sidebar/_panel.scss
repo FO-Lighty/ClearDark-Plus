@@ -3,8 +3,6 @@
 // ACCOUNT PANEL
 #{c(sidebar panel panels)} {
   @include glass(hsl(from cv('shading.bg') h s l/calc(cv('shading.percent') * 0.5)), 0 var(--glass-radius) var(--glass-radius) 0, $shadow: false);
-  // blur and tint only: no reflections around the user panel
-  box-shadow: none;
   width: 100%;
   left: 0;
   bottom: 0;
