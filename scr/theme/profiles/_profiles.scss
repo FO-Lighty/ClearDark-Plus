@@ -7,7 +7,6 @@
 
 // NO NITRO PROFILE
 #{c(profile userPopout)} {
-  @include glass-edge;
   &:not(#{c(profile customTheme)}) {
     &::before {
       content: '';
@@ -17,7 +16,7 @@
       background: cv('bg.popout.img') cv('bg.popout.pos')/cv('bg.popout.size') no-repeat;
       background-attachment: cv('bg.popout.attach');
       filter: cv('bg.popout.filter');
-      border-radius: var(--glass-radius);
+      border-radius: 8px;
       z-index: -1;
     }
   }
@@ -32,7 +31,7 @@
       background: cv('bg.modal.img') cv('bg.modal.pos')/cv('bg.modal.size') no-repeat;
       background-attachment: cv('bg.modal.attach');
       filter: cv('bg.modal.filter');
-      border-radius: var(--glass-radius-large);
+      border-radius: 16px;
       z-index: -1;
     }
   }

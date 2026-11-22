@@ -16,7 +16,8 @@
 
 // GUILD/CHANNELS UNSAVED CHANGES
 #{c(settings noticeContainer)} {
-  @include glass;
+  background: cv('shading.popout');
+  border: none;
 }
 
 // CARD
@@ -86,5 +87,5 @@
 
 // COLOUR PICKER
 #{c(settings colorPickerPopout)} {
-  @include glass;
+  background: cv('shading.popout');
 }

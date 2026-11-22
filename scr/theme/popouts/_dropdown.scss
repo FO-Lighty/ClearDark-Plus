@@ -11,7 +11,8 @@
 #{c(popouts dropdown popout)} {
   &,
   &#{c(popouts dropdown positionTop)} {
-    @include glass;
+    background: cv('shading.popout');
+    border: none;
   }
 }
 #{c(popouts dropdown option)} {

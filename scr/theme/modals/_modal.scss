@@ -1,14 +1,9 @@
 @use 'backend' as *;
 
 #{c(modals root)} {
-  @include glass(cv('shading.modal'), var(--glass-radius-large));
-
-  // modals that are meant to be see-through (image viewer...)
-  &:is(#{c(modals rootNoBg)}, #{c(modals rootTransparent)}) {
-    background: transparent !important;
-    box-shadow: none !important;
-    backdrop-filter: none !important;
-  }
+  background: cv('shading.modal');
+  border: none;
+  box-shadow: none;
 }
 #{c(modals header)},
 #{c(modals body)},

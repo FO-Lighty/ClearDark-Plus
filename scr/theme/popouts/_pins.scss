@@ -1,7 +1,8 @@
 @use 'backend' as *;
 
 #{c(popouts pins popout)} {
-  @include glass;
+  background: cv('shading.popout');
+  box-shadow: none;
 }
 #{c(popouts pins header)},
 #{c(popouts pins footer)} {

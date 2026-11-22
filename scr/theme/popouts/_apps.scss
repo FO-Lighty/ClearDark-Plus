@@ -1,7 +1,8 @@
 @use 'backend' as *;
 
 #{c(popouts apps popout)} {
-  @include glass;
+  background: cv('shading.popout');
+  box-shadow: none;
 }
 #{c(popouts apps sectionRowsContainer)} {
   gap: 8px;

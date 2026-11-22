@@ -2,7 +2,8 @@
 
 // SHARED
 #{c(popouts inbox popout)} {
-  @include glass;
+  background: cv('shading.popout');
+  box-shadow: none;
 }
 #{c(popouts inbox header)} {
   background: transparent;

@@ -1,7 +1,8 @@
 @use 'backend' as *;
 
 #{c(popouts expressionPicker contentWrapper)} {
-  @include glass;
+  background: cv('shading.popout');
+  border: none;
 }
 #{c(popouts expressionPicker inspector)} {
   background: transparent;
